@@ -1,0 +1,15 @@
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z1/main.cpp: In function ‘double NewtonRaphsonSolve(FunTip1, FunTip2, double, double, double, int)’:
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z1/main.cpp:203:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(damping == 0) {
+                   ^
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z1/main.cpp:223:74: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         while((std::fabs(v) > std::fabs(w)) || !std::isfinite(v) || d == 0) {
+                                                                          ^
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z1/main.cpp: In instantiation of ‘double NewtonRaphsonSolve(FunTip1, FunTip2, double, double, double, int) [with FunTip1 = main()::<lambda(double)>; FunTip2 = main()::<lambda(double)>]’:
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z1/main.cpp:444:49:   required from here
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z1/main.cpp:203:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(damping == 0) {
+        ~~~~~~~~^~~~
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z1/main.cpp:223:71: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         while((std::fabs(v) > std::fabs(w)) || !std::isfinite(v) || d == 0) {
+                                                                     ~~^~~~

@@ -1,0 +1,36 @@
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In member function ‘void Vector::Print(char, double) const’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:72:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(eps == -1) {
+                    ^
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In member function ‘Vector& Vector::operator/=(double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:114:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(s == 0) throw std::domain_error("Division by zero");
+                 ^
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In function ‘void PrintVector(const Vector&, char, double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:130:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(eps == -1) {
+                ^
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In function ‘Vector operator/(const Vector&, double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:184:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(s == 0) throw std::domain_error("Division by zero");
+             ^
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In constructor ‘Matrix::Matrix(std::initializer_list<std::vector<double> >)’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:217:26: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+         if(l.size() == 1 && kvel == 0 || l.size() == 0) throw std::range_error("Bad dimension");
+            ~~~~~~~~~~~~~~^~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In member function ‘void Matrix::Print(int, double) const’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:270:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(eps == -1) {
+                    ^
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In function ‘void PrintMatrix(const Matrix&, int, double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:363:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(eps == -1) {
+                ^
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In member function ‘Matrix& Matrix::operator+=(const Matrix&)’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:295:5: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp: In member function ‘Matrix& Matrix::operator-=(const Matrix&)’:
+/rhome/m/mucanbarli1/workspace/NA/Z1/Z1/main.cpp:302:5: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^

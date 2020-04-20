@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/NA/Z4/Z2/main.cpp: In lambda function:
+/rhome/m/mucanbarli1/workspace/NA/Z4/Z2/main.cpp:101:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(x == 0) return 0.;
+                 ^

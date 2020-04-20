@@ -1,0 +1,46 @@
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In member function ‘void Vector::Print(char, double) const’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:72:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(eps == -1) {
+                    ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In member function ‘Vector& Vector::operator/=(double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:114:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(s == 0) throw std::domain_error("Division by zero");
+                 ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In function ‘void PrintVector(const Vector&, char, double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:144:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(eps == -1) {
+                ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In function ‘Vector operator/(const Vector&, double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:198:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(s == 0) throw std::domain_error("Division by zero");
+             ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In constructor ‘Matrix::Matrix(std::initializer_list<std::vector<double> >)’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:231:26: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+         if(l.size() == 1 && kvel == 0 || l.size() == 0) throw std::range_error("Bad dimension");
+            ~~~~~~~~~~~~~~^~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In member function ‘void Matrix::Print(int, double) const’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:284:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(eps == -1) {
+                    ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In function ‘void PrintMatrix(const Matrix&, int, double)’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:412:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(eps == -1) {
+                ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In function ‘double Det(Matrix)’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:607:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(p != k){ 
+                 ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In member function ‘double Matrix::Det() const’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:631:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(p != k){ 
+                 ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp: In constructor ‘LUDecomposer::LUDecomposer(Matrix)’:
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:749:10: warning: ‘LUDecomposer::m’ will be initialized after [-Wreorder]
+   Matrix m;
+          ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:748:10: warning:   ‘Vector LUDecomposer::w’ [-Wreorder]
+   Vector w;
+          ^
+/rhome/m/mucanbarli1/workspace/NA/Z2/Z1/main.cpp:751:3: warning:   when initialized here [-Wreorder]
+   LUDecomposer(Matrix m1): m(m1), w(m1.NRows()){
+   ^~~~~~~~~~~~

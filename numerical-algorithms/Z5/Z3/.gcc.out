@@ -1,0 +1,8 @@
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z3/main.cpp: In instantiation of ‘std::vector<std::pair<double, double> > RK4Integrator(FunTip, double, double, double, double, double, bool) [with FunTip = main()::<lambda(double, double)>]’:
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z3/main.cpp:101:56:   required from here
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z3/main.cpp:66:24: warning: unused variable ‘w’ [-Wunused-variable]
+                 double w=stepCalc(f,x,y,h);
+                        ^
+/rhome/m/mucanbarli1/workspace/NA/Z5/Z3/main.cpp:90:24: warning: unused variable ‘w’ [-Wunused-variable]
+                 double w=stepCalc(f,x,y,h);
+                        ^
