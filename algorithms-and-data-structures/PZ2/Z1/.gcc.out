@@ -1,0 +1,5 @@
+/rhome/m/mucanbarli1/workspace/ASP/PZ2/Z1/main.cpp: In instantiation of ‘void JednostrukaLista<Tip>::kraj() [with Tip = int]’:
+/rhome/m/mucanbarli1/workspace/ASP/PZ2/Z1/main.cpp:670:14:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/PZ2/Z1/main.cpp:277:17: warning: statement has no effect [-Wunused-value]
+             for(tr; tr->veza != nullptr; tr = tr->veza);
+                 ^~

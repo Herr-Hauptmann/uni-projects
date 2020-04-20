@@ -1,0 +1,5 @@
+/rhome/m/mucanbarli1/workspace/ASP/PZ8/Z1/main.cpp: In instantiation of ‘TipVrijednosti BinStabloMapa<TipKljuca, TipVrijednosti>::operator[](TipKljuca) const [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/m/mucanbarli1/workspace/ASP/PZ8/Z1/main.cpp:296:1:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/PZ8/Z1/main.cpp:107:15: warning: variable ‘q’ set but not used [-Wunused-but-set-variable]
+         cvor* q = nullptr;
+               ^

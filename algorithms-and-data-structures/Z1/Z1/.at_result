@@ -1,0 +1,292 @@
+{
+    "buildhost_description": {
+        "id": "lab002c02",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘void testMax1()’:\nmain.cpp:320:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     if(dajMaksimum(dl) != 288) std::cout<<\"testMax1: failed!\"<<std::endl;\n                           ^~~\nmain.cpp: In instantiation of ‘DvostrukaLista<Tip>::DvostrukaLista(const DvostrukaLista<Tip>&) [with Tip = int]’:\nmain.cpp:377:31:   required from here\nmain.cpp:52:14: warning: statement has no effect [-Wunused-value]\n         for(p; p != nullptr; p = p->next) {\n              ^\nmain.cpp:51:20: warning: unused variable ‘temp’ [-Wunused-variable]\n         Cvor<Tip>* temp;\n                    ^~~~\nmain.cpp: In instantiation of ‘DvostrukaLista<Tip>::DvostrukaLista(const DvostrukaLista<Tip>&) [with Tip = double]’:\nmain.cpp:302:90:   required from ‘Tip dajMaksimum(const Lista<Tip>&) [with Tip = double]’\nmain.cpp:320:22:   required from here\nmain.cpp:52:14: warning: statement has no effect [-Wunused-value]\n         for(p; p != nullptr; p = p->next) {\n              ^\nmain.cpp:51:20: warning: unused variable ‘temp’ [-Wunused-variable]\n         Cvor<Tip>* temp;\n                    ^~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "320",
+                "col": "27",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_1638/main.cpp:320:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     if(dajMaksimum(dl) != 288) std::cout<<\"testMax1: failed!\"<<std::endl;                           ^~~/tmp/buildservice/bs_1638/main.cpp: In instantiation of ‘DvostrukaLista<Tip>::DvostrukaLista(const DvostrukaLista<Tip>&) [with Tip = int]’:/tmp/buildservice/bs_1638/main.cpp:377:31:   required from here",
+                "code": "if(dajMaksimum(dl) != 288) std::cout<<\"testMax1: failed!\"<<std::endl;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "52",
+                "col": "14",
+                "message": "statement has no effect",
+                "output": "/tmp/buildservice/bs_1638/main.cpp:52:14: warning: statement has no effect [-Wunused-value]         for(p; p != nullptr; p = p->next) {              ^",
+                "code": "for(p; p != nullptr; p = p->next) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "51",
+                "col": "20",
+                "message": "unused variable 'temp'",
+                "output": "/tmp/buildservice/bs_1638/main.cpp:51:20: warning: unused variable ‘temp’ [-Wunused-variable]         Cvor<Tip>* temp;                    ^~~~/tmp/buildservice/bs_1638/main.cpp: In instantiation of ‘DvostrukaLista<Tip>::DvostrukaLista(const DvostrukaLista<Tip>&) [with Tip = double]’:/tmp/buildservice/bs_1638/main.cpp:302:90:   required from ‘Tip dajMaksimum(const Lista<Tip>&) [with Tip = double]’/tmp/buildservice/bs_1638/main.cpp:320:22:   required from here",
+                "code": "Cvor<Tip>* temp;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "52",
+                "col": "14",
+                "message": "statement has no effect",
+                "output": "/tmp/buildservice/bs_1638/main.cpp:52:14: warning: statement has no effect [-Wunused-value]         for(p; p != nullptr; p = p->next) {              ^",
+                "code": "for(p; p != nullptr; p = p->next) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "51",
+                "col": "20",
+                "message": "unused variable 'temp'",
+                "output": "/tmp/buildservice/bs_1638/main.cpp:51:20: warning: unused variable ‘temp’ [-Wunused-variable]         Cvor<Tip>* temp;                    ^~~~",
+                "code": "Cvor<Tip>* temp;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1288": {
+            "status": 1,
+            "run_result": {
+                "output": "5 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1289": {
+            "status": 1,
+            "run_result": {
+                "output": "abc",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1290": {
+            "status": 1,
+            "run_result": {
+                "output": "1 5 4 3 2 6",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1291": {
+            "status": 1,
+            "run_result": {
+                "output": "2 3 4 5 1 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1292": {
+            "status": 1,
+            "run_result": {
+                "output": "10000 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1293": {
+            "status": 1,
+            "run_result": {
+                "output": "5 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1294": {
+            "status": 1,
+            "run_result": {
+                "output": "5 4 5 4 4 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1295": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 4 5 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1296": {
+            "status": 1,
+            "run_result": {
+                "output": "5 1 2\n15 20\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1297": {
+            "status": 1,
+            "run_result": {
+                "output": "OK",
+                "duration": 1,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1298": {
+            "status": 1,
+            "run_result": {
+                "output": "OK",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1299": {
+            "status": 1,
+            "run_result": {
+                "output": "99999",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1300": {
+            "status": 1,
+            "run_result": {
+                "output": "99",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1301": {
+            "status": 1,
+            "run_result": {
+                "output": "100000",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1302": {
+            "status": 1,
+            "run_result": {
+                "output": "500 100000 500",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1303": {
+            "status": 1,
+            "run_result": {
+                "output": "1 1 2 1 5 1 5 6 1 5 4 3 8 2 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1573839602
+}

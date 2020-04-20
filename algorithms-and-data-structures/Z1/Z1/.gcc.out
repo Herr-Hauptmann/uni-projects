@@ -1,0 +1,21 @@
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp: In function ‘void testMax1()’:
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:320:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(dajMaksimum(dl) != 288) std::cout<<"testMax1: failed!"<<std::endl;
+                           ^~~
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp: In instantiation of ‘DvostrukaLista<Tip>::DvostrukaLista(const DvostrukaLista<Tip>&) [with Tip = int]’:
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:377:31:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:52:14: warning: statement has no effect [-Wunused-value]
+         for(p; p != nullptr; p = p->next) {
+              ^
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:51:20: warning: unused variable ‘temp’ [-Wunused-variable]
+         Cvor<Tip>* temp;
+                    ^~~~
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp: In instantiation of ‘DvostrukaLista<Tip>::DvostrukaLista(const DvostrukaLista<Tip>&) [with Tip = double]’:
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:302:25:   required from ‘Tip dajMaksimum(const Lista<Tip>&) [with Tip = double]’
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:320:22:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:52:14: warning: statement has no effect [-Wunused-value]
+         for(p; p != nullptr; p = p->next) {
+              ^
+/rhome/m/mucanbarli1/workspace/ASP/Z1/Z1/main.cpp:51:20: warning: unused variable ‘temp’ [-Wunused-variable]
+         Cvor<Tip>* temp;
+                    ^~~~

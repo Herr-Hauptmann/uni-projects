@@ -1,0 +1,111 @@
+{
+    "buildhost_description": {
+        "id": "lab002c18",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘bool Test2()’:\nmain.cpp:151:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n         if(r.skini() != r2.skini()) return false;\n                                  ^\nmain.cpp:158:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n         if(r.skini() != r2.skini()) return false;\n                                  ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "151",
+                "col": "34",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_4957/main.cpp:151:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]         if(r.skini() != r2.skini()) return false;                                  ^",
+                "code": "if(r.skini() != r2.skini()) return false;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "158",
+                "col": "34",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_4957/main.cpp:158:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]         if(r.skini() != r2.skini()) return false;                                  ^",
+                "code": "if(r.skini() != r2.skini()) return false;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1305": {
+            "status": 1,
+            "run_result": {
+                "output": "5 1 5 1 2 3 4 5 0 5 1",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1306": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 3 4 5 1 2 3 4 5 2 3 4 5 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1307": {
+            "status": 1,
+            "run_result": {
+                "output": "0\n99999",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1308": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1309": {
+            "status": 1,
+            "run_result": {
+                "output": "0 1",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1573566446
+}

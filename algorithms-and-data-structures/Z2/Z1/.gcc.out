@@ -1,0 +1,12 @@
+/rhome/m/mucanbarli1/workspace/ASP/Z2/Z1/main.cpp: In function ‘void test2()’:
+/rhome/m/mucanbarli1/workspace/ASP/Z2/Z1/main.cpp:248:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(r.skiniSaCela() != 42 || r.skiniSaVrha() != -8){
+                           ^~
+/rhome/m/mucanbarli1/workspace/ASP/Z2/Z1/main.cpp:248:53: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(r.skiniSaCela() != 42 || r.skiniSaVrha() != -8){
+                                                     ^
+/rhome/m/mucanbarli1/workspace/ASP/Z2/Z1/main.cpp: In instantiation of ‘DvostraniRed<Tip>::DvostraniRed(const DvostraniRed<Tip>&) [with Tip = int]’:
+/rhome/m/mucanbarli1/workspace/ASP/Z2/Z1/main.cpp:207:27:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/Z2/Z1/main.cpp:25:14: warning: statement has no effect [-Wunused-value]
+         for(p; p != nullptr; p = p->next) {
+              ^

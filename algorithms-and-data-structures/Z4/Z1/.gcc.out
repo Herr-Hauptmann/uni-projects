@@ -1,0 +1,15 @@
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp: In instantiation of ‘TipVrijednosti& AVLStabloMapa<TipKljuca, TipVrijednosti>::operator[](TipKljuca) [with TipKljuca = float; TipVrijednosti = float]’:
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp:480:4:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp:377:15: warning: variable ‘q’ set but not used [-Wunused-but-set-variable]
+         node* q = nullptr;
+               ^
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp: In instantiation of ‘void AVLStabloMapa<TipKljuca, TipVrijednosti>::obrisi(const TipKljuca&) [with TipKljuca = float; TipVrijednosti = float]’:
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp:495:11:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp:411:24: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         while(p!=0 && k!=p->kljuc){
+                       ~^~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp: In instantiation of ‘TipVrijednosti AVLStabloMapa<TipKljuca, TipVrijednosti>::operator[](TipKljuca) const [with TipKljuca = float; TipVrijednosti = float]’:
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp:515:1:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/Z4/Z1/main.cpp:395:15: warning: variable ‘q’ set but not used [-Wunused-but-set-variable]
+         node* q = nullptr;
+               ^

@@ -1,0 +1,7 @@
+/rhome/m/mucanbarli1/workspace/ASP/PZ4/Z1/main.cpp: In function ‘bool Test2()’:
+/rhome/m/mucanbarli1/workspace/ASP/PZ4/Z1/main.cpp:151:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(r.skini() != r2.skini()) return false;
+                                  ^
+/rhome/m/mucanbarli1/workspace/ASP/PZ4/Z1/main.cpp:158:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(r.skini() != r2.skini()) return false;
+                                  ^

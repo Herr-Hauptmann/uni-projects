@@ -1,0 +1,15 @@
+==8703== Memcheck, a memory error detector
+==8703== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8703== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8703== Command: /rhome/m/mucanbarli1/workspace/ASP/Z3/Z1/.runme
+==8703== Parent PID: 8645
+==8703== 
+==8703== 
+==8703== HEAP SUMMARY:
+==8703==     in use at exit: 0 bytes in 0 blocks
+==8703==   total heap usage: 6 allocs, 6 frees, 72,828 bytes allocated
+==8703== 
+==8703== All heap blocks were freed -- no leaks are possible
+==8703== 
+==8703== For counts of detected and suppressed errors, rerun with: -v
+==8703== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

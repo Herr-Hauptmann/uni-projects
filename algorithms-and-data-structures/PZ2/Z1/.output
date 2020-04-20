@@ -1,0 +1,26 @@
+NizLista provjera:
+
+Konstruktor radi!
+Copy konstruktor radi!
+brojElemenata() radi!
+trenutni() radi!
+prethodni() radi!
+sljedeci() radi!
+pocetak() radi!
+kraj() radi!
+obrisi() radi!
+operator[] radi!
+dodajIspred() radi!
+dodajIza() radi!
+JednostrukaLista provjera:
+
+brojElemenata() radi!
+trenutni() radi!
+prethodni() radi!
+sljedeci() radi!
+pocetak() radi!
+kraj() radi!
+obrisi() radi!
+operator[] radi!
+dodajIspred() radi!
+dodajIza() radi!

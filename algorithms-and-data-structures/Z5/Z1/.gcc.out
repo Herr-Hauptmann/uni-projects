@@ -1,0 +1,17 @@
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp: In member function ‘unsigned int HashMapaLan<TipKljuca, TipVrijednosti>::definisiHashFunkciju(unsigned int (*)(TipKljuca, unsigned int))’:
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp:50:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp: In instantiation of ‘Cvor<TipOznake>::Cvor(UsmjereniGraf<TipOznake>*, int) [with TipOznake = bool]’:
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp:314:16:   required from ‘Cvor<TipOznake> UsmjereniGraf<TipOznake>::dajCvor(int) [with TipOznake = bool]’
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp:276:37:   required from ‘Cvor<TipOznake> Grana<TipOznake>::dajPolazniCvor() const [with TipOznake = bool]’
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp:503:50:   required from here
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp:233:31: warning: ‘Cvor<bool>::graf’ will be initialized after [-Wreorder]
+     UsmjereniGraf<TipOznake>* graf;
+                               ^~~~
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp:232:9: warning:   ‘int Cvor<bool>::redniBroj’ [-Wreorder]
+     int redniBroj;
+         ^~~~~~~~~
+/rhome/m/mucanbarli1/workspace/ASP/Z5/Z1/main.cpp:235:5: warning:   when initialized here [-Wreorder]
+     Cvor(UsmjereniGraf<TipOznake>* graf, int redniBroj): graf(graf), redniBroj(redniBroj) {}
+     ^~~~

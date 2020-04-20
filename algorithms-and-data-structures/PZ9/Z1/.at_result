@@ -1,0 +1,157 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In member function ‘unsigned int HashMapa<TipKljuca, TipVrijednosti>::definisiHashFunkciju(unsigned int (*)(TipKljuca, unsigned int))’:\nmain.cpp:283:97: warning: no return statement in function returning non-void [-Wreturn-type]\n     unsigned int definisiHashFunkciju(unsigned int (*fun)(TipKljuca, unsigned int)) {hash = fun;}\n                                                                                                 ^\nmain.cpp: In function ‘int main()’:\nmain.cpp:391:13: warning: unused variable ‘vrijeme77’ [-Wunused-variable]\n     clock_t vrijeme77=clock();\n             ^~~~~~~~~\nmain.cpp:394:13: warning: unused variable ‘vrijeme88’ [-Wunused-variable]\n     clock_t vrijeme88=clock();\n             ^~~~~~~~~\nmain.cpp: In instantiation of ‘TipVrijednosti BinStabloMapa<TipKljuca, TipVrijednosti>::operator[](TipKljuca) const [with TipKljuca = int; TipVrijednosti = int]’:\nmain.cpp:402:1:   required from here\nmain.cpp:196:15: warning: variable ‘q’ set but not used [-Wunused-but-set-variable]\n         cvor* q = nullptr;\n               ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "283",
+                "col": "97",
+                "message": "no return statement in function returning non-void",
+                "output": "/tmp/buildservice/bs_645/main.cpp:283:97: warning: no return statement in function returning non-void [-Wreturn-type]     unsigned int definisiHashFunkciju(unsigned int (*fun)(TipKljuca, unsigned int)) {hash = fun;}                                                                                                 ^",
+                "code": "unsigned int definisiHashFunkciju(unsigned int (*fun)(TipKljuca, unsigned int)) {hash = fun;}"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "391",
+                "col": "13",
+                "message": "unused variable 'vrijeme77'",
+                "output": "/tmp/buildservice/bs_645/main.cpp:391:13: warning: unused variable ‘vrijeme77’ [-Wunused-variable]     clock_t vrijeme77=clock();             ^~~~~~~~~",
+                "code": "clock_t vrijeme77=clock();"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "394",
+                "col": "13",
+                "message": "unused variable 'vrijeme88'",
+                "output": "/tmp/buildservice/bs_645/main.cpp:394:13: warning: unused variable ‘vrijeme88’ [-Wunused-variable]     clock_t vrijeme88=clock();             ^~~~~~~~~/tmp/buildservice/bs_645/main.cpp: In instantiation of ‘TipVrijednosti BinStabloMapa<TipKljuca, TipVrijednosti>::operator[](TipKljuca) const [with TipKljuca = int; TipVrijednosti = int]’:/tmp/buildservice/bs_645/main.cpp:402:1:   required from here",
+                "code": "clock_t vrijeme88=clock();"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "196",
+                "col": "15",
+                "message": "variable 'q' set but not used",
+                "output": "/tmp/buildservice/bs_645/main.cpp:196:15: warning: variable ‘q’ set but not used [-Wunused-but-set-variable]         cvor* q = nullptr;               ^",
+                "code": "cvor* q = nullptr;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1762": {
+            "status": 1,
+            "run_result": {
+                "output": "2 Hrvatska '' '' 3 '' 0 '' ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1763": {
+            "status": 1,
+            "run_result": {
+                "output": "2 2 2 BiH 2 BiH 1 '' 0 ''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1764": {
+            "status": 1,
+            "run_result": {
+                "output": "3 Sarajevo Tuzla 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1765": {
+            "status": 1,
+            "run_result": {
+                "output": "2 300 0 2 400 3",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1766": {
+            "status": 1,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2063": {
+            "status": 1,
+            "run_result": {
+                "output": "100 100 300 400 500 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2064": {
+            "status": 1,
+            "run_result": {
+                "output": "11001",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1578416533
+}
