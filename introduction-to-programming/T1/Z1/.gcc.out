@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T1/Z1/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T1/Z1/main.c:16:50: warning: repeated ' ' flag in format [-Wformat=]
+     printf("\n Povrsina kruga sa poluprecnikom %  2f je %.2f", R,P);
+                                                  ^

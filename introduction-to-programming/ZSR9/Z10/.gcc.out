@@ -1,0 +1,14 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z10/main.c: In function ‘zamijeni_string_ubaci’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z10/main.c:9:14: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+   while(kraj != '\0') kraj++;
+              ^~
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z10/main.c:9:9: note: did you mean to dereference the pointer?
+   while(kraj != '\0') kraj++;
+         ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z10/main.c: In function ‘GenerisiTablice’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z10/main.c:56:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  char* p = prethodna;
+            ^~~~~~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z10/main.c:58:6: warning: unused variable ‘vel’ [-Wunused-variable]
+  int vel = strlen(prethodna);
+      ^~~

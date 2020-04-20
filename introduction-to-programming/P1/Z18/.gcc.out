@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/P1/Z18/main.c: In function ‘izjavna2upitna’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z18/main.c:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^

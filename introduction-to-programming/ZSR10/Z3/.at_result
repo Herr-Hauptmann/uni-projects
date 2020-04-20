@@ -1,0 +1,88 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘IzbaciTekst’:\nmain.c:46:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n   while(*q++ = *p++);\n   ^~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "46",
+                "col": "3",
+                "message": "suggest parentheses around assignment used as truth value",
+                "output": "/tmp/buildservice/bs_841/main.c:46:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]   while(*q++ = *p++);   ^~~~~",
+                "code": "while(*q++ = *p++);"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1394": {
+            "status": 1,
+            "run_result": {
+                "output": "'as je divan !'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1395": {
+            "status": 1,
+            "run_result": {
+                "output": "''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1396": {
+            "status": 1,
+            "run_result": {
+                "output": "'rinajboljismjer'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1397": {
+            "status": 1,
+            "run_result": {
+                "output": "'aaaabcbcbcbc'\n''\n''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1566837662
+}

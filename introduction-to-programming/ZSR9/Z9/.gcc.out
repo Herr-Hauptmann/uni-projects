@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z9/main.c: In function ‘UnesiRealan’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z9/main.c:7:14: warning: unused variable ‘prava_cifra’ [-Wunused-variable]
+  int cifra=0,prava_cifra=0;
+              ^~~~~~~~~~~

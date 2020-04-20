@@ -1,0 +1,186 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘ucitaj’:\nmain.c:45:8: warning: unused variable ‘d’ [-Wunused-variable]\n    int d = 0;\n        ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "45",
+                "col": "8",
+                "message": "unused variable 'd'",
+                "output": "/tmp/buildservice/bs_320/main.c:45:8: warning: unused variable ‘d’ [-Wunused-variable]    int d = 0;        ^",
+                "code": "int d = 0;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "Bjelasnica - 2067\nTrebevic - 1627\nJahorina - 1913\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "Bjelasnica - 2067\nTrebevic - 1627\nJahorina - 1913\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "Bjelasnica - 2067\nTrebevic - 1627\nMount Everest - 8848\nJahorina - 1913\nBjelasnica - 2067\nTrebevic - 1627\nMount Everest - 8848\nJahorina - 1913\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "Vel: 1000\nLMBAAAAA 1999\nVel: 0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 1,
+            "run_result": {
+                "output": "OK\nOK\nOK\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6": {
+            "status": 1,
+            "run_result": {
+                "output": "Vel: 4\nOvoJeJakoDugacakNazivZaPlaninuKojiJeCakDuziIOdPede - 1627\nVel: 4\nOvoJeJakoDugacakNazivZaPlaninuKojiJeCakDuziIOdPede - 1913\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "7": {
+            "status": 1,
+            "run_result": {
+                "output": "Bjelasnica - 2067\nTrebevic - 1627\nJahorina - 1913\nMount Everest - 8848\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "8": {
+            "status": 1,
+            "run_result": {
+                "output": "121 7 0 0 77 111 117 110 116 32 69 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "9": {
+            "status": 1,
+            "run_result": {
+                "output": "Jahorina 1913\nBjelasnica 1967\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "10": {
+            "status": 1,
+            "run_result": {
+                "output": "JahorinA 1913\nArarat 1999\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "11": {
+            "status": 1,
+            "run_result": {
+                "output": "Poziv 1:\nPoziv 2:\nPoziv 3:\nMount Averest 0\nPoziv 4:\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1568112770
+}

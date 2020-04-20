@@ -1,0 +1,10 @@
+/rhome/m/mucanbarli1/workspace/OR/T6/Z3/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T6/Z3/main.c:11:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(nizA[i]==-1)
+                   ^~
+/rhome/m/mucanbarli1/workspace/OR/T6/Z3/main.c:21:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(nizB[i]==-1)
+                   ^~
+/rhome/m/mucanbarli1/workspace/OR/T6/Z3/main.c:4:25: warning: unused variable ‘temp’ [-Wunused-variable]
+     double nizA[DUZINA],temp,nizB[DUZINA],nizC[100];
+                         ^~~~

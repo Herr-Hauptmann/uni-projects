@@ -1,0 +1,23 @@
+==27667== Memcheck, a memory error detector
+==27667== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27667== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27667== Command: /rhome/m/mucanbarli1/workspace/OR/T11/Z5/.runme
+==27667== Parent PID: 27655
+==27667== 
+==27667== 
+==27667== Process terminating with default action of signal 1 (SIGHUP)
+==27667==    at 0x514E152: write (write.c:27)
+==27667==    by 0x50C91BC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1203)
+==27667==    by 0x50C9B2E: new_do_write (fileops.c:457)
+==27667==    by 0x50C9B2E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1277)
+==27667==    by 0x50BEA8E: puts (ioputs.c:40)
+==27667==    by 0x1088CF: main (main.c:42)
+==27667== 
+==27667== HEAP SUMMARY:
+==27667==     in use at exit: 0 bytes in 0 blocks
+==27667==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==27667== 
+==27667== All heap blocks were freed -- no leaks are possible
+==27667== 
+==27667== For counts of detected and suppressed errors, rerun with: -v
+==27667== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

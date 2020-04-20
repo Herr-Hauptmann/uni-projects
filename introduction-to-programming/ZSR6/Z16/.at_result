@@ -1,0 +1,102 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:29:6: warning: ‘duzina’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n    if(j!=duzina) {\n      ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "29",
+                "col": "6",
+                "message": "'duzina' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_8684/main.c:29:6: warning: ‘duzina’ may be used uninitialized in this function [-Wmaybe-uninitialized]    if(j!=duzina) {      ^",
+                "code": "if(j!=duzina) {"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite elemente 1. matrice: Unesite elemente 2. matrice: Matrice su pogodne za mnozenje. Matricni proizvod je: \n   22   28\n   49   64\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite elemente 1. matrice: Unesite elemente 2. matrice: Matrice nisu pogodne za mnozenje.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite elemente 1. matrice: Unesite elemente 2. matrice: Ovo nije matrica!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite elemente 1. matrice: Ovo nije matrica!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite elemente 1. matrice: Prekoracena dimenzija matrice!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1549648690
+}

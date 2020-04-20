@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T6/Z4/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T6/Z4/main.c:5:13: warning: unused variable ‘j’ [-Wunused-variable]
+     int i=0,j=0;
+             ^

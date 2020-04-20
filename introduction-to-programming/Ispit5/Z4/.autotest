@@ -1,0 +1,122 @@
+{
+    "id": 5595,
+    "name": "Osnove ra\u010dunarstva (2018\/2019), Ispit 5, zadatak 4",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT1: Primjer iz zadatka *\/\nFILE* txt = fopen(\"ocjene.txt\", \"w\");\nfputs(\"Meho Mehic,5,OR,9,IM1,6,LAG,8,OE,10,IF1,9\\nHana Hanic,1,IF1,8\", txt);\nfclose(txt);\n\n_main();\n\nFILE* bin = fopen(\"ocjene.dat\", \"rb\");\nstruct Student s;\nint i; double prosjek;\ndo {\n     i = fread(&s, sizeof(struct Student), 1, bin);\n     if (i == 0) break;\n     printf(\"%s %s %d \", s.ime, s.prezime, s.br_ocjena);\n     fread(&prosjek, sizeof(double), 1, bin);\n     printf(\"%g\\n\", prosjek);\n} while (!feof(bin));\nfclose(bin);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Meho Mehic 5 8.4\\nHana Hanic 1 8"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "remove(\"ocjene.txt\");\n_main();\n\/* Program koji uvijek ispisuje ovu poruku dobice 0 bodova *\/",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Greska prilikom otvaranja datoteke ocjene.txt"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT3: Puno studenata *\/\nFILE* txt = fopen(\"ocjene.txt\", \"w\");\nint i;\nchar ime[20] = \"AAAA\";\nfor (i=0; i<99; i++) {\n   ime[0]++;\n   if (ime[0] > 'Z') { ime[0]='A'; ime[1]++; }\n   if (ime[1] > 'Z') { ime[1]='A'; ime[2]++; }\n   fputs(ime, txt);\n   fputs(\" Prezime,3,OR,9,IM1,6,LAG,8\\n\",txt);\n}\nfputs(\"Student Studentic,3,OE,6,IF1,8,IM1,9\\n\",txt);\nfclose(txt);\n\n_main();\n\nFILE* bin = fopen(\"ocjene.dat\", \"rb\");\nstruct Student s;\nint j=0; double prosjek;\ndo {\n     i = fread(&s, sizeof(struct Student), 1, bin);\n     if (i == 0) break;\n     if (j==99) printf(\"%s %s %d \", s.ime, s.prezime, s.br_ocjena);\n     fread(&prosjek, sizeof(double), 1, bin);\n     if (j==99) printf(\"%.2f\\n\", prosjek);\n     j++;\n} while (!feof(bin));\nfclose(bin);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Student Studentic 3 7.67"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT4: Puno ocjena *\/\nFILE* txt = fopen(\"ocjene.txt\", \"w\");\nint i;\nchar ime[20]=\"Predmet A\";\nfputs(\"Student Studenkovic,100,\",txt);\nfor (i=0; i<99; i++) {\n   fputs(ime, txt);\n   fputs(\",10,\",txt);\n   ime[8]++;\n   if (ime[8]>'Z') ime[8]='A';\n}\nfputs(\"neki,6\\n\",txt);\nfclose(txt);\n\n_main();\n\nFILE* bin = fopen(\"ocjene.dat\", \"rb\");\nstruct Student s;\nint j=0; double prosjek;\ndo {\n     i = fread(&s, sizeof(struct Student), 1, bin);\n     if (i == 0) break;\n     printf(\"%s %s %d \", s.ime, s.prezime, s.br_ocjena);\n     fread(&prosjek, sizeof(double), 1, bin);\n     printf(\"%.2f\\n\", prosjek);\n     for(j=0; j<s.br_ocjena; j++) {\n         if (s.ocjene[j].ocjena<10) printf(\"%s\\n\", s.ocjene[j].naziv_predmeta);\n     }\n} while (!feof(bin));\nfclose(bin);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Student Studenkovic 100 9.96\\nneki"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT5: Puno studenata v2 *\/\nFILE* txt = fopen(\"ocjene.txt\", \"w\");\nint i;\nchar ime[20] = \"AAAA\";\nfor (i=0; i<99; i++) {\n   ime[0]++;\n   if (ime[0] > 'Z') { ime[0]='A'; ime[1]++; }\n   if (ime[1] > 'Z') { ime[1]='A'; ime[2]++; }\n   fputs(ime, txt);\n   fputs(\" Prezime,3,OR,9,IM1,6,LAG,8\\n\",txt);\n}\nfputs(\"Student Studentic,3,OE,6,IF1,8,IM1,9\\n\",txt);\nfclose(txt);\n\n_main();\n\nFILE* bin = fopen(\"ocjene.dat\", \"rb\");\nstruct Student s;\nint j=0, k; double prosjek;\ndo {\n     i = fread(&s, sizeof(struct Student), 1, bin);\n     if (i == 0) break;\n     if (j==97) printf(\"%s %s %d \", s.ime, s.prezime, s.br_ocjena);\n     fread(&prosjek, sizeof(double), 1, bin);\n     if (j==97) { \n           printf(\"%.2f\\n\", prosjek);\n           for(k=0; k<s.br_ocjena; k++)\n                printf(\"%s %d\\n\", s.ocjene[k].naziv_predmeta, s.ocjene[k].ocjena);\n     }\n     j++;\n} while (!feof(bin));\nfclose(bin);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "UDAA Prezime 3 7.67\\nOR 9\\nIM1 6\\nLAG 8"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

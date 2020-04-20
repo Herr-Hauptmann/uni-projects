@@ -1,0 +1,7 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z12/main.c: In function ‘zamijeni_string_ubaci’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z12/main.c:8:14: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+   while(kraj != '\0') kraj++;
+              ^~
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z12/main.c:8:9: note: did you mean to dereference the pointer?
+   while(kraj != '\0') kraj++;
+         ^

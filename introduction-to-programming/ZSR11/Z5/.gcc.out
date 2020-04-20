@@ -1,0 +1,5 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z5/main.c: In function ‘CrtajPravougaonike’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z5/main.c:15:25: warning: missing braces around initializer [-Wmissing-braces]
+  char matrica[100][100]={' '};
+                         ^
+                          {  }

@@ -1,0 +1,35 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c: In function ‘izbaci_skupe’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:42:5: warning: statement with no effect [-Wunused-value]
+     for(i; i < na; i++) suma += a[i].cijena;
+     ^~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:46:5: warning: statement with no effect [-Wunused-value]
+     for(i; i < na; i++){
+     ^~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:49:9: warning: statement with no effect [-Wunused-value]
+         for(j; j < na; j++){
+         ^~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c: In function ‘sacuvaj’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:69:60: warning: passing argument 4 of ‘fwrite’ from incompatible pointer type [-Wincompatible-pointer-types]
+     int zapisano = fwrite(p, sizeof(struct Prodavnica), n, ime_datoteke);
+                                                            ^~~~~~~~~~~~
+In file included from /rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:2:0:
+/usr/include/stdio.h:652:15: note: expected ‘FILE * restrict {aka struct _IO_FILE * restrict}’ but argument is of type ‘const char *’
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+               ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:70:15: warning: passing argument 1 of ‘ferror’ from incompatible pointer type [-Wincompatible-pointer-types]
+     if(ferror(ime_datoteke)) return 0;
+               ^~~~~~~~~~~~
+In file included from /rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:2:0:
+/usr/include/stdio.h:761:12: note: expected ‘FILE * {aka struct _IO_FILE *}’ but argument is of type ‘const char *’
+ extern int ferror (FILE *__stream) __THROW __wur;
+            ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:71:12: warning: passing argument 1 of ‘fclose’ from incompatible pointer type [-Wincompatible-pointer-types]
+     fclose(ime_datoteke);
+            ^~~~~~~~~~~~
+In file included from /rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:2:0:
+/usr/include/stdio.h:199:12: note: expected ‘FILE * {aka struct _IO_FILE *}’ but argument is of type ‘const char *’
+ extern int fclose (FILE *__stream);
+            ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR13/Z11/main.c:69:9: warning: unused variable ‘zapisano’ [-Wunused-variable]
+     int zapisano = fwrite(p, sizeof(struct Prodavnica), n, ime_datoteke);
+         ^~~~~~~~

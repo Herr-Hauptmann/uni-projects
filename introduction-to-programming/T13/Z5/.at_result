@@ -1,0 +1,88 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:49:27: warning: variable ‘vel’ set but not used [-Wunused-but-set-variable]\n     int i=0, j,meni,k,max,vel;\n                           ^~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "49",
+                "col": "27",
+                "message": "variable 'vel' set but not used",
+                "output": "/tmp/buildservice/bs_9296/main.c:49:27: warning: variable ‘vel’ set but not used [-Wunused-but-set-variable]     int i=0, j,meni,k,max,vel;                           ^~~",
+                "code": "int i=0, j,meni,k,max,vel;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. Muhic Muho - 18, 14\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. Muhic Muho - 18, 14\n2. Merzic Mirza - 20, 20\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. Muhic Muho - 18, 14\n2. Merzic Mirza - 20, 20\n3. FaZe Niko - 0, 0\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. Muhic Muho - 18, 14\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. Muhic Muho - 18, 14\n2. Merzic Mirza - 20, 20\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. Muhic Muho - 18, 14\n2. Merzic Mirza - 20, 20\n3. FaZe Niko - 0, 0\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \nUcitani studenti iz datoteke usmeni.dat:\n'Merzic' 'Mirza' 40\n'Muhic' 'Muho' 32\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. FaZe Niko - 1, 2\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. FaZe Niko - 1, 2\n2. Cep Opet_neki - 3, 4\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \nUcitani studenti iz datoteke usmeni.dat:\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Unesite ime: Unesite prezime: Unesite broj bodova na I parcijalnom: Unesite broj bodova na II parcijalnom: Unesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \n1. s a - 11, 10\n2. w q - 13, 20\n3. r e - 20, 20\n4. h g - 1, 20\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: Izlazna datoteka usmeni.dat je kreirana\nUnesite 1 za unos, 2 za ispis, 3 za usmeni, 0 za izlaz: \nUcitani studenti iz datoteke usmeni.dat:\n'r' 'e' 40\n'w' 'q' 33\n's' 'a' 21\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1549580464
+}

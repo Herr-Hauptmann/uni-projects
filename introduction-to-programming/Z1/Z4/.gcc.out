@@ -1,0 +1,39 @@
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:7:2: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘scanf’
+  scanf("%d %d %d %d",&x1, &y2, &xp, &yp);
+  ^~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:15:18: error: ‘y1’ undeclared (first use in this function); did you mean ‘n1’?
+   k1=(xp-x1)/(yp-y1);
+                  ^~
+                  n1
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:15:18: note: each undeclared identifier is reported only once for each function it appears in
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:20:8: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(k1==k2&&n1==n2){
+        ^~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:20:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(k1==k2&&n1==n2){
+                ^~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:22:11: warning: ISO C does not support the ‘D’ gnu_printf length modifier [-Wformat=]
+    printf("0 %D",M);
+           ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:22:15: warning: conversion lacks type at end of format [-Wformat=]
+    printf("0 %D",M);
+               ^
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:22:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("0 %D",M);
+           ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:25:10: error: expected ‘(’ before ‘{’ token
+   else if{
+          ^
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:27:5: error: ‘x’ undeclared (first use in this function)
+     x=-n2/k2;
+     ^
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:30:4: error: expected identifier before ‘}’ token
+    }
+    ^
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:4:22: warning: unused variable ‘b’ [-Wunused-variable]
+  int x1,y2,xp,yp,m,n,b,M=0;
+                      ^
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z4/main.c:4:9: warning: unused variable ‘y2’ [-Wunused-variable]
+  int x1,y2,xp,yp,m,n,b,M=0;
+         ^~

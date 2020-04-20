@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z6/main.c: In function ‘PopuniLijevo’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR9/Z6/main.c:6:8: warning: unused variable ‘poc’ [-Wunused-variable]
+  char* poc = s;
+        ^~~

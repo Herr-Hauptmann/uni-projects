@@ -1,0 +1,13 @@
+/rhome/m/mucanbarli1/workspace/OR/T2/Z6/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T2/Z6/main.c:7:6: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+  if(a==c&&b==d)
+      ^~
+/rhome/m/mucanbarli1/workspace/OR/T2/Z6/main.c:7:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+  if(a==c&&b==d)
+            ^~
+/rhome/m/mucanbarli1/workspace/OR/T2/Z6/main.c:4:11: warning: unused variable ‘S2’ [-Wunused-variable]
+  float S1,S2,a,b,c,d;
+           ^~
+/rhome/m/mucanbarli1/workspace/OR/T2/Z6/main.c:4:8: warning: unused variable ‘S1’ [-Wunused-variable]
+  float S1,S2,a,b,c,d;
+        ^~

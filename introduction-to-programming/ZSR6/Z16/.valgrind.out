@@ -1,0 +1,23 @@
+==8678== Memcheck, a memory error detector
+==8678== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8678== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8678== Command: /rhome/m/mucanbarli1/workspace/OR/ZSR6/Z16/.runme
+==8678== Parent PID: 8665
+==8678== 
+==8678== 
+==8678== Process terminating with default action of signal 15 (SIGTERM)
+==8678==    at 0x514E081: read (read.c:27)
+==8678==    by 0x50CB147: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:531)
+==8678==    by 0x50CC3F1: _IO_default_uflow (genops.c:380)
+==8678==    by 0x50A9BE9: _IO_vfscanf (vfscanf.c:630)
+==8678==    by 0x50B9FD7: __isoc99_scanf (isoc99_scanf.c:37)
+==8678==    by 0x1088A1: main (main.c:10)
+==8678== 
+==8678== HEAP SUMMARY:
+==8678==     in use at exit: 0 bytes in 0 blocks
+==8678==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==8678== 
+==8678== All heap blocks were freed -- no leaks are possible
+==8678== 
+==8678== For counts of detected and suppressed errors, rerun with: -v
+==8678== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

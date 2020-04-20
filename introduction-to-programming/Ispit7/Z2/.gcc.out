@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/Ispit7/Z2/main.c: In function ‘pocetna_slova’:
+/rhome/m/mucanbarli1/workspace/OR/Ispit7/Z2/main.c:8:11: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  char* s= string;
+           ^~~~~~

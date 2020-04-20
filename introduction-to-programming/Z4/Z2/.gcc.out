@@ -1,0 +1,26 @@
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c: In function ‘ZamijeniRijec’:
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:42:10: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ char* k2=sa_cim;
+          ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:43:10: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ char* k1=sta;
+          ^~~
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:56:19: warning: passing argument 2 of ‘Ubaci’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  Ubaci(Str+indeks,sa_cim);//                      ^^
+                   ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:9:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void Ubaci(char *s,char *rijec){
+      ^~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:41:5: warning: variable ‘vel2’ set but not used [-Wunused-but-set-variable]
+ int vel2=0,vel1=0;
+     ^~~~
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c: In function ‘zamijeni_min_max’:
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:112:17: warning: variable ‘p_min2’ set but not used [-Wunused-but-set-variable]
+   char* p_min, *p_min2;
+                 ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:111:17: warning: variable ‘p_max2’ set but not used [-Wunused-but-set-variable]
+   char* p_max, *p_max2;
+                 ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z4/Z2/main.c:102:7: warning: unused variable ‘min’ [-Wunused-variable]
+   int min=brojaci[1];
+       ^~~

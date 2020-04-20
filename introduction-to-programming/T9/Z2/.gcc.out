@@ -1,0 +1,5 @@
+/rhome/m/mucanbarli1/workspace/OR/T9/Z2/main.c: In function ‘samoglasnici’:
+/rhome/m/mucanbarli1/workspace/OR/T9/Z2/main.c:32:13: error: ‘s’ undeclared (first use in this function)
+     while (*s != '\0') {
+             ^
+/rhome/m/mucanbarli1/workspace/OR/T9/Z2/main.c:32:13: note: each undeclared identifier is reported only once for each function it appears in

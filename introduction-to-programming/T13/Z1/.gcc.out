@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T13/Z1/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T13/Z1/main.c:29:38: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+      while (fscanf(ulaz,"%20s%15s%2d%\n", studenti[i].prezime, studenti[i].ime, &studenti[i].broj_bodova) == 3 && i<300)
+                                      ^~

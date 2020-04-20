@@ -1,0 +1,7 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR8/Z13/main.c: In function ‘istecifre’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR8/Z13/main.c:7:23: warning: unused variable ‘zbir2’ [-Wunused-variable]
+  int tmp1,tmp2,zbir=0,zbir2=0;
+                       ^~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR8/Z13/main.c:7:16: warning: unused variable ‘zbir’ [-Wunused-variable]
+  int tmp1,tmp2,zbir=0,zbir2=0;
+                ^~~~

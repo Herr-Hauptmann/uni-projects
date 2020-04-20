@@ -1,0 +1,4 @@
+Amko,1
+Bingo,2
+Robot,3
+Konzum,4

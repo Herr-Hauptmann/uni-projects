@@ -1,0 +1,11 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z8/main.c: In function ‘Periodican’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z8/main.c:21:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+      q=s;
+       ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z8/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z8/main.c:45:40: warning: unused variable ‘c’ [-Wunused-variable]
+  char a[] = "ababab", b[] = "abcabca", c[]="DanasDanasDa";
+                                        ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z8/main.c:45:23: warning: unused variable ‘b’ [-Wunused-variable]
+  char a[] = "ababab", b[] = "abcabca", c[]="DanasDanasDa";
+                       ^

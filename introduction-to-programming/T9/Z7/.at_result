@@ -1,0 +1,74 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘strcmpi’:\nmain.c:13:10: warning: self-comparison always evaluates to false [-Wtautological-compare]\n    if(p2 > p2) return 1;\n          ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "13",
+                "col": "10",
+                "message": "self-comparison always evaluates to false",
+                "output": "/tmp/buildservice/bs_1083/main.c:13:10: warning: self-comparison always evaluates to false [-Wtautological-compare]    if(p2 > p2) return 1;          ^",
+                "code": "if(p2 > p2) return 1;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "797": {
+            "status": 1,
+            "run_result": {
+                "output": "0 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "798": {
+            "status": 1,
+            "run_result": {
+                "output": "0 -1",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1612": {
+            "status": 1,
+            "run_result": {
+                "output": "-1 1",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1548378930
+}

@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z3/main.c: In function ‘IzbaciTekst’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z3/main.c:45:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   while(*q++ = *p++);
+         ^

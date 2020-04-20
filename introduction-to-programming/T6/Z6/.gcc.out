@@ -1,0 +1,6 @@
+/rhome/m/mucanbarli1/workspace/OR/T6/Z6/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T6/Z6/main.c:14:22: error: implicit declaration of function ‘printff’; did you mean ‘printf’? [-Werror=implicit-function-declaration]
+   for(j=0; j<S; j++) printff("%f",matrica[i][j]);
+                      ^~~~~~~
+                      printf
+cc1: some warnings being treated as errors

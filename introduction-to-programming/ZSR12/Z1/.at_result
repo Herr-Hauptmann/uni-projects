@@ -1,0 +1,105 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2126": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj: Pogresan unos",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2127": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite broj: IZLAZNA:\nAAACCCxxxAAA",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2128": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj: Izlazna datoteka prazna!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2129": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite broj: Pogresan karakter /, treba  \nPogresan karakter  , treba !\nPogresan karakter !, treba \"\nPogresan karakter \", treba #\nPogresan karakter #, treba $\nPogresan karakter $, treba %\nPogresan karakter %, treba &\nPogresan karakter &, treba '\nPogresan karakter ', treba (\nPogresan karakter (, treba )\nPogresan karakter ), treba *\nPogresan karakter *, treba +\nPogresan karakter +, treba ,\nPogresan karakter ,, treba -\nPogresan karakter -, treba .\nPogresan karakter ., treba /\nPogresan karakter /, treba 0\nPogresan karakter 0, treba 1\nPogresan karakter 1, treba 2\nPogresan karakter 2, treba 3\nPogresan karakter 3, treba 4\nPogresan karakter 4, treba 5\nPogresan karakter 5, treba 6\nPogresan karakter 6, treba 7\nPogresan karakter 7, treba 8\nPogresan karakter 8, treba 9\nPogresan karakter 9, treba :\nPogresan karakter :, treba ;\nPogresan karakter ;, treba <\nPogresan karakter <, treba =\nPogresan karakter =, treba >\nPogresan karakter >, treba ?\nPogresan karakter ?, treba @\nPogresan karakter @, treba A\nPogresan karakter A, treba B\nPogresan karakter B, treba C\nPogresan karakter C, treba D\nPogresan karakter D, treba E\nPogresan karakter E, treba F\nPogresan karakter F, treba G\nPogresan karakter G, treba H\nPogresan karakter H, treba I\nPogresan karakter I, treba J\nPogresan karakter J, treba K\nPogresan karakter K, treba L\nPogresan karakter L, treba M\nPogresan karakter M, treba N\nPogresan karakter N, treba O\nPogresan karakter O, treba P\nPogresan karakter P, treba Q\nPogresan karakter Q, treba R\nPogresan karakter R, treba S\nPogresan karakter S, treba T\nPogresan karakter T, treba U\nPogresan karakter U, treba V\nPogresan karakter V, treba W\nPogresan karakter W, treba X\nPogresan karakter X, treba Y\nPogresan karakter Y, treba Z\nPogresan karakter Z, treba [\nPogresan karakter [, treba \\\nPogresan karakter \\, treba ]\nPogresan karakter ], treba ^\nPogresan karakter ^, treba _\nPogresan karakter _, treba `\nPogresan karakter `, treba a\nPogresan karakter a, treba b\nPogresan karakter b, treba c\nPogresan karakter c, treba d\nPogresan karakter d, treba e\nPogresan karakter e, treba f\nPogresan karakter f, treba g\nPogresan karakter g, treba h\nPogresan karakter h, treba i\nPogresan karakter i, treba j\nPogresan karakter j, treba k\nPogresan karakter k, treba l\nPogresan karakter l, treba m\nPogresan karakter m, treba n\nPogresan karakter n, treba o\nPogresan karakter o, treba p\nPogresan karakter p, treba q\nPogresan karakter q, treba r\nPogresan karakter r, treba s\nPogresan karakter s, treba t\nPogresan karakter t, treba u\nPogresan karakter u, treba v\nPogresan karakter v, treba w\nPogresan karakter w, treba x\nPogresan karakter x, treba y\nPogresan karakter y, treba z\nPogresan karakter z, treba {\nPogresan karakter {, treba |\nPogresan karakter |, treba }\nPogresan karakter }, treba ~\nPogresan karakter ~, treba \nPogresan karakter , treba \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2130": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj: Izlazna datoteka prazna!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2131": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj: Slovo B se ponavlja 100000 puta",
+                "duration": 1,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1566929676
+}

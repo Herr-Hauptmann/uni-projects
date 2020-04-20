@@ -1,0 +1,10 @@
+/rhome/m/mucanbarli1/workspace/OR/T11/Z2/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T11/Z2/main.c:64:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if (d==k.poluprecnik)
+               ^~
+/rhome/m/mucanbarli1/workspace/OR/T11/Z2/main.c:66:5: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/rhome/m/mucanbarli1/workspace/OR/T11/Z2/main.c:69:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+         printf("\nObim kruznice: %f\n",obim_kruznice(k));
+         ^~~~~~

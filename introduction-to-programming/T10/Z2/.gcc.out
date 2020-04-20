@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T10/Z2/main.c: In function ‘rot13’:
+/rhome/m/mucanbarli1/workspace/OR/T10/Z2/main.c:24:3: error: ‘else’ without a previous ‘if’
+   else if(*p>='a'&&*p<'z'){
+   ^~~~

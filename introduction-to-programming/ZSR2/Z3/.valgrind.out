@@ -1,0 +1,15 @@
+==7522== Memcheck, a memory error detector
+==7522== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7522== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==7522== Command: /rhome/m/mucanbarli1/workspace/OR/ZSR2/Z3/.runme
+==7522== Parent PID: 7508
+==7522== 
+==7522== 
+==7522== HEAP SUMMARY:
+==7522==     in use at exit: 0 bytes in 0 blocks
+==7522==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==7522== 
+==7522== All heap blocks were freed -- no leaks are possible
+==7522== 
+==7522== For counts of detected and suppressed errors, rerun with: -v
+==7522== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

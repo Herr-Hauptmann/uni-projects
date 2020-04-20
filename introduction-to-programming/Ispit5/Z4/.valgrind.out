@@ -1,0 +1,175 @@
+==7311== Memcheck, a memory error detector
+==7311== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7311== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==7311== Command: /rhome/m/mucanbarli1/workspace/OR/Ispit5/Z4/.runme
+==7311== Parent PID: 7295
+==7311== 
+==7311== Warning: client switching stacks?  SP change: 0x1fff000910 --> 0x1ffee021a0
+==7311==          to suppress, use: --max-stackframe=2090864 or greater
+==7311== Invalid write of size 8
+==7311==    at 0x1088B2: main (main.c:27)
+==7311==  Address 0x1ffee02198 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 8
+==7311==    at 0x50BCECB: fopen@@GLIBC_2.2.5 (iofopen.c:90)
+==7311==    by 0x1088B6: main (main.c:27)
+==7311==  Address 0x1ffee02198 is on thread 1's stack
+==7311==  in frame #0, created by fopen@@GLIBC_2.2.5 (iofopen.c:88)
+==7311== 
+==7311== Invalid write of size 8
+==7311==    at 0x1088B7: main (main.c:27)
+==7311==  Address 0x1ffee021c0 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 8
+==7311==    at 0x1088BE: main (main.c:27)
+==7311==  Address 0x1ffee021c0 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 8
+==7311==    at 0x1088F6: main (main.c:32)
+==7311==  Address 0x1ffee021c0 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 8
+==7311==    at 0x1088FD: main (main.c:32)
+==7311==  Address 0x1ffee021c0 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 4
+==7311==    at 0x108931: main (main.c:38)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 4
+==7311==    at 0x10893B: main (main.c:38)
+==7311==  Address 0x1ffee021a8 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108A55: main (main.c:39)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108A69: main (main.c:39)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108A8B: main (main.c:39)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108AAD: main (main.c:39)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108ACF: main (main.c:39)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108AF1: main (main.c:39)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 8
+==7311==    at 0x108B03: main (main.c:39)
+==7311==  Address 0x1ffee021c0 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108B36: main (main.c:49)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 4
+==7311==    at 0x108B3C: main (main.c:49)
+==7311==  Address 0x1ffee021ac is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 8
+==7311==    at 0x108B46: main (main.c:50)
+==7311==  Address 0x1ffee021b8 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 4
+==7311==    at 0x108B4E: main (main.c:51)
+==7311==  Address 0x1ffee021b0 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 4
+==7311==    at 0x108B58: main (main.c:52)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108E38: main (main.c:52)
+==7311==  Address 0x1ffee021a4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108E3E: main (main.c:52)
+==7311==  Address 0x1ffee021ac is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x108E4A: main (main.c:67)
+==7311==  Address 0x1ffee021ac is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 8
+==7311==    at 0x108E53: main (main.c:67)
+==7311==  Address 0x1ffee021c8 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid write of size 4
+==7311==    at 0x108E6E: main (main.c:67)
+==7311==  Address 0x1ffee021b4 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 8
+==7311==    at 0x108E74: main (main.c:68)
+==7311==  Address 0x1ffee021c0 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 8
+==7311==    at 0x108E83: main (main.c:69)
+==7311==  Address 0x1ffee021c8 is on thread 1's stack
+==7311==  in frame #0, created by main (main.c:21)
+==7311== 
+==7311== Invalid read of size 4
+==7311==    at 0x50BC254: fclose@@GLIBC_2.2.5 (iofclose.c:48)
+==7311==    by 0x108E91: main (main.c:69)
+==7311==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7311== 
+==7311== 
+==7311== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==7311==  Access not within mapped region at address 0x0
+==7311==    at 0x50BC254: fclose@@GLIBC_2.2.5 (iofclose.c:48)
+==7311==    by 0x108E91: main (main.c:69)
+==7311==  If you believe this happened as a result of a stack
+==7311==  overflow in your program's main thread (unlikely but
+==7311==  possible), you can try to increase the size of the
+==7311==  main thread stack using the --main-stacksize= flag.
+==7311==  The main thread stack size used in this run was 8388608.
+==7311== 
+==7311== HEAP SUMMARY:
+==7311==     in use at exit: 552 bytes in 1 blocks
+==7311==   total heap usage: 2 allocs, 1 frees, 1,104 bytes allocated
+==7311== 
+==7311== LEAK SUMMARY:
+==7311==    definitely lost: 0 bytes in 0 blocks
+==7311==    indirectly lost: 0 bytes in 0 blocks
+==7311==      possibly lost: 0 bytes in 0 blocks
+==7311==    still reachable: 552 bytes in 1 blocks
+==7311==         suppressed: 0 bytes in 0 blocks
+==7311== Reachable blocks (those to which a pointer was found) are not shown.
+==7311== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==7311== 
+==7311== For counts of detected and suppressed errors, rerun with: -v
+==7311== ERROR SUMMARY: 28 errors from 28 contexts (suppressed: 0 from 0)

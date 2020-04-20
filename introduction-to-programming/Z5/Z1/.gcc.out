@@ -1,0 +1,13 @@
+/rhome/m/mucanbarli1/workspace/OR/Z5/Z1/main.c: In function ‘apsolutna’:
+/rhome/m/mucanbarli1/workspace/OR/Z5/Z1/main.c:38:9: warning: unused variable ‘p5’ [-Wunused-variable]
+   char* p5 = p1;
+         ^~
+/rhome/m/mucanbarli1/workspace/OR/Z5/Z1/main.c:80:11: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+   while(p4!='\0') {
+           ^~
+/rhome/m/mucanbarli1/workspace/OR/Z5/Z1/main.c:80:9: note: did you mean to dereference the pointer?
+   while(p4!='\0') {
+         ^
+/rhome/m/mucanbarli1/workspace/OR/Z5/Z1/main.c:66:9: warning: unused variable ‘p5’ [-Wunused-variable]
+   char* p5 = p1;
+         ^~

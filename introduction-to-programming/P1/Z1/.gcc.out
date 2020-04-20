@@ -1,0 +1,15 @@
+/rhome/m/mucanbarli1/workspace/OR/P1/Z1/main.c: In function ‘spoji’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z1/main.c:45:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  while (*s1++ = *s2++);
+         ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z1/main.c: In function ‘izbaci_ntu_rijec’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z1/main.c:135:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     while (*pocetak++ = *s++);
+            ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z1/main.c: In function ‘zamijeni_string_ubaci’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z1/main.c:149:14: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+   while(kraj != '\0') kraj++;
+              ^~
+/rhome/m/mucanbarli1/workspace/OR/P1/Z1/main.c:149:9: note: did you mean to dereference the pointer?
+   while(kraj != '\0') kraj++;
+         ^

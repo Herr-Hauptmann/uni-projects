@@ -1,0 +1,17 @@
+/rhome/m/mucanbarli1/workspace/OR/T8/Z1/main.c: In function ‘f’:
+/rhome/m/mucanbarli1/workspace/OR/T8/Z1/main.c:6:4: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   c=*a+b;
+    ^
+/rhome/m/mucanbarli1/workspace/OR/T8/Z1/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T8/Z1/main.c:14:33: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+  printf("\n Prije funkcije f:a=%d, b=%d,a,b");
+                                ~^
+/rhome/m/mucanbarli1/workspace/OR/T8/Z1/main.c:14:39: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+  printf("\n Prije funkcije f:a=%d, b=%d,a,b");
+                                      ~^
+/rhome/m/mucanbarli1/workspace/OR/T8/Z1/main.c:15:9: warning: passing argument 2 of ‘f’ makes pointer from integer without a cast [-Wint-conversion]
+  c=f(&a,b);
+         ^
+/rhome/m/mucanbarli1/workspace/OR/T8/Z1/main.c:4:6: note: expected ‘int *’ but argument is of type ‘int’
+  int f(int *a, int* b) {
+      ^

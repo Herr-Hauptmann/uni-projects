@@ -1,0 +1,29 @@
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:25:14: warning: missing braces around initializer [-Wmissing-braces]
+  int B[3][3]={1,2,3,4};
+              ^
+               {    }{}
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:31:6: warning: passing argument 1 of ‘y’ from incompatible pointer type [-Wincompatible-pointer-types]
+  b=y(A,29);
+      ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:9:5: note: expected ‘int *’ but argument is of type ‘char *’
+ int y(int *p,int a)
+     ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:33:4: warning: passing argument 1 of ‘y’ from incompatible pointer type [-Wincompatible-pointer-types]
+  y(B,1);
+    ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:9:5: note: expected ‘int *’ but argument is of type ‘int (*)[3]’
+ int y(int *p,int a)
+     ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:35:4: warning: passing argument 1 of ‘x’ from incompatible pointer type [-Wincompatible-pointer-types]
+  x(&a,&b);
+    ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:4:5: note: expected ‘char *’ but argument is of type ‘int *’
+ int x(char *a, char *b)
+     ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:35:7: warning: passing argument 2 of ‘x’ from incompatible pointer type [-Wincompatible-pointer-types]
+  x(&a,&b);
+       ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z20/main.c:4:5: note: expected ‘char *’ but argument is of type ‘int *’
+ int x(char *a, char *b)
+     ^

@@ -1,0 +1,361 @@
+==1461== Memcheck, a memory error detector
+==1461== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1461== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==1461== Command: /rhome/m/mucanbarli1/workspace/OR/T7/Z2/.runme
+==1461== Parent PID: 1449
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509D1B8: __printf_fp_l (printf_fp.c:392)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509D1D9: __printf_fp_l (printf_fp.c:392)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x5092A30: __mpn_extract_double (dbl2mpn.c:56)
+==1461==    by 0x509D208: __printf_fp_l (printf_fp.c:392)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509D061: __printf_fp_l (printf_fp.c:442)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509DDFA: __printf_fp_l (printf_fp.c:645)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509E3E7: __printf_fp_l (printf_fp.c:661)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x5091288: __mpn_lshift (lshift.S:59)
+==1461==    by 0x509E3EB: __printf_fp_l (printf_fp.c:661)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509128B: __mpn_lshift (lshift.S:60)
+==1461==    by 0x509E3EB: __printf_fp_l (printf_fp.c:661)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509E41C: __printf_fp_l (printf_fp.c:662)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E4F5: __printf_fp_l (printf_fp.c:673)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E4E8: __printf_fp_l (printf_fp.c:785)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x50918C4: __mpn_mul_1 (mul_1.S:36)
+==1461==    by 0x5091684: __mpn_mul (mul.c:81)
+==1461==    by 0x509E533: __printf_fp_l (printf_fp.c:686)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509194F: __mpn_mul_1 (mul_1.S:85)
+==1461==    by 0x5091684: __mpn_mul (mul.c:81)
+==1461==    by 0x509E533: __printf_fp_l (printf_fp.c:686)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x50919C2: __mpn_mul_1 (mul_1.S:117)
+==1461==    by 0x5091684: __mpn_mul (mul.c:81)
+==1461==    by 0x509E533: __printf_fp_l (printf_fp.c:686)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x5091695: __mpn_mul (mul.c:83)
+==1461==    by 0x509E533: __printf_fp_l (printf_fp.c:686)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E474: __printf_fp_l (printf_fp.c:690)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509E4A1: __printf_fp_l (printf_fp.c:693)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E4C0: __printf_fp_l (printf_fp.c:702)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E4CC: __printf_fp_l (printf_fp.c:724)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509E57C: __printf_fp_l (printf_fp.c:741)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E582: __printf_fp_l (printf_fp.c:741)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509F3E1: __printf_fp_l (printf_fp.c:742)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509F3FD: __printf_fp_l (printf_fp.c:752)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x5091398: __mpn_rshift (rshift.S:62)
+==1461==    by 0x509E5FD: __printf_fp_l (printf_fp.c:775)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x50913BD: __mpn_rshift (rshift.S:73)
+==1461==    by 0x509E5FD: __printf_fp_l (printf_fp.c:775)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E623: __printf_fp_l (printf_fp.c:704)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509E649: __printf_fp_l (printf_fp.c:725)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E64C: __printf_fp_l (printf_fp.c:725)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E652: __printf_fp_l (printf_fp.c:727)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E66E: __printf_fp_l (printf_fp.c:787)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x50918C4: __mpn_mul_1 (mul_1.S:36)
+==1461==    by 0x509E68F: __printf_fp_l (printf_fp.c:791)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509194F: __mpn_mul_1 (mul_1.S:85)
+==1461==    by 0x509E68F: __printf_fp_l (printf_fp.c:791)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x50919C2: __mpn_mul_1 (mul_1.S:117)
+==1461==    by 0x509E68F: __printf_fp_l (printf_fp.c:791)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509E6A6: __printf_fp_l (printf_fp.c:795)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509E6BB: __printf_fp_l (printf_fp.c:796)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x5091398: __mpn_rshift (rshift.S:62)
+==1461==    by 0x509F3C3: __printf_fp_l (printf_fp.c:804)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x50913BD: __mpn_rshift (rshift.S:73)
+==1461==    by 0x509F3C3: __printf_fp_l (printf_fp.c:804)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Use of uninitialised value of size 8
+==1461==    at 0x509EC37: __printf_fp_l (printf_fp.c:987)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509EC3D: __printf_fp_l (printf_fp.c:987)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509DCB1: __printf_fp_l (printf_fp.c:1162)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== Conditional jump or move depends on uninitialised value(s)
+==1461==    at 0x509DDA4: __printf_fp_l (printf_fp.c:1169)
+==1461==    by 0x509AA06: vfprintf (vfprintf.c:1642)
+==1461==    by 0x509C67F: buffered_vfprintf (vfprintf.c:2329)
+==1461==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==1461==    by 0x50A2F25: printf (printf.c:33)
+==1461==    by 0x108882: main (main.c:26)
+==1461== 
+==1461== 
+==1461== HEAP SUMMARY:
+==1461==     in use at exit: 0 bytes in 0 blocks
+==1461==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==1461== 
+==1461== All heap blocks were freed -- no leaks are possible
+==1461== 
+==1461== For counts of detected and suppressed errors, rerun with: -v
+==1461== Use --track-origins=yes to see where uninitialised values come from
+==1461== ERROR SUMMARY: 69 errors from 41 contexts (suppressed: 0 from 0)

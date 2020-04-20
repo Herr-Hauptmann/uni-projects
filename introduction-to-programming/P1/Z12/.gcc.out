@@ -1,0 +1,10 @@
+/rhome/m/mucanbarli1/workspace/OR/P1/Z12/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z12/main.c:7:24: warning: unused variable ‘temp3’ [-Wunused-variable]
+ int temp,temp1,temp2,i,temp3;
+                        ^~~~~
+/rhome/m/mucanbarli1/workspace/OR/P1/Z12/main.c:7:16: warning: unused variable ‘temp2’ [-Wunused-variable]
+ int temp,temp1,temp2,i,temp3;
+                ^~~~~
+/rhome/m/mucanbarli1/workspace/OR/P1/Z12/main.c:7:10: warning: unused variable ‘temp1’ [-Wunused-variable]
+ int temp,temp1,temp2,i,temp3;
+          ^~~~~

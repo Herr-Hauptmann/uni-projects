@@ -1,0 +1,10 @@
+/rhome/m/mucanbarli1/workspace/OR/P1/Z14/main.c: In function ‘upitna’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z14/main.c:31:14: warning: variable ‘razmak’ set but not used [-Wunused-but-set-variable]
+ int slovo=0, razmak=0, slozeno=0;
+              ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/P1/Z14/main.c:31:5: warning: variable ‘slovo’ set but not used [-Wunused-but-set-variable]
+ int slovo=0, razmak=0, slozeno=0;
+     ^~~~~
+/rhome/m/mucanbarli1/workspace/OR/P1/Z14/main.c:26:7: warning: unused variable ‘ret’ [-Wunused-variable]
+ char* ret = string;
+       ^~~

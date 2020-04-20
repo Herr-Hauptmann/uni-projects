@@ -1,0 +1,344 @@
+{
+    "id": 7039,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), Zada\u0107a 4, zadatak 3",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1761,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT1: Trivijalni test *\/\nchar* rijeci[2] = { \"beli\", \"sneg\" };\nchar* zamjene[2] = { \"bijeli\", \"snijeg\" };\nchar tekst[100] = \"beli sneg je pokrio beli breg\";\nprintf(\"%s\\n\", zamjena_rijeci(tekst, rijeci, zamjene, 2));\n\/* Da li je promijenjen i polazni string? *\/\nprintf(\"%s\", tekst);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "bijeli snijeg je pokrio bijeli breg\\nbijeli snijeg je pokrio bijeli breg"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1762,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT2: Rijec je niz znakova omedjen razmacima, pocetkom i krajem stringa *\/\nchar* rijeci[2] = { \"test\" };\nchar* zamjene[2] = { \"zamjena\" };\nchar tekst[100] = \"test protest testiranje protestiranje test\";\nprintf(\"%s\", zamjena_rijeci(tekst, rijeci, zamjene, 1));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "zamjena protest testiranje protestiranje zamjena"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1763,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT3: Prazan string *\/\nchar* rijeci[2] = { \"r1\", \"r2\" };\nchar* zamjene[2] = { \"z1\", \"z2\" };\nchar tekst[100] = \"\";\nprintf(\"'%s' '%s'\", zamjena_rijeci(tekst, rijeci, zamjene, 2), tekst);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'' ''"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1764,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT4: Samo jedna zamjena u sredini *\/\nchar* rijeci[2] = { \"r1\", \"r2\" };\nchar* zamjene[2] = { \"z1\", \"z2\" };\nchar tekst[100] = \"aaa aa r1 aaa aaaa\";\nprintf(\"%s\", zamjena_rijeci(tekst, rijeci, zamjene, 2));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "aaa aa z1 aaa aaaa"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1765,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT5: Rijec je niz znakova omedjen razmacima, pocetkom i krajem stringa *\/\nchar* rijeci[2] = { \"auto\", \"stop\" };\nchar* zamjene[2] = { \"vozilo\", \"start\" };\nchar tekst[100] = \"auto-stop auto. stop auto kj stop\";\nprintf(\"%s\", zamjena_rijeci(tekst, rijeci, zamjene, 2));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "auto-stop auto. start vozilo kj start"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1766,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT6: Zamjena praznim stringovima *\/\nchar* rijeci[3] = { \"proba\", \"Ovo\", \"je\" };\nchar* zamjene[3] = { \"\", \"\", \"\" };\nchar tekst[100] = \"Ovo je proba\";\nprintf(\"'%s'\", zamjena_rijeci(tekst, rijeci, zamjene, 3));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'  '"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1767,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "char* rijeci[2] = { \"Ovo\" };\nchar* zamjene[2] = { \"AAA\" };\nchar tekst[100] = \"Ovo je ovo je OVO\";\nprintf(\"%s\", zamjena_rijeci(tekst, rijeci, zamjene, 1));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "AAA je ovo je OVO"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1768,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "char* rijeci[2] = { \"Ovo\" };\nchar* zamjene[2] = { \"AAA\" };\nchar tekst[100] = \"Ovo je neka proba sa praznim nizom zamjena\";\nprintf(\"%s\", zamjena_rijeci(tekst, rijeci, zamjene, 0));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Ovo je neka proba sa praznim nizom zamjena"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1769,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT9: Najduza rijec u nasem jeziku *\/\nchar* rijeci[2] = { \"Prijestolonasljednikovica\" };\nchar* zamjene[2] = { \"c\" };\nchar tekst[100] = \"Prijestolonasljednikovica\";\nprintf(\"%s\", zamjena_rijeci(tekst, rijeci, zamjene, 1));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "c"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1770,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT10: Zamjenjujemo velika slova malim *\/\nchar* rijeci[30] = { \"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\" };\nchar* zamjene[30] = { \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\" };\nchar tekst[100], tekst2[100];\n\n\/* String oblika \"A AA B BB C CC...\" *\/\nchar c; int i=0, j;\nfor (c='a'; c<='j'; c++) {\n    tekst[i++] = c;\n    tekst[i++] = ' ';\n    tekst[i++] = c;\n    tekst[i++] = c;\n    tekst[i++] = ' ';\n}\ntekst[i] = '\\0';\n\n\/* Rucno pretvaram velika slova u mala *\/\nstrcpy(tekst2,tekst);\nfor (j=0; j<i; j+=5) {\n     tekst[j] -= 'a' - 'A';\n}\n\nzamjena_rijeci(tekst, rijeci, zamjene, 10);\n\n\/* Da li je string dobijen funkcijom jednak rucno pretvorenom? *\/\nif (strcmp(tekst,tekst2)==0)\n   printf(\"OK\");\nelse\n   printf(\"Nije ok\\nTekst: %s\\nTekst2: %s\", tekst, tekst2);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "OK"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1771,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT13: A sada je zamjena najduza rijec! *\/\nchar* rijeci[2] = { \"c\" };\nchar* zamjene[2] = {  \"Prijestolonasljednikovica\" };\n\n\/* Ovako cemo zadati tekst da bi vrijednosti >3 bile neinicijalizirane *\/\nchar tekst[100]; \/* = \"c c\"; *\/\ntekst[0] = 'c';\ntekst[1] = ' ';\ntekst[2] = 'c';\ntekst[3] = '\\0';\n\nprintf(\"'%s'\", zamjena_rijeci(tekst, rijeci, zamjene, 1));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'Prijestolonasljednikovica Prijestolonasljednikovica'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1830,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT14: Slozeniji slucaj u kojem nema zamjene *\/\nchar* rijeci[1] = {\"dobro\"};\nchar* zamjene[1] = {\"dobro\"};\nchar tekst[] = \"dobro dobro\";\nprintf(\"'%s'\", zamjena_rijeci(tekst, rijeci, zamjene, 1));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'dobro dobro'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1836,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT15: Jos jedan test za rijec vs. dio rijeci *\/\nchar* rijeci[2] = {\"testiranje\", \"test\"};\nchar* zamjene[2] = {\"zamjena\", \"swap\"};\nchar tekst[] = \"test testiranje test\";\nprintf(\"'%s'\", zamjena_rijeci(tekst, rijeci, zamjene, 2));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'swap zamjena swap'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,303 @@
+==16427== Memcheck, a memory error detector
+==16427== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==16427== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==16427== Command: /rhome/m/mucanbarli1/workspace/OR/T3/Z5/.runme
+==16427== Parent PID: 16405
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543B1B8: __printf_fp_l (printf_fp.c:392)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543B1D9: __printf_fp_l (printf_fp.c:392)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x5430A30: __mpn_extract_double (dbl2mpn.c:56)
+==16427==    by 0x543B208: __printf_fp_l (printf_fp.c:392)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543B061: __printf_fp_l (printf_fp.c:442)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543BDFA: __printf_fp_l (printf_fp.c:645)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x543C3E7: __printf_fp_l (printf_fp.c:661)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F288: __mpn_lshift (lshift.S:59)
+==16427==    by 0x543C3EB: __printf_fp_l (printf_fp.c:661)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F28B: __mpn_lshift (lshift.S:60)
+==16427==    by 0x543C3EB: __printf_fp_l (printf_fp.c:661)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x543C41C: __printf_fp_l (printf_fp.c:662)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543C4F5: __printf_fp_l (printf_fp.c:673)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543C4E8: __printf_fp_l (printf_fp.c:785)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543C66E: __printf_fp_l (printf_fp.c:787)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F8C4: __mpn_mul_1 (mul_1.S:36)
+==16427==    by 0x543C68F: __printf_fp_l (printf_fp.c:791)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F94F: __mpn_mul_1 (mul_1.S:85)
+==16427==    by 0x543C68F: __printf_fp_l (printf_fp.c:791)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F9C2: __mpn_mul_1 (mul_1.S:117)
+==16427==    by 0x543C68F: __printf_fp_l (printf_fp.c:791)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x543C6A6: __printf_fp_l (printf_fp.c:795)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543C6BB: __printf_fp_l (printf_fp.c:796)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F398: __mpn_rshift (rshift.S:62)
+==16427==    by 0x543D3C3: __printf_fp_l (printf_fp.c:804)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F3BD: __mpn_rshift (rshift.S:73)
+==16427==    by 0x543D3C3: __printf_fp_l (printf_fp.c:804)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x543BAD9: hack_digit (printf_fp.c:174)
+==16427==    by 0x543BAD9: __printf_fp_l (printf_fp.c:962)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F8C4: __mpn_mul_1 (mul_1.S:36)
+==16427==    by 0x543BAE7: hack_digit (printf_fp.c:175)
+==16427==    by 0x543BAE7: __printf_fp_l (printf_fp.c:962)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F8E8: __mpn_mul_1 (mul_1.S:52)
+==16427==    by 0x543BAE7: hack_digit (printf_fp.c:175)
+==16427==    by 0x543BAE7: __printf_fp_l (printf_fp.c:962)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543BB1D: __printf_fp_l (printf_fp.c:974)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x543A989: hack_digit (printf_fp.c:174)
+==16427==    by 0x543BB2F: __printf_fp_l (printf_fp.c:975)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F8C4: __mpn_mul_1 (mul_1.S:36)
+==16427==    by 0x543A990: hack_digit (printf_fp.c:175)
+==16427==    by 0x543BB2F: __printf_fp_l (printf_fp.c:975)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Use of uninitialised value of size 8
+==16427==    at 0x542F8E8: __mpn_mul_1 (mul_1.S:52)
+==16427==    by 0x543A990: hack_digit (printf_fp.c:175)
+==16427==    by 0x543BB2F: __printf_fp_l (printf_fp.c:975)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543BB3E: __printf_fp_l (printf_fp.c:977)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543C2CC: round_away (rounding-mode.h:52)
+==16427==    by 0x543C2CC: __printf_fp_l (printf_fp.c:994)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543BCB1: __printf_fp_l (printf_fp.c:1162)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543BDA4: __printf_fp_l (printf_fp.c:1169)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543C89A: __printf_fp_l (printf_fp.c:1225)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Conditional jump or move depends on uninitialised value(s)
+==16427==    at 0x543C87B: __printf_fp_l (printf_fp.c:1227)
+==16427==    by 0x5438A06: vfprintf (vfprintf.c:1642)
+==16427==    by 0x543A67F: buffered_vfprintf (vfprintf.c:2329)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427== 
+==16427== Syscall param write(buf) points to uninitialised byte(s)
+==16427==    at 0x54EC154: write (write.c:27)
+==16427==    by 0x54671BC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1203)
+==16427==    by 0x5467B2E: new_do_write (fileops.c:457)
+==16427==    by 0x5467B2E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1277)
+==16427==    by 0x543A706: buffered_vfprintf (vfprintf.c:2350)
+==16427==    by 0x5437725: vfprintf (vfprintf.c:1301)
+==16427==    by 0x5440F25: printf (printf.c:33)
+==16427==    by 0x108845: main (main.c:14)
+==16427==  Address 0x1ffeffe26e is on thread 1's stack
+==16427==  in frame #3, created by buffered_vfprintf (vfprintf.c:2296)
+==16427== 
+==16427== 
+==16427== HEAP SUMMARY:
+==16427==     in use at exit: 0 bytes in 0 blocks
+==16427==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==16427== 
+==16427== All heap blocks were freed -- no leaks are possible
+==16427== 
+==16427== For counts of detected and suppressed errors, rerun with: -v
+==16427== Use --track-origins=yes to see where uninitialised values come from
+==16427== ERROR SUMMARY: 64 errors from 33 contexts (suppressed: 0 from 0)

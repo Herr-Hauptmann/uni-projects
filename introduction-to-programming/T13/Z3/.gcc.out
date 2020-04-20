@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T13/Z3/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T13/Z3/main.c:40:15: warning: unused variable ‘vel’ [-Wunused-variable]
+     int i, j, vel, meni;
+               ^~~

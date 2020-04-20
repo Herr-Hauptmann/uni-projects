@@ -1,0 +1,31 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c: In function ‘KonjugovanoKompleksni’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:13:7: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+      q=p1;
+       ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:14:13: warning: comparison of distinct pointer types lacks a cast
+      while(q<p2){
+             ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:15:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+       if(*p1->Re==*q->Re && *p1->Im == -(*q->Im)){
+          ^~~~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:15:21: error: request for member ‘Re’ in something not a structure or union
+       if(*p1->Re==*q->Re && *p1->Im == -(*q->Im)){
+                     ^~
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:15:29: error: invalid type argument of unary ‘*’ (have ‘int’)
+       if(*p1->Re==*q->Re && *p1->Im == -(*q->Im)){
+                             ^~~~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:15:44: error: request for member ‘Im’ in something not a structure or union
+       if(*p1->Re==*q->Re && *p1->Im == -(*q->Im)){
+                                            ^~
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:17:14: error: incompatible types when assigning to type ‘struct Kompleksni’ from type ‘char’
+        *rez++=*q;
+              ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:11:15: warning: unused variable ‘p’ [-Wunused-variable]
+     char* q, *p;
+               ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:10:11: warning: unused variable ‘j’ [-Wunused-variable]
+     int i,j, brojac=0;
+           ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z8/main.c:10:9: warning: unused variable ‘i’ [-Wunused-variable]
+     int i,j, brojac=0;
+         ^

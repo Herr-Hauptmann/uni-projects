@@ -1,0 +1,324 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1388": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1388.c: In function ‘main’:\nbs_test_1388.c:16:20: error: storage size of ‘c’ isn’t known\n struct Cetverougao c;\n                    ^\nbs_test_1388.c:25:14: error: storage size of ‘t1’ isn’t known\n struct Tacka t1;\n              ^~\nbs_test_1388.c:27:14: warning: implicit declaration of function ‘tacka_u_cetverouglu’ [-Wimplicit-function-declaration]\n printf(\"%d\", tacka_u_cetverouglu(t1, c));\n              ^~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "20",
+                        "message": "storage size of 'c' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1388.c:16:20: error: storage size of ‘c’ isn’t known struct Cetverougao c;                    ^",
+                        "code": "struct Cetverougao c;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 12,
+                        "col": "14",
+                        "message": "storage size of 't1' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1388.c:25:14: error: storage size of ‘t1’ isn’t known struct Tacka t1;              ^~",
+                        "code": "struct Tacka t1;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 14,
+                        "col": "14",
+                        "message": "implicit declaration of function 'tacka_u_cetverouglu'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1388.c:27:14: warning: implicit declaration of function ‘tacka_u_cetverouglu’ [-Wimplicit-function-declaration] printf(\"%d\", tacka_u_cetverouglu(t1, c));              ^~~~~~~~~~~~~~~~~~~",
+                        "code": "printf(\"%d\", tacka_u_cetverouglu(t1, c));"
+                    }
+                ]
+            }
+        },
+        "1389": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1389.c: In function ‘main’:\nbs_test_1389.c:16:20: error: storage size of ‘c’ isn’t known\n struct Cetverougao c;\n                    ^\nbs_test_1389.c:25:14: error: array type has incomplete element type ‘struct Tacka’\n struct Tacka t1[2];\n              ^~\nbs_test_1389.c:29:7: warning: implicit declaration of function ‘filtriraj_tacke’ [-Wimplicit-function-declaration]\n vel = filtriraj_tacke(t1, 2, c);\n       ^~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "20",
+                        "message": "storage size of 'c' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1389.c:16:20: error: storage size of ‘c’ isn’t known struct Cetverougao c;                    ^",
+                        "code": "struct Cetverougao c;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 12,
+                        "col": "14",
+                        "message": "array type has incomplete element type 'struct Tacka'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1389.c:25:14: error: array type has incomplete element type ‘struct Tacka’ struct Tacka t1[2];              ^~",
+                        "code": "struct Tacka t1[2];"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 16,
+                        "col": "7",
+                        "message": "implicit declaration of function 'filtriraj_tacke'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1389.c:29:7: warning: implicit declaration of function ‘filtriraj_tacke’ [-Wimplicit-function-declaration] vel = filtriraj_tacke(t1, 2, c);       ^~~~~~~~~~~~~~~",
+                        "code": "vel = filtriraj_tacke(t1, 2, c);"
+                    }
+                ]
+            }
+        },
+        "1402": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1402.c: In function ‘main’:\nbs_test_1402.c:15:20: error: storage size of ‘c’ isn’t known\n struct Cetverougao c;\n                    ^\nbs_test_1402.c:26:14: error: array type has incomplete element type ‘struct Tacka’\n struct Tacka t1[12];\n              ^~\nbs_test_1402.c:40:7: warning: implicit declaration of function ‘filtriraj_tacke’ [-Wimplicit-function-declaration]\n vel = filtriraj_tacke(t1, 12, c);\n       ^~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "20",
+                        "message": "storage size of 'c' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1402.c:15:20: error: storage size of ‘c’ isn’t known struct Cetverougao c;                    ^",
+                        "code": "struct Cetverougao c;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 13,
+                        "col": "14",
+                        "message": "array type has incomplete element type 'struct Tacka'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1402.c:26:14: error: array type has incomplete element type ‘struct Tacka’ struct Tacka t1[12];              ^~",
+                        "code": "struct Tacka t1[12];"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 27,
+                        "col": "7",
+                        "message": "implicit declaration of function 'filtriraj_tacke'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1402.c:40:7: warning: implicit declaration of function ‘filtriraj_tacke’ [-Wimplicit-function-declaration] vel = filtriraj_tacke(t1, 12, c);       ^~~~~~~~~~~~~~~",
+                        "code": "vel = filtriraj_tacke(t1, 12, c);"
+                    }
+                ]
+            }
+        },
+        "1463": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1463.c: In function ‘main’:\nbs_test_1463.c:16:14: error: array type has incomplete element type ‘struct Tacka’\n struct Tacka t1[4];\n              ^~\nbs_test_1463.c:22:1: warning: implicit declaration of function ‘sortiraj_tacke’ [-Wimplicit-function-declaration]\n sortiraj_tacke(t1, 4);\n ^~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "14",
+                        "message": "array type has incomplete element type 'struct Tacka'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1463.c:16:14: error: array type has incomplete element type ‘struct Tacka’ struct Tacka t1[4];              ^~",
+                        "code": "struct Tacka t1[4];"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "1",
+                        "message": "implicit declaration of function 'sortiraj_tacke'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1463.c:22:1: warning: implicit declaration of function ‘sortiraj_tacke’ [-Wimplicit-function-declaration] sortiraj_tacke(t1, 4); ^~~~~~~~~~~~~~",
+                        "code": "sortiraj_tacke(t1, 4);"
+                    }
+                ]
+            }
+        },
+        "1464": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1464.c: In function ‘main’:\nbs_test_1464.c:16:20: error: storage size of ‘c’ isn’t known\n struct Cetverougao c;\n                    ^\nbs_test_1464.c:25:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration]\n printf(\"%d\", kvadrat(c));\n              ^~~~~~~\nbs_test_1464.c:26:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration]\n printf(\"%d\", pravougaonik(c));\n              ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "20",
+                        "message": "storage size of 'c' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1464.c:16:20: error: storage size of ‘c’ isn’t known struct Cetverougao c;                    ^",
+                        "code": "struct Cetverougao c;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 12,
+                        "col": "14",
+                        "message": "implicit declaration of function 'kvadrat'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1464.c:25:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration] printf(\"%d\", kvadrat(c));              ^~~~~~~",
+                        "code": "printf(\"%d\", kvadrat(c));"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 13,
+                        "col": "14",
+                        "message": "implicit declaration of function 'pravougaonik'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1464.c:26:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration] printf(\"%d\", pravougaonik(c));              ^~~~~~~~~~~~",
+                        "code": "printf(\"%d\", pravougaonik(c));"
+                    }
+                ]
+            }
+        },
+        "1465": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1465.c: In function ‘main’:\nbs_test_1465.c:15:20: error: storage size of ‘c’ isn’t known\n struct Cetverougao c;\n                    ^\nbs_test_1465.c:24:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration]\n printf(\"%d\", kvadrat(c));\n              ^~~~~~~\nbs_test_1465.c:25:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration]\n printf(\"%d\", pravougaonik(c));\n              ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "20",
+                        "message": "storage size of 'c' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1465.c:15:20: error: storage size of ‘c’ isn’t known struct Cetverougao c;                    ^",
+                        "code": "struct Cetverougao c;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "14",
+                        "message": "implicit declaration of function 'kvadrat'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1465.c:24:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration] printf(\"%d\", kvadrat(c));              ^~~~~~~",
+                        "code": "printf(\"%d\", kvadrat(c));"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 12,
+                        "col": "14",
+                        "message": "implicit declaration of function 'pravougaonik'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1465.c:25:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration] printf(\"%d\", pravougaonik(c));              ^~~~~~~~~~~~",
+                        "code": "printf(\"%d\", pravougaonik(c));"
+                    }
+                ]
+            }
+        },
+        "1466": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1466.c: In function ‘main’:\nbs_test_1466.c:15:20: error: storage size of ‘c’ isn’t known\n struct Cetverougao c;\n                    ^\nbs_test_1466.c:24:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration]\n printf(\"%d\", kvadrat(c));\n              ^~~~~~~\nbs_test_1466.c:25:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration]\n printf(\"%d\", pravougaonik(c));\n              ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "20",
+                        "message": "storage size of 'c' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1466.c:15:20: error: storage size of ‘c’ isn’t known struct Cetverougao c;                    ^",
+                        "code": "struct Cetverougao c;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "14",
+                        "message": "implicit declaration of function 'kvadrat'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1466.c:24:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration] printf(\"%d\", kvadrat(c));              ^~~~~~~",
+                        "code": "printf(\"%d\", kvadrat(c));"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 12,
+                        "col": "14",
+                        "message": "implicit declaration of function 'pravougaonik'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1466.c:25:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration] printf(\"%d\", pravougaonik(c));              ^~~~~~~~~~~~",
+                        "code": "printf(\"%d\", pravougaonik(c));"
+                    }
+                ]
+            }
+        },
+        "1467": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1467.c: In function ‘main’:\nbs_test_1467.c:15:20: error: storage size of ‘c’ isn’t known\n struct Cetverougao c;\n                    ^\nbs_test_1467.c:24:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration]\n printf(\"%d\", kvadrat(c));\n              ^~~~~~~\nbs_test_1467.c:25:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration]\n printf(\"%d\", pravougaonik(c));\n              ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "20",
+                        "message": "storage size of 'c' isn't known",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1467.c:15:20: error: storage size of ‘c’ isn’t known struct Cetverougao c;                    ^",
+                        "code": "struct Cetverougao c;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "14",
+                        "message": "implicit declaration of function 'kvadrat'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1467.c:24:14: warning: implicit declaration of function ‘kvadrat’ [-Wimplicit-function-declaration] printf(\"%d\", kvadrat(c));              ^~~~~~~",
+                        "code": "printf(\"%d\", kvadrat(c));"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 12,
+                        "col": "14",
+                        "message": "implicit declaration of function 'pravougaonik'",
+                        "output": "/tmp/buildservice/bs_6672/bs_test_1467.c:25:14: warning: implicit declaration of function ‘pravougaonik’ [-Wimplicit-function-declaration] printf(\"%d\", pravougaonik(c));              ^~~~~~~~~~~~",
+                        "code": "printf(\"%d\", pravougaonik(c));"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1551219411
+}

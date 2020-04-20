@@ -1,0 +1,8 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z11/main.c: In function ‘izbaci_tekst’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z11/main.c:10:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   while(*p++ = *q++);
+         ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z11/main.c: In function ‘izbaci_rijec’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z11/main.c:47:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     while (*pocetak++ = *s++);
+            ^

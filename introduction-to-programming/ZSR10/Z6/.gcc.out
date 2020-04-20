@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z6/main.c: In function ‘strstrInsensitive’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z6/main.c:123:78: warning: suggest parentheses around comparison in operand of ‘&’ [-Wparentheses]
+    while(*p != '\0' && (*p == *q || (*p + 32) == *q || (*p - 32) == *q) & *q != '\0'){
+                                                                           ~~~^~~~~~~

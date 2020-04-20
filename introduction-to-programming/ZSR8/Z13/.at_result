@@ -1,0 +1,181 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘istecifre’:\nmain.c:7:23: warning: unused variable ‘zbir2’ [-Wunused-variable]\n  int tmp1,tmp2,zbir=0,zbir2=0;\n                       ^~~~~\nmain.c:7:16: warning: unused variable ‘zbir’ [-Wunused-variable]\n  int tmp1,tmp2,zbir=0,zbir2=0;\n                ^~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "7",
+                "col": "23",
+                "message": "unused variable 'zbir2'",
+                "output": "/tmp/buildservice/bs_4503/main.c:7:23: warning: unused variable ‘zbir2’ [-Wunused-variable]  int tmp1,tmp2,zbir=0,zbir2=0;                       ^~~~~",
+                "code": "int tmp1,tmp2,zbir=0,zbir2=0;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "7",
+                "col": "16",
+                "message": "unused variable 'zbir'",
+                "output": "/tmp/buildservice/bs_4503/main.c:7:16: warning: unused variable ‘zbir’ [-Wunused-variable]  int tmp1,tmp2,zbir=0,zbir2=0;                ^~~~",
+                "code": "int tmp1,tmp2,zbir=0,zbir2=0;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1592": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\n\n\n\n\n\n\nBroj 141 pozicija 8",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1593": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBroj 114 pozicija 1",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1594": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\n\n\n\n\n\n\nBroj 411 pozicija 3",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1595": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\nBroj 123 pozicija 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1596": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\nBroj 100 pozicija 6",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1597": {
+            "status": 1,
+            "run_result": {
+                "output": "Broj 0 pozicija 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1598": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\n\n\n\n\n\n\nBroj 53 pozicija 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1599": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\nBroj 999 pozicija 1",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1600": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\nBroj 999 pozicija 5",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1601": {
+            "status": 1,
+            "run_result": {
+                "output": "\n\n\n\n\n\nBroj 123 pozicija 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1550168973
+}

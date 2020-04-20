@@ -1,0 +1,188 @@
+{
+    "buildhost_description": {
+        "id": "lab002c05",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘upitna’:\nmain.c:17:11: warning: unused variable ‘q’ [-Wunused-variable]\n     char *q;\n           ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "17",
+                "col": "11",
+                "message": "unused variable 'q'",
+                "output": "/tmp/buildservice/bs_6485/main.c:17:11: warning: unused variable ‘q’ [-Wunused-variable]     char *q;           ^",
+                "code": "char *q;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 7,
+            "run_result": {
+                "output": "'Da li je medo isao u sumu?'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==2528== exp-sgcheck, a stack and global array overrun detector\n==2528== NOTE: This is an Experimental-Class Valgrind Tool\n==2528== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==2528== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==2528== Command: bs_test_1\n==2528== Parent PID: 2527\n==2528== \n==2528== Invalid read of size 1\n==2528==    at 0x4008DE: upitna (bs_test_1.c:62)\n==2528==    by 0x400CDF: main (bs_test_1.c:132)\n==2528==  Address 0xfff000a46 expected vs actual:\n==2528==  Expected: stack array \"ubaci\" of size 6 in this frame\n==2528==  Actual:   unknown\n==2528==  Actual:   is 0 after Expected\n==2528== \n==2528== \n==2528== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4008DE: upitna (bs_test_1.c:62)\n    by 0x400CDF: main (bs_test_1.c:132)\n  Address 0xfff000a46 expected vs actual:\n  Expected: stack array \"ubaci\" of size 6 in this frame\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 6,
+            "run_result": {
+                "output": "'Da li cita djecak knjigu?'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==2544== exp-sgcheck, a stack and global array overrun detector\n==2544== NOTE: This is an Experimental-Class Valgrind Tool\n==2544== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==2544== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==2544== Command: bs_test_2\n==2544== Parent PID: 2543\n==2544== \n==2544== Invalid read of size 1\n==2544==    at 0x4008DE: upitna (bs_test_2.c:62)\n==2544==    by 0x400CDF: main (bs_test_2.c:132)\n==2544==  Address 0xfff000a46 expected vs actual:\n==2544==  Expected: stack array \"ubaci\" of size 6 in this frame\n==2544==  Actual:   unknown\n==2544==  Actual:   is 0 after Expected\n==2544== \n==2544== \n==2544== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4008DE: upitna (bs_test_2.c:62)\n    by 0x400CDF: main (bs_test_2.c:132)\n  Address 0xfff000a46 expected vs actual:\n  Expected: stack array \"ubaci\" of size 6 in this frame\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 6,
+            "run_result": {
+                "output": "'Da li cebiti lijepo  vrijeme. sutra vrijeme?'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==2572== exp-sgcheck, a stack and global array overrun detector\n==2572== NOTE: This is an Experimental-Class Valgrind Tool\n==2572== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==2572== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==2572== Command: bs_test_3\n==2572== Parent PID: 2571\n==2572== \n==2572== Invalid read of size 1\n==2572==    at 0x4008DE: upitna (bs_test_3.c:62)\n==2572==    by 0x400CF3: main (bs_test_3.c:132)\n==2572==  Address 0xfff000a46 expected vs actual:\n==2572==  Expected: stack array \"ubaci\" of size 6 in this frame\n==2572==  Actual:   unknown\n==2572==  Actual:   is 0 after Expected\n==2572== \n==2572== \n==2572== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4008DE: upitna (bs_test_3.c:62)\n    by 0x400CF3: main (bs_test_3.c:132)\n  Address 0xfff000a46 expected vs actual:\n  Expected: stack array \"ubaci\" of size 6 in this frame\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 7,
+            "run_result": {
+                "output": "'Da li je mjesec izasao iza brda, poprimio zutu boju i obasjao citavu dolinu?'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==2588== exp-sgcheck, a stack and global array overrun detector\n==2588== NOTE: This is an Experimental-Class Valgrind Tool\n==2588== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==2588== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==2588== Command: bs_test_4\n==2588== Parent PID: 2587\n==2588== \n==2588== Invalid read of size 1\n==2588==    at 0x4008DE: upitna (bs_test_4.c:62)\n==2588==    by 0x400D3B: main (bs_test_4.c:132)\n==2588==  Address 0xfff000a46 expected vs actual:\n==2588==  Expected: stack array \"ubaci\" of size 6 in this frame\n==2588==  Actual:   unknown\n==2588==  Actual:   is 0 after Expected\n==2588== \n==2588== \n==2588== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4008DE: upitna (bs_test_4.c:62)\n    by 0x400D3B: main (bs_test_4.c:132)\n  Address 0xfff000a46 expected vs actual:\n  Expected: stack array \"ubaci\" of size 6 in this frame\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 6,
+            "run_result": {
+                "output": "'Da li ceproljece   ubrzo 9?'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==2604== exp-sgcheck, a stack and global array overrun detector\n==2604== NOTE: This is an Experimental-Class Valgrind Tool\n==2604== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==2604== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==2604== Command: bs_test_5\n==2604== Parent PID: 2603\n==2604== \n==2604== Invalid read of size 1\n==2604==    at 0x4008DE: upitna (bs_test_5.c:62)\n==2604==    by 0x400CDF: main (bs_test_5.c:132)\n==2604==  Address 0xfff000a46 expected vs actual:\n==2604==  Expected: stack array \"ubaci\" of size 6 in this frame\n==2604==  Actual:   unknown\n==2604==  Actual:   is 0 after Expected\n==2604== \n==2604== Invalid read of size 1\n==2604==    at 0x400BA1: upitna (bs_test_5.c:106)\n==2604==    by 0x400CDF: main (bs_test_5.c:132)\n==2604==  Address 0xfff000ab4 expected vs actual:\n==2604==  Expected: stack array \"objekat\" of size 100 in this frame\n==2604==  Actual:   unknown\n==2604==  Actual:   is 0 after Expected\n==2604== \n==2604== Invalid read of size 1\n==2604==    at 0x400BA1: upitna (bs_test_5.c:106)\n==2604==    by 0x400CDF: main (bs_test_5.c:132)\n==2604==  Address 0xfff000ac0 expected vs actual:\n==2604==  Expected: unknown\n==2604==  Actual:   stack array \"predikat\" of size 100 in this frame\n==2604== \n==2604== Invalid read of size 1\n==2604==    at 0x400BA1: upitna (bs_test_5.c:106)\n==2604==    by 0x400CDF: main (bs_test_5.c:132)\n==2604==  Address 0xfff000b24 expected vs actual:\n==2604==  Expected: stack array \"predikat\" of size 100 in this frame\n==2604==  Actual:   unknown\n==2604==  Actual:   is 0 after Expected\n==2604== \n==2604== Invalid read of size 1\n==2604==    at 0x400BA1: upitna (bs_test_5.c:106)\n==2604==    by 0x400CDF: main (bs_test_5.c:132)\n==2604==  Address 0xfff000b30 expected vs actual:\n==2604==  Expected: unknown\n==2604==  Actual:   stack array \"subjekat\" of size 100 in this frame\n==2604== \n==2604== \n==2604== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4008DE: upitna (bs_test_5.c:62)\n    by 0x400CDF: main (bs_test_5.c:132)\n  Address 0xfff000a46 expected vs actual:\n  Expected: stack array \"ubaci\" of size 6 in this frame\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 60
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400BA1: upitna (bs_test_5.c:106)\n    by 0x400CDF: main (bs_test_5.c:132)\n  Address 0xfff000ab4 expected vs actual:\n  Expected: stack array \"objekat\" of size 100 in this frame\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 104
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6": {
+            "status": 6,
+            "run_result": {
+                "output": "'Da li trepti vazduh kao da nebo gori, sprema se oluja?'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==2620== exp-sgcheck, a stack and global array overrun detector\n==2620== NOTE: This is an Experimental-Class Valgrind Tool\n==2620== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==2620== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==2620== Command: bs_test_6\n==2620== Parent PID: 2619\n==2620== \n==2620== Invalid read of size 1\n==2620==    at 0x4008DE: upitna (bs_test_6.c:62)\n==2620==    by 0x400D17: main (bs_test_6.c:132)\n==2620==  Address 0xfff000a46 expected vs actual:\n==2620==  Expected: stack array \"ubaci\" of size 6 in this frame\n==2620==  Actual:   unknown\n==2620==  Actual:   is 0 after Expected\n==2620== \n==2620== \n==2620== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4008DE: upitna (bs_test_6.c:62)\n    by 0x400D17: main (bs_test_6.c:132)\n  Address 0xfff000a46 expected vs actual:\n  Expected: stack array \"ubaci\" of size 6 in this frame\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1551283168
+}

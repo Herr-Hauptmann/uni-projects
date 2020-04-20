@@ -1,0 +1,326 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘GenerisiTablice’:\nmain.c:56:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~\nmain.c:58:6: warning: unused variable ‘vel’ [-Wunused-variable]\n  int vel = strlen(prethodna);\n      ^~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "56",
+                "col": "12",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_1101/main.c:56:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                "code": "char* p = prethodna;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "58",
+                "col": "6",
+                "message": "unused variable 'vel'",
+                "output": "/tmp/buildservice/bs_1101/main.c:58:6: warning: unused variable ‘vel’ [-Wunused-variable]  int vel = strlen(prethodna);      ^~~",
+                "code": "int vel = strlen(prethodna);"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2199": {
+            "status": 1,
+            "run_result": {
+                "output": "1 A00-A-001",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2199.c: In function ‘GenerisiTablice’:\nbs_test_2199.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2199.c",
+                        "line": "58",
+                        "col": "12",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_1101/bs_test_2199.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                        "code": "char* p = prethodna;"
+                    }
+                ]
+            }
+        },
+        "2200": {
+            "status": 1,
+            "run_result": {
+                "output": "1 A00-A-010\n1 A00-A-011\n1 A00-A-012\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2200.c: In function ‘GenerisiTablice’:\nbs_test_2200.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2200.c",
+                        "line": "58",
+                        "col": "12",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_1101/bs_test_2200.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                        "code": "char* p = prethodna;"
+                    }
+                ]
+            }
+        },
+        "2201": {
+            "status": 6,
+            "run_result": {
+                "output": "1 A00-A-999\n0  16\n-1 x\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==29641== Memcheck, a memory error detector\n==29641== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==29641== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==29641== Command: bs_test_2201\n==29641== Parent PID: 29640\n==29641== \n==29641== Conditional jump or move depends on uninitialised value(s)\n==29641==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29641==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29641==    by 0x400FBD: main (bs_test_2201.c:148)\n==29641== \n==29641== Conditional jump or move depends on uninitialised value(s)\n==29641==    at 0x4A08B48: __GI_strlen (vg_replace_strmem.c:455)\n==29641==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29641==    by 0x400FBD: main (bs_test_2201.c:148)\n==29641== \n==29641== Conditional jump or move depends on uninitialised value(s)\n==29641==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29641==    by 0x400956: GenerisiTablice (bs_test_2201.c:60)\n==29641==    by 0x400FD0: main (bs_test_2201.c:149)\n==29641== \n==29641== Conditional jump or move depends on uninitialised value(s)\n==29641==    at 0x4A08BA8: __strlen_sse42 (vg_replace_strmem.c:458)\n==29641==    by 0x400956: GenerisiTablice (bs_test_2201.c:60)\n==29641==    by 0x400FD0: main (bs_test_2201.c:149)\n==29641== \n==29641== Conditional jump or move depends on uninitialised value(s)\n==29641==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29641==    by 0x400965: GenerisiTablice (bs_test_2201.c:61)\n==29641==    by 0x400FD0: main (bs_test_2201.c:149)\n==29641== \n==29641== Conditional jump or move depends on uninitialised value(s)\n==29641==    at 0x4A08BA8: __strlen_sse42 (vg_replace_strmem.c:458)\n==29641==    by 0x400965: GenerisiTablice (bs_test_2201.c:61)\n==29641==    by 0x400FD0: main (bs_test_2201.c:149)\n==29641== \n==29641== Conditional jump or move depends on uninitialised value(s)\n==29641==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29641==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29641==    by 0x400FED: main (bs_test_2201.c:150)\n==29641== \n==29641== Syscall param write(buf) points to uninitialised byte(s)\n==29641==    at 0x36312DB850: __write_nocancel (in /lib64/libc-2.12.so)\n==29641==    by 0x36312719B2: _IO_file_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29641==    by 0x3631272F64: _IO_do_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29641==    by 0x3631273CD2: _IO_flush_all_lockp (in /lib64/libc-2.12.so)\n==29641==    by 0x3631274B7E: _IO_cleanup (in /lib64/libc-2.12.so)\n==29641==    by 0x36312359A1: exit (in /lib64/libc-2.12.so)\n==29641==    by 0x363121ED26: (below main) (in /lib64/libc-2.12.so)\n==29641==  Address 0x4c11025 is in a rw- anonymous segment\n==29641== \n==29641== \n==29641== HEAP SUMMARY:\n==29641==     in use at exit: 0 bytes in 0 blocks\n==29641==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==29641== \n==29641== All heap blocks were freed -- no leaks are possible\n==29641== \n==29641== For counts of detected and suppressed errors, rerun with: -v\n==29641== Use --track-origins=yes to see where uninitialised values come from\n==29641== ERROR SUMMARY: 20 errors from 8 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400FBD: main (bs_test_2201.c:148)\n",
+                        "file": "TEST_CODE",
+                        "line": 6
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n    by 0x400956: GenerisiTablice (bs_test_2201.c:60)\n    by 0x400FD0: main (bs_test_2201.c:149)\n",
+                        "file": "main.c",
+                        "line": 58
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n    by 0x400965: GenerisiTablice (bs_test_2201.c:61)\n    by 0x400FD0: main (bs_test_2201.c:149)\n",
+                        "file": "main.c",
+                        "line": 59
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400FED: main (bs_test_2201.c:150)\n",
+                        "file": "TEST_CODE",
+                        "line": 8
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2201.c: In function ‘GenerisiTablice’:\nbs_test_2201.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2201.c",
+                        "line": "58",
+                        "col": "12",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_1101/bs_test_2201.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                        "code": "char* p = prethodna;"
+                    }
+                ]
+            }
+        },
+        "2202": {
+            "status": 6,
+            "run_result": {
+                "output": "-1 \n-1  16\n-1 \nt\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==29659== Memcheck, a memory error detector\n==29659== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==29659== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==29659== Command: bs_test_2202\n==29659== Parent PID: 29658\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29659==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29659==    by 0x400F8D: main (bs_test_2202.c:146)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29659==    by 0x400956: GenerisiTablice (bs_test_2202.c:60)\n==29659==    by 0x400FA0: main (bs_test_2202.c:147)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29659==    by 0x400965: GenerisiTablice (bs_test_2202.c:61)\n==29659==    by 0x400FA0: main (bs_test_2202.c:147)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29659==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29659==    by 0x400FBD: main (bs_test_2202.c:148)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B48: __GI_strlen (vg_replace_strmem.c:455)\n==29659==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29659==    by 0x400FBD: main (bs_test_2202.c:148)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29659==    by 0x400956: GenerisiTablice (bs_test_2202.c:60)\n==29659==    by 0x400FD0: main (bs_test_2202.c:149)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08BA8: __strlen_sse42 (vg_replace_strmem.c:458)\n==29659==    by 0x400956: GenerisiTablice (bs_test_2202.c:60)\n==29659==    by 0x400FD0: main (bs_test_2202.c:149)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29659==    by 0x400965: GenerisiTablice (bs_test_2202.c:61)\n==29659==    by 0x400FD0: main (bs_test_2202.c:149)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08BA8: __strlen_sse42 (vg_replace_strmem.c:458)\n==29659==    by 0x400965: GenerisiTablice (bs_test_2202.c:61)\n==29659==    by 0x400FD0: main (bs_test_2202.c:149)\n==29659== \n==29659== Conditional jump or move depends on uninitialised value(s)\n==29659==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29659==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29659==    by 0x400FED: main (bs_test_2202.c:150)\n==29659== \n==29659== Syscall param write(buf) points to uninitialised byte(s)\n==29659==    at 0x36312DB850: __write_nocancel (in /lib64/libc-2.12.so)\n==29659==    by 0x36312719B2: _IO_file_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29659==    by 0x3631272F64: _IO_do_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29659==    by 0x3631273CD2: _IO_flush_all_lockp (in /lib64/libc-2.12.so)\n==29659==    by 0x3631274B7E: _IO_cleanup (in /lib64/libc-2.12.so)\n==29659==    by 0x36312359A1: exit (in /lib64/libc-2.12.so)\n==29659==    by 0x363121ED26: (below main) (in /lib64/libc-2.12.so)\n==29659==  Address 0x4c1101e is in a rw- anonymous segment\n==29659== \n==29659== \n==29659== HEAP SUMMARY:\n==29659==     in use at exit: 0 bytes in 0 blocks\n==29659==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==29659== \n==29659== All heap blocks were freed -- no leaks are possible\n==29659== \n==29659== For counts of detected and suppressed errors, rerun with: -v\n==29659== Use --track-origins=yes to see where uninitialised values come from\n==29659== ERROR SUMMARY: 23 errors from 11 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400F8D: main (bs_test_2202.c:146)\n",
+                        "file": "TEST_CODE",
+                        "line": 4
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n    by 0x400956: GenerisiTablice (bs_test_2202.c:60)\n    by 0x400FA0: main (bs_test_2202.c:147)\n",
+                        "file": "main.c",
+                        "line": 58
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n    by 0x400965: GenerisiTablice (bs_test_2202.c:61)\n    by 0x400FA0: main (bs_test_2202.c:147)\n",
+                        "file": "main.c",
+                        "line": 59
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400FBD: main (bs_test_2202.c:148)\n",
+                        "file": "TEST_CODE",
+                        "line": 6
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400FED: main (bs_test_2202.c:150)\n",
+                        "file": "TEST_CODE",
+                        "line": 8
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2202.c: In function ‘GenerisiTablice’:\nbs_test_2202.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2202.c",
+                        "line": "58",
+                        "col": "12",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_1101/bs_test_2202.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                        "code": "char* p = prethodna;"
+                    }
+                ]
+            }
+        },
+        "2203": {
+            "status": 6,
+            "run_result": {
+                "output": "-1 \n-1  16\n-1 ؼ\u0007\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==29677== Memcheck, a memory error detector\n==29677== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==29677== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==29677== Command: bs_test_2203\n==29677== Parent PID: 29676\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29677==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29677==    by 0x400F8D: main (bs_test_2203.c:146)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29677==    by 0x400956: GenerisiTablice (bs_test_2203.c:60)\n==29677==    by 0x400FA0: main (bs_test_2203.c:147)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29677==    by 0x400965: GenerisiTablice (bs_test_2203.c:61)\n==29677==    by 0x400FA0: main (bs_test_2203.c:147)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29677==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29677==    by 0x400FBD: main (bs_test_2203.c:148)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B48: __GI_strlen (vg_replace_strmem.c:455)\n==29677==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29677==    by 0x400FBD: main (bs_test_2203.c:148)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29677==    by 0x400956: GenerisiTablice (bs_test_2203.c:60)\n==29677==    by 0x400FD0: main (bs_test_2203.c:149)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08BA8: __strlen_sse42 (vg_replace_strmem.c:458)\n==29677==    by 0x400956: GenerisiTablice (bs_test_2203.c:60)\n==29677==    by 0x400FD0: main (bs_test_2203.c:149)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n==29677==    by 0x400965: GenerisiTablice (bs_test_2203.c:61)\n==29677==    by 0x400FD0: main (bs_test_2203.c:149)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08BA8: __strlen_sse42 (vg_replace_strmem.c:458)\n==29677==    by 0x400965: GenerisiTablice (bs_test_2203.c:61)\n==29677==    by 0x400FD0: main (bs_test_2203.c:149)\n==29677== \n==29677== Conditional jump or move depends on uninitialised value(s)\n==29677==    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n==29677==    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n==29677==    by 0x400FED: main (bs_test_2203.c:150)\n==29677== \n==29677== Syscall param write(buf) points to uninitialised byte(s)\n==29677==    at 0x36312DB850: __write_nocancel (in /lib64/libc-2.12.so)\n==29677==    by 0x36312719B2: _IO_file_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29677==    by 0x3631272F64: _IO_do_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29677==    by 0x3631273CD2: _IO_flush_all_lockp (in /lib64/libc-2.12.so)\n==29677==    by 0x3631274B7E: _IO_cleanup (in /lib64/libc-2.12.so)\n==29677==    by 0x36312359A1: exit (in /lib64/libc-2.12.so)\n==29677==    by 0x363121ED26: (below main) (in /lib64/libc-2.12.so)\n==29677==  Address 0x4c1101e is in a rw- anonymous segment\n==29677== \n==29677== \n==29677== HEAP SUMMARY:\n==29677==     in use at exit: 0 bytes in 0 blocks\n==29677==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==29677== \n==29677== All heap blocks were freed -- no leaks are possible\n==29677== \n==29677== For counts of detected and suppressed errors, rerun with: -v\n==29677== Use --track-origins=yes to see where uninitialised values come from\n==29677== ERROR SUMMARY: 23 errors from 11 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400F8D: main (bs_test_2203.c:146)\n",
+                        "file": "TEST_CODE",
+                        "line": 4
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n    by 0x400956: GenerisiTablice (bs_test_2203.c:60)\n    by 0x400FA0: main (bs_test_2203.c:147)\n",
+                        "file": "main.c",
+                        "line": 58
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B99: __strlen_sse42 (vg_replace_strmem.c:458)\n    by 0x400965: GenerisiTablice (bs_test_2203.c:61)\n    by 0x400FA0: main (bs_test_2203.c:147)\n",
+                        "file": "main.c",
+                        "line": 59
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400FBD: main (bs_test_2203.c:148)\n",
+                        "file": "TEST_CODE",
+                        "line": 6
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4A08B39: __GI_strlen (vg_replace_strmem.c:455)\n    by 0x36312688BA: puts (in /lib64/libc-2.12.so)\n    by 0x400FED: main (bs_test_2203.c:150)\n",
+                        "file": "TEST_CODE",
+                        "line": 8
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2203.c: In function ‘GenerisiTablice’:\nbs_test_2203.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2203.c",
+                        "line": "58",
+                        "col": "12",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_1101/bs_test_2203.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                        "code": "char* p = prethodna;"
+                    }
+                ]
+            }
+        },
+        "2204": {
+            "status": 6,
+            "run_result": {
+                "output": "Pogresan format 0 (T99-A-000)\n 16",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==29695== Memcheck, a memory error detector\n==29695== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==29695== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==29695== Command: bs_test_2204\n==29695== Parent PID: 29694\n==29695== \n==29695== Conditional jump or move depends on uninitialised value(s)\n==29695==    at 0x3631247D0C: vfprintf (in /lib64/libc-2.12.so)\n==29695==    by 0x363124F069: printf (in /lib64/libc-2.12.so)\n==29695==    by 0x40101E: main (bs_test_2204.c:153)\n==29695== \n==29695== Syscall param write(buf) points to uninitialised byte(s)\n==29695==    at 0x36312DB850: __write_nocancel (in /lib64/libc-2.12.so)\n==29695==    by 0x36312719B2: _IO_file_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29695==    by 0x3631272F64: _IO_do_write@@GLIBC_2.2.5 (in /lib64/libc-2.12.so)\n==29695==    by 0x3631273CD2: _IO_flush_all_lockp (in /lib64/libc-2.12.so)\n==29695==    by 0x3631274B7E: _IO_cleanup (in /lib64/libc-2.12.so)\n==29695==    by 0x36312359A1: exit (in /lib64/libc-2.12.so)\n==29695==    by 0x363121ED26: (below main) (in /lib64/libc-2.12.so)\n==29695==  Address 0x4c11035 is in a rw- anonymous segment\n==29695== \n==29695== \n==29695== HEAP SUMMARY:\n==29695==     in use at exit: 0 bytes in 0 blocks\n==29695==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==29695== \n==29695== All heap blocks were freed -- no leaks are possible\n==29695== \n==29695== For counts of detected and suppressed errors, rerun with: -v\n==29695== Use --track-origins=yes to see where uninitialised values come from\n==29695== ERROR SUMMARY: 7 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x3631247D0C: vfprintf (in /lib64/libc-2.12.so)\n    by 0x363124F069: printf (in /lib64/libc-2.12.so)\n    by 0x40101E: main (bs_test_2204.c:153)\n",
+                        "file": "TEST_CODE",
+                        "line": 11
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2204.c: In function ‘GenerisiTablice’:\nbs_test_2204.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2204.c",
+                        "line": "58",
+                        "col": "12",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_1101/bs_test_2204.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                        "code": "char* p = prethodna;"
+                    }
+                ]
+            }
+        },
+        "2205": {
+            "status": 1,
+            "run_result": {
+                "output": "-1 -1 -1 -1 -1 -1 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2205.c: In function ‘GenerisiTablice’:\nbs_test_2205.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n  char* p = prethodna;\n            ^~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2205.c",
+                        "line": "58",
+                        "col": "12",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_1101/bs_test_2205.c:58:12: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]  char* p = prethodna;            ^~~~~~~~~",
+                        "code": "char* p = prethodna;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1566829656
+}

@@ -1,0 +1,319 @@
+{
+    "id": 7040,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), Zada\u0107a 4, zadatak 4",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1948,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT1: primjer iz zadatka (trivijalni test) *\/\nchar s[] = \"(0,-3.1),(-15.09,4),(2.,2),(-1.1,217)\";\nchar* rez = obuhvat(s, -3, -3, 3, 3);\n\n\/* Funkcija modificira primljeni string i vraca pokazivac na njegov pocetak *\/\nprintf(\"%s %s\", rez, s);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "(2.,2) (2.,2)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1949,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT2: Razni primjeri pogresno formatiranih stringova *\/\nchar a[] = \"(0,-3), (-15,4),(2,2),(-1,217)\"; \/* razmak *\/\nchar b[] = \"(0,-3),(-15,4),(2,2),(-1,217\"; \/* nije zatvorena zagrada *\/\nchar c[] = \"(0,-3),(-15,4),(2,2),(-1,\"; \/* fali y koordinata *\/\nchar d[] = \"(0,-3),(-15,4),(2,2),(-1\"; \/* fali zarez i y koordinata *\/\n\nchar* rez = obuhvat(a, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(b, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(c, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(d, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 0 0 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1950,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT3: Provjera rada sa negativnim brojevima *\/\nchar s[] = \"(100,-100),(50,50),(70,20),(-1,-1)\";\nchar pom[100];\n\nstrcpy(pom,s);\nobuhvat(pom, -1, -100, 100, 50);\nprintf(\"%s\\n\", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 1, -100, 100, 50);\nprintf(\"%s\\n\", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 0, 0, 100, 100);\nprintf(\"%s\\n\", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, -50, -50, 50, 50);\nprintf(\"%s\\n\", pom);\n",
+            "global_above_main": "",
+            "global_top": "#include <string.h>",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "(100,-100),(50,50),(70,20),(-1,-1)\\n(100,-100),(50,50),(70,20)\\n(50,50),(70,20)\\n(50,50),(-1,-1)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1790,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT4: prazan string *\/\nchar s[] = \"\";\nobuhvat(s, -3, -3, 3, 3);\nprintf(\"'%s'\", s);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "''"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1791,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT5: U zadatku pise da su parametri funkcije (redom): x1, y1, x2, y2 *\/\nchar s[] = \"(1,7),(2,5),(1,6),(3,3)\";\nchar pom[100];\n\nstrcpy(pom,s);\nobuhvat(pom, 1, 3, 3, 7);\nprintf(\"%s \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 3, 3, 1, 7);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 7, 3, 3, 1);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 1, 5, 2, 6);\nprintf(\"%s \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 1, 6, 2, 5);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 2, 5, 1, 6);\nprintf(\"'%s' \", pom);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "(1,7),(2,5),(1,6),(3,3) '' '' (2,5),(1,6) '' '' "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1792,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT6: Tacke na rubu pripadaju pravougaoniku (cak i ako je pravougaonik linija) *\/\nchar s[] = \"(15,30)\";\nchar pom[100];\n\nstrcpy(pom,s);\nobuhvat(pom, 15, 30, 16, 31);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 15, 15, 30, 30);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 16, 15, 32, 31);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 15, 30, 15, 30);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 14, 29, 16, 31);\nprintf(\"'%s'\", pom);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'(15,30)' '(15,30)' '' '(15,30)' '(15,30)'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1793,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT7: Varijanta AT6 sa negativnim brojevima *\/\nchar s[] = \"(-15,-30)\";\nchar pom[100];\n\nstrcpy(pom,s);\nobuhvat(pom, -15, -30, -14, -29);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, -30, -30, -15, -15);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, -32, -31, -16, -15);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, -15, -30, -15, -30);\nprintf(\"'%s' \", pom);\n\nstrcpy(pom,s);\nobuhvat(pom, 14, 29, 16, 31);\nprintf(\"'%s' \", pom);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'(-15,-30)' '(-15,-30)' '' '(-15,-30)' ''"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1794,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT8: Jos primjera pogresno formatiranih stringova *\/\n\n\/* Provjera ispravnosti stringa je znatan dio zadatka pa mora \n   biti bodovan sa vise testova.\n   Sve vrste hardcodiranja ce biti kaznjene sa 0 bodova! *\/\nchar e[] = \"(0,-3!0),(-15,4),(2,2),(-1,217)\"; \/* invalidan karakter *\/\nchar f[] = \"(0,-3),(-15,4),(2,2,2),(-1,217)\"; \/* tri koordinate *\/\n\n\/* cifra nije obavezna poslije tacke, ali prije tacke jeste! *\/\nchar g1[] = \"(.0,-3),(-15,1),(2,1.0),(-1,217)\"; \nchar g2[] = \"(0,-3),(-15,.1),(2,1.0),(-1,217)\"; \nchar g3[] = \"(.,-3),(-15,1.1),(2,1.0),(-1,217)\"; \n\nchar* rez = obuhvat(e, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(f, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(g1, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(g2, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(g3, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 0 0 0 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1795,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT9: Jos primjera pogresno formatiranih stringova *\/\n\n\/* Provjera ispravnosti stringa je znatan dio zadatka pa mora \n   biti bodovan sa vise testova.\n   Sve vrste hardcodiranja ce biti kaznjene sa 0 bodova! *\/\n\n\/* nedostajuci elementi u sredini stringa (testiran je bio samo kraj) *\/\nchar h[] = \"(0,-3),(-15,),(2,2),(-1,217)\";\nchar i[] = \"(0,-3),(-15,4),(,2),(-1,217)\";\nchar j[] = \"(0,-3),(-15,4),(222),(-1,217)\";\nchar k[] = \"(0,-3),(-15,4,(2,2),(-1,217)\";\nchar l[] = \"0,-3),(-15,4),(2,2),(-1,217)\";\nchar m[] = \"(0,-3),-15,4),(2,2),(-1,217)\";\n\nchar* rez = obuhvat(h, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(i, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(j, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(k, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(l, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(m, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 0 0 0 0 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1796,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT10: Jos primjera pogresno formatiranih stringova *\/\n\n\/* Provjera ispravnosti stringa je znatan dio zadatka pa mora \n   biti bodovan sa vise testova.\n   Sve vrste hardcodiranja ce biti kaznjene sa 0 bodova! *\/\n\nchar n[] = \"(0,-3),(-15,4),(2,2(,(-1,217)\"; \/* otvorena zagrada umjesto zatvorene *\/\nchar o[] = \"(0,-3),)-15,4),(2,2),(-1,217)\"; \/* zatvorena zagrada umjesto otvorene *\/\nchar p[] = \"(0,-3),-(15,4),(2,2),(-1,217)\"; \/* minus ispred zagrade *\/\nchar q[] = \"(0,-3),(-15,4),1(2,2),(-1,217)\"; \/* cifra ispred zagrade *\/\n\nchar* rez = obuhvat(n, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(o, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(p, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(q, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 0 0 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1797,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT11: Jos primjera pogresno formatiranih stringova *\/\n\n\/* Provjera ispravnosti stringa je znatan dio zadatka pa mora \n   biti bodovan sa vise testova.\n   Sve vrste hardcodiranja ce biti kaznjene sa 0 bodova! *\/\n\nchar r[] = \"(0,-3)),(-15,4),(2,2),(-1,217)\"; \/* dvostruka zagrada *\/\nchar s[] = \"((0,-3),(-15,4),(2,2),(-1,217)\"; \/* dvostruka zagrada *\/\nchar t[] = \"(0,-3),,(-15,4),(2,2),(-1,217)\"; \/* dvostruki zarez *\/\nchar u[] = \",(0,-3),(-15,4),(2,2),(-1,217)\"; \/* zarez na pocetku *\/\nchar v[] = \"(0,-3),(-15,4),(2,2),(-1,217),\"; \/* zarez na kraju *\/\n\nchar* rez = obuhvat(r, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(s, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(t, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(u, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\nrez = obuhvat(v, -3, -3, 3, 3);\nprintf(\"%d \", (int)rez);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 0 0 0 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1798,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT12: realni brojevi *\/\nchar s[] = \"(1.1,5.5),(1.2,5.5),(1.3,5.5),(1.4,5.5),(1.5,5.5)\";\nchar* rez = obuhvat(s, 1.2, 5.499, 1.4, 5.501);\nprintf(\"%s\", rez);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "(1.2,5.5),(1.3,5.5),(1.4,5.5)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

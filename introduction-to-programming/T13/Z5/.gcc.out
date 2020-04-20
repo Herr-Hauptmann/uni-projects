@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T13/Z5/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T13/Z5/main.c:49:27: warning: variable ‘vel’ set but not used [-Wunused-but-set-variable]
+     int i=0, j,meni,k,max,vel;
+                           ^~~

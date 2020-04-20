@@ -1,0 +1,248 @@
+{
+    "id": 7060,
+    "name": "Osnove ra\u010dunarstva (2017\/2018), ZSR6, zadatak 14",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nNul-matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n1 0 0 0 \n0 1 0 0 \n0 0 1 0 \n0 0 0 1 "
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nJedinicna matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 -1 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 "
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nDijagonalna matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n0 0 0 0 0 0 0 0 0 1000 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0"
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nGornja trougaona matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n111 0 0 0 0 0 0 0 0 0"
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nDonja trougaona matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 42 0 0 0 0 0 0 \n0 0 42 0 0 0 0 0 0 0 \n0 42 0 0 0 0 0 0 0 0 \n42 0 0 0 0 0 0 0 0 0"
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nDonja trougaona matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 42 0 0 \n0 0 0 0 0 0 42 0 0 0 \n0 0 0 0 0 42 0 0 0 0 \n0 0 0 0 42 0 0 0 0 0 \n0 0 0 42 0 0 0 0 0 0 \n0 0 42 0 0 0 0 0 0 0 \n0 42 0 0 0 0 0 0 0 0 \n42 0 0 0 0 0 0 0 0 0"
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nSporedna dijagonalna matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 222 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 \n111 0 0 0 0 0 0 0 0 0"
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nNista od navedenog"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 9,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5\n2 0 0 0 0\n4 1 0 0 0\n5 3 1 0 0\n5 0 0 8 0\n0 0 -20 0 0"
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nDonja trougaona matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 11,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n1 2 3 4 5 6 7 8 9 10 \n0 3 4 5 6 7 8 9 10 11 \n0 0 5 6 7 8 9 10 11 12 \n0 0 0 7 8 9 10 11 12 13 \n0 0 0 0 9 10 11 12 13 14 \n0 0 0 0 0 11 12 13 14 15 \n0 0 0 0 0 0 13 14 15 16 \n0 0 0 0 0 0 0 15 16 17 \n0 0 0 0 0 0 0 0 17 18 \n0 0 0 0 0 0 0 0 0 19  "
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nGornja trougaona matrica"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 12,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n1 2 3 4 5 6 7 8 9 10 \n0 3 4 5 6 7 8 9 10 11 \n0 0 5 6 7 8 9 10 11 12 \n0 0 0 7 8 9 10 11 12 13 \n0 0 0 0 9 10 11 12 13 14 \n0 0 0 0 0 11 12 13 14 15 \n0 0 0 0 0 0 13 14 15 16 \n0 0 0 0 0 0 0 15 16 17 \n-1 0 0 0 0 0 0 0 17 18 \n0 0 0 0 0 0 0 0 0 19 "
+            },
+            "expected": [
+                "Unesite broj N: Unesite elemente matrice: \\nNista od navedenog"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

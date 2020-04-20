@@ -1,0 +1,10 @@
+/rhome/m/mucanbarli1/workspace/OR/Ispit5/Z4/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/Ispit5/Z4/main.c:67:6: warning: unused variable ‘zapisano’ [-Wunused-variable]
+  int zapisano = fwrite(StudentBINARY, sizeof(struct StudentBINARY), vel, izlaz);
+      ^~~~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Ispit5/Z4/main.c:51:6: warning: unused variable ‘ukupno’ [-Wunused-variable]
+  int ukupno=0;
+      ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Ispit5/Z4/main.c:67:17: warning: ‘izlaz’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  int zapisano = fwrite(StudentBINARY, sizeof(struct StudentBINARY), vel, izlaz);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

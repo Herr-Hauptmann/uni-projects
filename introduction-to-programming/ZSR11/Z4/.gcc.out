@@ -1,0 +1,7 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z4/main.c: In function ‘OduzmiTacke’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z4/main.c:16:18: warning: variable ‘c’ set but not used [-Wunused-but-set-variable]
+     struct Tacka c;
+                  ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR11/Z4/main.c:19:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^

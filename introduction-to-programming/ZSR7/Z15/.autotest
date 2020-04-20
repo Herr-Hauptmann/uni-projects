@@ -1,0 +1,269 @@
+{
+    "id": 7013,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), Zada\u0107a 3, zadatak 1",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 5720,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0 15\n5 -5\n10 10\n-5 -2\n2 10"
+            },
+            "expected": [
+                "Unesite brojeve A i B: A nije prirodan broj.\\nUnesite brojeve A i B: A nije manje od B.\\nUnesite brojeve A i B: A nije manje od B.\\nUnesite brojeve A i B: A nije prirodan broj.\\nUnesite brojeve A i B: Suma prostih brojeva izmedju 2 i 10 je 15."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5721,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", daj_prost());\nprintf (\"%d \", daj_prost());\nprintf (\"%d \", daj_prost());",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "2 3 5 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5722,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "{\n   \/\/AT3: Provjera da li daj_prost zaista vraca ispravne proste brojeve na intervalu 1-100\n\n   \/\/Ovisno o povratnoj vrijednosti funkcije ProvjeraValjanosti, ako se desila greska ispisemo prigodnu poruku, a ako nije cestitamo :)\n   int greska=ProvjeraValjanosti();\n   if (greska) printf (\"Nisam ispravno nasao sve proste brojeve izmedju A i B ili ne koristim funkciju daj_prost.\");\n   else printf (\"Svaka cast!\");\n}",
+            "global_above_main": "#include <stdio.h>\n\n\/\/ funkcija koja provjerava ispravnost prvih 25 prostih brojeva\nint ProvjeraValjanosti()\n{\n   int i, greska=0;\n\n   \/\/ kreirat cemo niz sa svim prostim brojevima od 1-100\n\n   int niz[25]={2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};\n\n   \/\/ buduci da ima tacno 25 broj, toliko puta cemo i pozvati funkciju daj_prost\n\n   for (i = 0; i < 25; i++) {\n      int x = daj_prost();\n      if (x != niz[i]) {\n           printf(\"Neslaganje %d != %d\\n\", x, niz[i]);\n           greska = 1; \/\/ako dodje do neslaganja, funkcija nije vratila ispravan broj\n      }\n   }\n   return greska;\n}",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Svaka cast!"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5723,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();\n\/\/AT4: Kada pocetak nije 2...",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1 1\n10 20"
+            },
+            "expected": [
+                "Unesite brojeve A i B: A nije manje od B.\\nUnesite brojeve A i B: Suma prostih brojeva izmedju 10 i 20 je 60."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5724,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();\n\/\/AT5: I pocetak i kraj prosti brojevi, ne smije se preklopiti...",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "701 997"
+            },
+            "expected": [
+                "Unesite brojeve A i B: Suma prostih brojeva izmedju 701 i 997 je 34817."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5725,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1000 1005"
+            },
+            "expected": [
+                "Unesite brojeve A i B: Suma prostih brojeva izmedju 1000 i 1005 je 0."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1595,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "2000 2100"
+            },
+            "expected": [
+                "Unesite brojeve A i B: Suma prostih brojeva izmedju 2000 i 2100 je 28750."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1730,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1 2"
+            },
+            "expected": [
+                "Unesite brojeve A i B: Suma prostih brojeva izmedju 1 i 2 je 0."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1731,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "120000 120000\n120000 121000"
+            },
+            "expected": [
+                "Unesite brojeve A i B: A nije manje od B.\\nUnesite brojeve A i B: Suma prostih brojeva izmedju 120000 i 121000 je 10606394."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1732,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "int i;\nfor (i = 0; i < 10000; i++)\n      daj_prost();\nprintf (\"%d\", daj_prost());",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "104743"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

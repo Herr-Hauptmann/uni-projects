@@ -1,0 +1,122 @@
+{
+    "id": 7224,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 10, zadatak 7",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 2191,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[100] = \"  Zeko   pije   CAJ.  Pije caj iz ocaja mali zeko!\";\nZamijeniRijec (tekst, \"caj\", \"mlijeko\", 0); \/\/cs = 1\nprintf (\"'%s'\", tekst);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'  Zeko   pije   mlijeko.  Pije mlijeko iz ocaja mali zeko!'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2192,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[100] = \"  Zeko   pije   CAJ  Pije caja iz ocaj mali zeko!\";\nZamijeniRijec (tekst, \"caj\", \"mlijeko\", 0); \/\/cs = 0\nprintf (\"'%s'\", tekst);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'  Zeko   pije   mlijeko  Pije caja iz ocaj mali zeko!'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2193,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[100] = \"  Zeko   pije   CAJ.  Pije caj CAJ mali zeko!\";\nZamijeniRijec (tekst, \"caj\", \"mlijeko\", 1); \/\/cs = 1\nprintf (\"'%s'\", tekst);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'  Zeko   pije   CAJ.  Pije mlijeko CAJ mali zeko!'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2194,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/ Testiranje rijeci na zadnjem mjestu\nchar tekst[100] = \"  Cudna Recenica Mnogo Je Ova\";\nZamijeniRijec (tekst, \"Ova\", \"Ona\", 0); \/\/cs = 0\nprintf (\"'%s'\", tekst); ",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'  Cudna Recenica Mnogo Je Ona'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2195,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/ AT5: Rijec na prvom mjestu, velika i mala slova\nchar tekst[100]=\"Or OR ororOroR\";\nZamijeniRijec(tekst,\"OR\",\"tp\",1);\nprintf(\"'%s'\\n\",tekst);\nZamijeniRijec(tekst,\"OR\",\"tp\",0);\nprintf(\"'%s'\\n\",tekst);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'Or tp ororOroR'\\n'tp tp ororOroR'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

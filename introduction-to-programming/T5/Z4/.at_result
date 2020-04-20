@@ -1,0 +1,116 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:5:58: warning: unused variable ‘broj’ [-Wunused-variable]\n  int i=0, niz[1000],velicina=0,broj5=0,broj7=0,broj11=0, broj;\n                                                          ^~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "5",
+                "col": "58",
+                "message": "unused variable 'broj'",
+                "output": "/tmp/buildservice/bs_7000/main.c:5:58: warning: unused variable ‘broj’ [-Wunused-variable]  int i=0, niz[1000],velicina=0,broj5=0,broj7=0,broj11=0, broj;                                                          ^~~~",
+                "code": "int i=0, niz[1000],velicina=0,broj5=0,broj7=0,broj11=0, broj;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1418": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: \nDjeljivih sa 5: 1 \nDjeljivih sa 7: 0 \nDjeljivih sa 11: 0 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1419": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: \nDjeljivih sa 5: 0 \nDjeljivih sa 7: 0 \nDjeljivih sa 11: 0 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1420": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: \nDjeljivih sa 5: 3 \nDjeljivih sa 7: 3 \nDjeljivih sa 11: 3 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1421": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: \nDjeljivih sa 5: 3 \nDjeljivih sa 7: 1 \nDjeljivih sa 11: 0 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1425": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: \nDjeljivih sa 5: 0 \nDjeljivih sa 7: 0 \nDjeljivih sa 11: 0 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5083": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: \nDjeljivih sa 5: 4 \nDjeljivih sa 7: 2 \nDjeljivih sa 11: 2 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1548268890
+}

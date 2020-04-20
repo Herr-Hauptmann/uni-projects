@@ -1,0 +1,6 @@
+/rhome/m/mucanbarli1/workspace/OR/T13/Z2/main.c:59:5: error: expected identifier or ‘(’ before ‘return’
+     return 0;
+     ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/T13/Z2/main.c:60:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^

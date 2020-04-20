@@ -1,0 +1,16 @@
+/rhome/m/mucanbarli1/workspace/OR/P1/Z13/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/P1/Z13/main.c:33:15: error: assignment to expression with array type
+  grad[0].naziv="A";
+               ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z13/main.c:35:16: error: assignment to expression with array type
+   grad[1].naziv="A";
+                ^
+/rhome/m/mucanbarli1/workspace/OR/P1/Z13/main.c:37:2: warning: statement with no effect [-Wunused-value]
+  funkcija
+  ^~~~~~~~
+/rhome/m/mucanbarli1/workspace/OR/P1/Z13/main.c:38:2: error: expected ‘;’ before ‘nesto’
+  nesto= funkcija(grad,2);
+  ^~~~~
+/rhome/m/mucanbarli1/workspace/OR/P1/Z13/main.c:32:14: warning: variable ‘grad’ set but not used [-Wunused-but-set-variable]
+  struct Grad grad[1];
+              ^~~~

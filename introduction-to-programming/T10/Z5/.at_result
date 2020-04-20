@@ -1,0 +1,257 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:44:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "44",
+                "col": "24",
+                "message": "initializer-string for array of chars is too long",
+                "output": "/tmp/buildservice/bs_3758/main.c:44:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1702": {
+            "status": 1,
+            "run_result": {
+                "output": "int main() {\n\tprintf(\"Hello world\"); \n\treturn 0;\n}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1702.c: In function ‘_main’:\nbs_test_1702.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1702.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1702.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1703": {
+            "status": 1,
+            "run_result": {
+                "output": "abcdefgh/*ovaj komentar nije zatvoren!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1703.c: In function ‘_main’:\nbs_test_1703.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1703.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1703.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1704": {
+            "status": 1,
+            "run_result": {
+                "output": "testtri",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1704.c: In function ‘_main’:\nbs_test_1704.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1704.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1704.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1705": {
+            "status": 6,
+            "run_result": {
+                "output": "aa**/*bb",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1705.c: In function ‘_main’:\nbs_test_1705.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1705.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1705.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1706": {
+            "status": 1,
+            "run_result": {
+                "output": "''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1706.c: In function ‘_main’:\nbs_test_1706.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1706.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1706.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1707": {
+            "status": 1,
+            "run_result": {
+                "output": "   abc \n   def",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1707.c: In function ‘_main’:\nbs_test_1707.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1707.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1707.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1708": {
+            "status": 1,
+            "run_result": {
+                "output": "''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1708.c: In function ‘_main’:\nbs_test_1708.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1708.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1708.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1709": {
+            "status": 1,
+            "run_result": {
+                "output": "''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1709.c: In function ‘_main’:\nbs_test_1709.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1709.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1709.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        },
+        "1710": {
+            "status": 6,
+            "run_result": {
+                "output": "abc/* U C komentaru \nghi*/j\njkl",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1710.c: In function ‘_main’:\nbs_test_1710.c:46:24: warning: initializer-string for array of chars is too long\n     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1710.c",
+                        "line": "46",
+                        "col": "24",
+                        "message": "initializer-string for array of chars is too long",
+                        "output": "/tmp/buildservice/bs_3758/bs_test_1710.c:46:24: warning: initializer-string for array of chars is too long     char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                        "code": "char recenica[100]=\"abc/* U C komentaru // je C++ komentar*/def//U C++ komentaru /* je C komentar\\nghi*/j//Sada necemo zatvoriti /* C komentar\\njkl\";"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1548718069
+}

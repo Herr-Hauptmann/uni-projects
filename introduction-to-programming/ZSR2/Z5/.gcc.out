@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR2/Z5/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR2/Z5/main.c:12:12: warning: too many arguments for format [-Wformat-extra-args]
+     printf("%c %d %c\n",x,c,c,c,c,c);
+            ^~~~~~~~~~~~

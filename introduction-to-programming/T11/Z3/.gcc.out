@@ -1,0 +1,18 @@
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c: In function ‘unos_pravougaonika’:
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c:39:22: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+  struct Pravougaonik p;
+                      ^
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c:87:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if (d==k.poluprecnik)
+               ^~
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c:89:5: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c:92:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+         printf("\nObim kruznice: %.3f\n",obim_kruznice(k));
+         ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c: In function ‘unos_pravougaonika’:
+/rhome/m/mucanbarli1/workspace/OR/T11/Z3/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^

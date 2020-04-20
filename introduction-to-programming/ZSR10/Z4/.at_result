@@ -1,0 +1,184 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘strstrInsensitive’:\nmain.c:8:74: warning: suggest parentheses around comparison in operand of ‘&’ [-Wparentheses]\n    while(*p != '\\0' && (*p == *q || *p + 32 == *q || *p - 32 == *q) & *q != '\\0'){\n                                                                       ~~~^~~~~~~\nmain.c:11:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n    if(*q == '\\0') return str;\n                          ^~~\nmain.c: In function ‘IzbaciTekst’:\nmain.c:88:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n   while(*q++ = *p++);\n   ^~~~~\nmain.c:98:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n   while(*q++ = *p++);\n   ^~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "8",
+                "col": "74",
+                "message": "suggest parentheses around comparison in operand of '&'",
+                "output": "/tmp/buildservice/bs_394/main.c:8:74: warning: suggest parentheses around comparison in operand of ‘&’ [-Wparentheses]    while(*p != '\\0' && (*p == *q || *p + 32 == *q || *p - 32 == *q) & *q != '\\0'){                                                                       ~~~^~~~~~~",
+                "code": "while(*p != '\\0' && (*p == *q || *p + 32 == *q || *p - 32 == *q) & *q != '\\0'){"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "11",
+                "col": "26",
+                "message": "return discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_394/main.c:11:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]    if(*q == '\\0') return str;                          ^~~",
+                "code": "if(*q == '\\0') return str;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "88",
+                "col": "3",
+                "message": "suggest parentheses around assignment used as truth value",
+                "output": "/tmp/buildservice/bs_394/main.c:88:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]   while(*q++ = *p++);   ^~~~~",
+                "code": "while(*q++ = *p++);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "98",
+                "col": "3",
+                "message": "suggest parentheses around assignment used as truth value",
+                "output": "/tmp/buildservice/bs_394/main.c:98:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]   while(*q++ = *p++);   ^~~~~",
+                "code": "while(*q++ = *p++);"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1403": {
+            "status": 1,
+            "run_result": {
+                "output": "'def cde AbCDE'\n'def cde DE'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1403.c: In function ‘strstrInsensitive’:\nbs_test_1403.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n    if(*q == '\\0') return str;\n                          ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1403.c",
+                        "line": "13",
+                        "col": "26",
+                        "message": "return discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_394/bs_test_1403.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]    if(*q == '\\0') return str;                          ^~~",
+                        "code": "if(*q == '\\0') return str;"
+                    }
+                ]
+            }
+        },
+        "1404": {
+            "status": 6,
+            "run_result": {
+                "output": "'RI ri rI  KURS kUrS je najbolji smjer'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1404.c: In function ‘strstrInsensitive’:\nbs_test_1404.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n    if(*q == '\\0') return str;\n                          ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1404.c",
+                        "line": "13",
+                        "col": "26",
+                        "message": "return discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_394/bs_test_1404.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]    if(*q == '\\0') return str;                          ^~~",
+                        "code": "if(*q == '\\0') return str;"
+                    }
+                ]
+            }
+        },
+        "1405": {
+            "status": 1,
+            "run_result": {
+                "output": "'RI je najbolji smjer'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1405.c: In function ‘strstrInsensitive’:\nbs_test_1405.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n    if(*q == '\\0') return str;\n                          ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1405.c",
+                        "line": "13",
+                        "col": "26",
+                        "message": "return discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_394/bs_test_1405.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]    if(*q == '\\0') return str;                          ^~~",
+                        "code": "if(*q == '\\0') return str;"
+                    }
+                ]
+            }
+        },
+        "1406": {
+            "status": 1,
+            "run_result": {
+                "output": "'  '",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1406.c: In function ‘strstrInsensitive’:\nbs_test_1406.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n    if(*q == '\\0') return str;\n                          ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1406.c",
+                        "line": "13",
+                        "col": "26",
+                        "message": "return discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_394/bs_test_1406.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]    if(*q == '\\0') return str;                          ^~~",
+                        "code": "if(*q == '\\0') return str;"
+                    }
+                ]
+            }
+        },
+        "1407": {
+            "status": 1,
+            "run_result": {
+                "output": "''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1407.c: In function ‘strstrInsensitive’:\nbs_test_1407.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n    if(*q == '\\0') return str;\n                          ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1407.c",
+                        "line": "13",
+                        "col": "26",
+                        "message": "return discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_394/bs_test_1407.c:13:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]    if(*q == '\\0') return str;                          ^~~",
+                        "code": "if(*q == '\\0') return str;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1566838217
+}

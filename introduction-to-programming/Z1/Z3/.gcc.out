@@ -1,0 +1,22 @@
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c:10:47: warning: unused variable ‘izborG’ [-Wunused-variable]
+  int uncaZlata=0, uncaSrebra=0, barelNafte=0, izborG=1, izbor,izbor2, KuncaZlata=0, PuncaZlata=0,KuncaSrebra=0, PuncaSrebra=0,KbarelNafte=0,PbarelNafte=0;
+                                               ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c:8:22: warning: unused variable ‘rNafta’ [-Wunused-variable]
+  int rZlato, rSrebro,rNafta,G=1;
+                      ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c:8:14: warning: unused variable ‘rSrebro’ [-Wunused-variable]
+  int rZlato, rSrebro,rNafta,G=1;
+              ^~~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c:8:6: warning: unused variable ‘rZlato’ [-Wunused-variable]
+  int rZlato, rSrebro,rNafta,G=1;
+      ^~~~~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c:7:60: warning: unused variable ‘prN’ [-Wunused-variable]
+  double novac=100000,zlato=1200,srebro=15,nafta=70,prZ,prS,prN,razlika;
+                                                            ^~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c:7:56: warning: unused variable ‘prS’ [-Wunused-variable]
+  double novac=100000,zlato=1200,srebro=15,nafta=70,prZ,prS,prN,razlika;
+                                                        ^~~
+/rhome/m/mucanbarli1/workspace/OR/Z1/Z3/main.c:7:52: warning: unused variable ‘prZ’ [-Wunused-variable]
+  double novac=100000,zlato=1200,srebro=15,nafta=70,prZ,prS,prN,razlika;
+                                                    ^~~

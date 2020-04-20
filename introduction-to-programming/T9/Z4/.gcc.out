@@ -1,0 +1,11 @@
+/rhome/m/mucanbarli1/workspace/OR/T9/Z4/main.c: In function ‘max_slovo’:
+/rhome/m/mucanbarli1/workspace/OR/T9/Z4/main.c:8:45: error: ‘s’ undeclared (first use in this function)
+   if(*string>='A' && *string<='Z') brojaci[*s-A]++;
+                                             ^
+/rhome/m/mucanbarli1/workspace/OR/T9/Z4/main.c:8:45: note: each undeclared identifier is reported only once for each function it appears in
+/rhome/m/mucanbarli1/workspace/OR/T9/Z4/main.c:8:47: error: ‘A’ undeclared (first use in this function)
+   if(*string>='A' && *string<='Z') brojaci[*s-A]++;
+                                               ^
+/rhome/m/mucanbarli1/workspace/OR/T9/Z4/main.c:9:47: error: ‘a’ undeclared (first use in this function)
+   if(*string>='a' && *string<='z') brojaci[*s-a]++;
+                                               ^

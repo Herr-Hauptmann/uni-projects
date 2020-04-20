@@ -1,0 +1,134 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘zamijeni_min_max’:\nmain.c:60:11: warning: ‘temp’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n    *p_max = temp;\n    ~~~~~~~^~~~~~\nmain.c:65:18: warning: ‘p_min’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n    p_max++; p_min++;\n             ~~~~~^~\nmain.c:41:9: warning: ‘p_max’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n   char* p_max;\n         ^~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "60",
+                "col": "11",
+                "message": "'temp' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_5488/main.c:60:11: warning: ‘temp’ may be used uninitialized in this function [-Wmaybe-uninitialized]    *p_max = temp;    ~~~~~~~^~~~~~",
+                "code": "*p_max = temp;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "65",
+                "col": "18",
+                "message": "'p_min' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_5488/main.c:65:18: warning: ‘p_min’ may be used uninitialized in this function [-Wmaybe-uninitialized]    p_max++; p_min++;             ~~~~~^~",
+                "code": "p_max++; p_min++;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "41",
+                "col": "9",
+                "message": "'p_max' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_5488/main.c:41:9: warning: ‘p_max’ may be used uninitialized in this function [-Wmaybe-uninitialized]   char* p_max;         ^~~~~",
+                "code": "char* p_max;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1546267185
+}

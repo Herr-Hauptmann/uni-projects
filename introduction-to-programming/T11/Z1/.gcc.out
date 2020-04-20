@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T11/Z1/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/T11/Z1/main.c:49:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if (d==k.poluprecnik)
+               ^~

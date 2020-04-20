@@ -1,0 +1,269 @@
+{
+    "id": 282102,
+    "name": "Osnove ra\u010dunarstva (2014\/2015), Zada\u0107a 3, zadatak 2",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": "2091",
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(2358, 35));\nprintf (\"%d \", broj_sadrzan(2358, 223));\nprintf (\"%d \", broj_sadrzan(2358, 8));\nprintf (\"%d\", broj_sadrzan(2358, 2358));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": 10,
+                "vmem": 1000000,
+                "stdin": ""
+            },
+            "expected": [
+                "1 0 1 1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": "2092",
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": 10,
+                "vmem": 1000000,
+                "stdin": "2358\n35"
+            },
+            "expected": [
+                "Unesite broj a: Unesite broj b: ISTINA"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": "2138",
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(2358, 53));\nprintf (\"%d\", broj_sadrzan(2358, 38));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": 10,
+                "vmem": 1000000,
+                "stdin": ""
+            },
+            "expected": [
+                "0 0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": "2140",
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d\", broj_sadrzan(2358, 34));\n\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": 10,
+                "vmem": 1000000,
+                "stdin": ""
+            },
+            "expected": [
+                "0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": "2141",
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(2135135, 235));\nprintf (\"%d \", broj_sadrzan(1235135, 235));\nprintf (\"%d\", broj_sadrzan(235135, 235));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": 10,
+                "vmem": 1000000,
+                "stdin": ""
+            },
+            "expected": [
+                "0 1 1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": "2225",
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(13587642, 358764));\nprintf (\"%d \", broj_sadrzan(13587642, 358761));\nprintf (\"%d \", broj_sadrzan(13587642, 158764));\nprintf (\"%d \", broj_sadrzan(13587642, 3587642));\nprintf (\"%d \", broj_sadrzan(13587642, 1358764));\nprintf (\"%d \", broj_sadrzan(13587642, 13587642));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": 10,
+                "vmem": 1000000,
+                "stdin": ""
+            },
+            "expected": [
+                "1 0 0 1 1 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2334,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(1, 0));\nprintf (\"%d \", broj_sadrzan(0, 0));\nprintf (\"%d \", broj_sadrzan(0, 1));\nprintf (\"%d \", broj_sadrzan(1, 1));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 1 0 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2335,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(101, 0));\nprintf (\"%d \", broj_sadrzan(101, 10));\nprintf (\"%d \", broj_sadrzan(101, 1));\nprintf (\"%d \", broj_sadrzan(101, 11));\nprintf (\"%d \", broj_sadrzan(10110, 11));\nprintf (\"%d \", broj_sadrzan(10110, 110));\nprintf (\"%d \", broj_sadrzan(10110, 1010));\nprintf (\"%d \", broj_sadrzan(10110, 101));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 1 0 1 1 0 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2336,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(22522, 22));\nprintf (\"%d \", broj_sadrzan(22522, 25));\nprintf (\"%d \", broj_sadrzan(22522, 255));\nprintf (\"%d \", broj_sadrzan(22522, 252));\nprintf (\"%d \", broj_sadrzan(22522, 222));\nprintf (\"%d \", broj_sadrzan(22522, 522));\nprintf (\"%d \", broj_sadrzan(2252, 522));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 0 1 0 1 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2337,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "printf (\"%d \", broj_sadrzan(1234567890, 345));\nprintf (\"%d \", broj_sadrzan(1234567890, 1234567890));\nprintf (\"%d \", broj_sadrzan(1234567890, 1234567899));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

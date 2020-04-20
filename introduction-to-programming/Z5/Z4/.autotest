@@ -1,0 +1,229 @@
+{
+    "id": 234412,
+    "name": "Osnove ra\u010dunarstva (2018\/2019), Zada\u0107a 5, Zadatak 4",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 2388,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT1: Osnovni primjer funkcija ucitaj i zapisi *\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\n\/* Generisemo datoteku mjerenja *\/\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Sarajevo 1 1 2010 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Tuzla 2 1 2010 4 5 -2 5.5 9 8.1 9\", ulaz);\nfputc(10, ulaz);\nfputs(\"Mostar 31 12 2009 10 11 12\", ulaz);\nfputc(10, ulaz);\nfputs(\"Bijeljina 30 12 2009 1 2 3 4 5 6 7 8 9\", ulaz);\nfclose(ulaz);\n\n\/* Poziv funkcije ucitaj *\/\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d = {1, 1, 2010};\n\n\/* Poziv funkcije zapisi *\/\nzapisi(gradovi, br_gradova, d);\n\nFILE* izlaz = fopen(\"izlaz.txt\", \"r\");\nwhile (!feof(izlaz)) \n    printf(\"%c\", fgetc(izlaz));\nfclose(izlaz);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 4\\nSarajevo -3.10 5.88 6.00 0.12 5.00\\nTuzla 4.00 5.00 -2.00 5.50 9.00 8.10 9.00\\nMostar 12.00\\nBijeljina 4.00 5.00 6.00 7.00 8.00 9.00"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2402,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT2: Test ispravnosti funkcije prosjek *\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Sarajevo 1 1 2010 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Tuzla 2 1 2010 4 5 -2 5.5 9 8.1 9\", ulaz);\nfputc(10, ulaz);\nfputs(\"Mostar 31 12 2009 10 11 12\", ulaz);\nfputc(10, ulaz);\nfputs(\"Bijeljina 30 12 2009 1 2 3 4 5 6 7 8 9\", ulaz);\nfclose(ulaz);\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d1 = {1, 1, 2010};\nstruct Datum d2 = {5, 1, 2010};\n\nprintf(\"Prosjek za Sarajevo: %.2f\\n\", prosjek(gradovi, br_gradova, \"Sarajevo\", d1, d2));\nprintf(\"Prosjek za Mostar: %.2f\\n\", prosjek(gradovi, br_gradova, \"Mostar\", d1, d2));\nd1.dan++;\nprintf(\"Prosjek za Mostar: %.2f\\n\", prosjek(gradovi, br_gradova, \"Mostar\", d1, d2));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 4\\nProsjek za Sarajevo: 2.93\\nProsjek za Mostar: 12.00\\nProsjek za Mostar: 0.00"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2403,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT3: Maksimalan broj mjerenja (ucitaj, zapisi) *\/\nint i, j, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nchar grad[10] = \"AGrad\";\ndouble x=10;\nfor (i=0; i<11; i++) {\n    fputs(grad, ulaz);\n    fputs(\" 1 1 2010\", ulaz);\n    for (j=0; j<2000; j++) {\n          fprintf(ulaz, \" %.2f\", x);\n          x += 0.1;\n    }\n    fputc(10, ulaz);\n    grad[0]++;\n    x=10+i+1;\n}\nfclose(ulaz);\n\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d = {20, 9, 2012};\n\/* Nakon ovog datuma ostaje jos 6 mjerenja jer 1.1.2010 + 1000 dana = 26.9.2012 *\/\nzapisi(gradovi, br_gradova, d);\n\nFILE* izlaz = fopen(\"izlaz.txt\", \"r\");\nwhile (!feof(izlaz)) \n    printf(\"%c\", fgetc(izlaz));\nfclose(izlaz);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 10\\nAGrad 109.40 109.50 109.60 109.70 109.80 109.90\\nBGrad 110.40 110.50 110.60 110.70 110.80 110.90\\nCGrad 111.40 111.50 111.60 111.70 111.80 111.90\\nDGrad 112.40 112.50 112.60 112.70 112.80 112.90\\nEGrad 113.40 113.50 113.60 113.70 113.80 113.90\\nFGrad 114.40 114.50 114.60 114.70 114.80 114.90\\nGGrad 115.40 115.50 115.60 115.70 115.80 115.90\\nHGrad 116.40 116.50 116.60 116.70 116.80 116.90\\nIGrad 117.40 117.50 117.60 117.70 117.80 117.90\\nJGrad 118.40 118.50 118.60 118.70 118.80 118.90\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2404,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT4: Maksimalan broj mjerenja (ucitaj, prosjek) *\/\nint i, j, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nchar grad[10] = \"AGrad\";\ndouble x=10;\nfor (i=0; i<11; i++) {\n    fputs(grad, ulaz);\n    fputs(\" 1 1 2010\", ulaz);\n    for (j=0; j<2000; j++) {\n          fprintf(ulaz, \" %.2f\", x);\n          x += 0.1;\n    }\n    fputc(10, ulaz);\n    grad[0]++;\n    x=10+i+1;\n}\nfclose(ulaz);\n\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d1 = {20, 9, 2012};\nstruct Datum d2 = {27, 9, 2012};\n\nprintf(\"AGrad %.2f\\n\", prosjek(gradovi, br_gradova, \"AGrad\", d1, d2));\nprintf(\"BGrad %.2f\\n\", prosjek(gradovi, br_gradova, \"BGrad\", d1, d2));\nprintf(\"IGrad %.2f\\n\", prosjek(gradovi, br_gradova, \"IGrad\", d1, d2));\nprintf(\"JGrad %.2f\\n\", prosjek(gradovi, br_gradova, \"JGrad\", d1, d2));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 10\\nAGrad 109.65\\nBGrad 110.65\\nIGrad 117.65\\nJGrad 118.65\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2405,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* Prestupne godine u funkciji zapisi *\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Bijeljina 28 2 2009 1 2 3 4 5 6 7 8 9\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Mostar 28 2 2004 10 11 12 13\", ulaz);\nfputc(10, ulaz);\nfputs(\"Tuzla 28 2 2000 4 5 -2 5.5 9 8.1 9\", ulaz);\nfputc(10, ulaz);\nfputs(\"Sarajevo 28 2 1900 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfclose(ulaz);\n\nbr_gradova=ucitaj(gradovi, 10);\n\nstruct Datum d = {1, 3, 2009};\nzapisi(gradovi, br_gradova, d);\n\nFILE* izlaz = fopen(\"izlaz.txt\", \"r\");\nwhile (!feof(izlaz)) \n    printf(\"%c\", fgetc(izlaz));\nfclose(izlaz);\n\nd.godina = 2004;\nzapisi(gradovi+1, br_gradova-1, d);\n\nizlaz = fopen(\"izlaz.txt\", \"r\");\nwhile (!feof(izlaz)) \n    printf(\"%c\", fgetc(izlaz));\nfclose(izlaz);\n\nd.godina = 2000;\nzapisi(gradovi+2, br_gradova-2, d);\n\nizlaz = fopen(\"izlaz.txt\", \"r\");\nwhile (!feof(izlaz)) \n    printf(\"%c\", fgetc(izlaz));\nfclose(izlaz);\n\n\nd.godina = 1900;\nzapisi(gradovi+3, br_gradova-3, d);\n\nizlaz = fopen(\"izlaz.txt\", \"r\");\nwhile (!feof(izlaz)) \n    printf(\"%c\", fgetc(izlaz));\nfclose(izlaz);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Bijeljina 3.00 4.00 5.00 6.00 7.00 8.00 9.00\\nMostar 13.00\\nTuzla 5.50 9.00 8.10 9.00\\nSarajevo 5.88 6.00 0.12 5.00"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2407,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT6: Prestupne godine u funkciji prosjek*\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Bijeljina 28 2 2009 1 2 3 4 5 6 7 8 9\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Mostar 28 2 2004 10 11 12 13\", ulaz);\nfputc(10, ulaz);\nfputs(\"Tuzla 28 2 2000 4 5 -2 5.5 9 8.1 9\", ulaz);\nfputc(10, ulaz);\nfputs(\"Sarajevo 28 2 1900 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfclose(ulaz);\n\nbr_gradova=ucitaj(gradovi, 10);\n\nstruct Datum d1 = {28, 2, 2009};\nstruct Datum d2 = {2, 3, 2009};\nprintf(\"%.2f\\n\", prosjek(gradovi, br_gradova, \"Bijeljina\", d1, d2));\n\nd1.godina=d2.godina=2004;\nprintf(\"%.2f\\n\", prosjek(gradovi, br_gradova, \"Mostar\", d1, d2));\n\nd1.godina=d2.godina=2000;\nprintf(\"%.2f\\n\", prosjek(gradovi, br_gradova, \"Tuzla\", d1, d2));\n\nd1.godina=d2.godina=1900;\nprintf(\"%.2f\\n\", prosjek(gradovi, br_gradova, \"Sarajevo\", d1, d2));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "2.00\\n11.50\\n1.50\\n-3.10\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2408,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT7: Gradovi sa razmacima u imenima *\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Sarajevo 1 1 2010 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Banja Luka 2 1 2010 4 5 -2 5.5 9 8.1 9\", ulaz);\nfputc(10, ulaz);\nfputs(\"Mostar 31 12 2009 10 11 12\", ulaz);\nfputc(10, ulaz);\nfputs(\"New York 30 12 2009 1 2 3 4 5 6 7 8 9\", ulaz);\nfclose(ulaz);\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d = {1, 1, 2010};\n\nzapisi(gradovi, br_gradova, d);\n\nFILE* izlaz = fopen(\"izlaz.txt\", \"r\");\nwhile (!feof(izlaz)) \n    printf(\"%c\", fgetc(izlaz));\nfclose(izlaz);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 4\\nSarajevo -3.10 5.88 6.00 0.12 5.00\\nBanja Luka 4.00 5.00 -2.00 5.50 9.00 8.10 9.00\\nMostar 12.00\\nNew York 4.00 5.00 6.00 7.00 8.00 9.00"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2409,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT8: Test ispravnosti funkcije prosjek, imena sa razmacima *\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Sarajevo 1 3 2008 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Banja Luka 2 1 2008 4 5 -2 5.5 9 8.1 9\", ulaz);\nfputc(10, ulaz);\nfputs(\"New York 28 2 2008 9 10 11 12\", ulaz);\nfputc(10, ulaz);\nfputs(\"Bosanska Otoka 30 12 2009 1 2 3 4 5 6 7 8 9\", ulaz);\nfclose(ulaz);\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d1 = {1, 3, 2008};\nstruct Datum d2 = {5, 3, 2008};\n\nprintf(\"Prosjek za Sarajevo: %.2f\\n\", prosjek(gradovi, br_gradova, \"Sarajevo\", d1, d2));\nprintf(\"Prosjek za New York: %.2f\\n\", prosjek(gradovi, br_gradova, \"New York\", d1, d2));\nd1.dan++;\nprintf(\"Prosjek za New York: %.2f\\n\", prosjek(gradovi, br_gradova, \"New York\", d1, d2));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 4\\nProsjek za Sarajevo: 2.93\\nProsjek za New York: 12.00\\nProsjek za New York: 0.00"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2410,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT9: Razne vrste neispravnih datoteka *\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Sarajevo 1 1 2010 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Llanfairpwllgwyngyllgogerychwyrndrobwllllantysil 2 1 2008 4 5 -2 5.5 9 8.1 9\", ulaz);\nfclose(ulaz);\n\n\/* Poziv funkcije ucitaj *\/\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d1 = {1, 1, 2010};\nstruct Datum d2 = {5, 1, 2010};\n\nprintf(\"Prosjek za Sarajevo: %.2f\\n\", prosjek(gradovi, br_gradova, \"Sarajevo\", d1, d2));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 2\\nProsjek za Sarajevo: 2.93",
+                "Broj gradova: 1\\nProsjek za Sarajevo: 2.93"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2411,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT10: Razne vrste neispravnih datoteka *\/\nint i, br_gradova;\nstruct Mjerenja gradovi[10];\nFILE* ulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Sarajevo 1 1 2010 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Tuzla\", ulaz);\nfclose(ulaz);\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nstruct Datum d1 = {1, 1, 2010};\nstruct Datum d2 = {5, 1, 2010};\n\nprintf(\"Prosjek za Sarajevo: %.2f\\n\", prosjek(gradovi, br_gradova, \"Sarajevo\", d1, d2));\n\nulaz = fopen(\"mjerenja.txt\", \"w\");\nfputs(\"Sarajevo 1 1 2010 1.1 -3.1 5.88 6 0.1234 5\", ulaz);\nfputc(10, ulaz); \/* Pouzdan nacin za novi red na Linuxu *\/\nfputs(\"Tuzla 1 1 2008\", ulaz);\nfclose(ulaz);\nbr_gradova=ucitaj(gradovi, 10);\nprintf(\"Broj gradova: %d\\n\", br_gradova);\n\nprintf(\"Prosjek za Sarajevo: %.2f\\n\", prosjek(gradovi, br_gradova, \"Sarajevo\", d1, d2));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Broj gradova: 1\\nProsjek za Sarajevo: 2.93\\nBroj gradova: 1\\nProsjek za Sarajevo: 2.93",
+                "Broj gradova: 1\\nProsjek za Sarajevo: 2.93\\nBroj gradova: 2\\nProsjek za Sarajevo: 2.93"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

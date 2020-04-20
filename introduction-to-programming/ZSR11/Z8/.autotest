@@ -1,0 +1,94 @@
+{
+    "id": 7219,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 12, zadatak 12",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 2169,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "Kompleksni niz1[5] = {{5,5}, {3,3}, {-5, -5}, {5,5}, {-3,3}};\nKompleksni niz2[5];\nint vel = KonjugovanoKompleksni (niz1, niz1 + 5, niz2);\nint i;\nfor (i=0; i<vel; i++)\n    printf(\"(%d,%d) \",niz2[i].Im,niz2[i].Re);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "(-5,5) (-3,3) (5,-5) (3,3) "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2170,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "Kompleksni niz1[1000];\nKompleksni niz2[1000];\nint i;\nniz1[0].Re = niz1[0].Im = niz1[999].Re = niz1[999].Im = 2;\nfor (i=1; i<999; i++) {\n    niz1[i].Re = niz1[i].Im = 1;\n}\nint vel = KonjugovanoKompleksni (niz1, niz1 + 1000, niz2);\nfor (i=0; i<vel; i++)\n    printf(\"(%d,%d) \",niz2[i].Im,niz2[i].Re);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "(-2,2) (-1,1) "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2171,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "Kompleksni niz1[5] = {{5,5}, {3,3}, {-5, -5}, {5,5}, {-3,3}};\nKompleksni niz2[5];\nint vel = KonjugovanoKompleksni (niz1, niz1, niz2);\nprintf(\"%d\", vel);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z4/main.c: In function ‘strstrInsensitive’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z4/main.c:8:74: warning: suggest parentheses around comparison in operand of ‘&’ [-Wparentheses]
+    while(*p != '\0' && (*p == *q || *p + 32 == *q || *p - 32 == *q) & *q != '\0'){
+                                                                       ~~~^~~~~~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z4/main.c:11:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    if(*q == '\0') return str;
+                          ^~~
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z4/main.c: In function ‘IzbaciTekst’:
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z4/main.c:88:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   while(*q++ = *p++);
+         ^
+/rhome/m/mucanbarli1/workspace/OR/ZSR10/Z4/main.c:98:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   while(*q++ = *p++);
+         ^

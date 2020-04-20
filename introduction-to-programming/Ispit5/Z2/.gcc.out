@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/Ispit5/Z2/main.c: In function ‘upitna’:
+/rhome/m/mucanbarli1/workspace/OR/Ispit5/Z2/main.c:17:11: warning: unused variable ‘q’ [-Wunused-variable]
+     char *q;
+           ^

@@ -1,0 +1,214 @@
+{
+    "buildhost_description": {
+        "id": "lab002c18",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘zamjena_rijeci’:\nmain.c:40:2: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]\n  else\n  ^~~~\nmain.c:42:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘else’\n   i++;\n   ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "40",
+                "col": "2",
+                "message": "this 'else' clause does not guard...",
+                "output": "/tmp/buildservice/bs_1413/main.c:40:2: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]  else  ^~~~",
+                "code": "else"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1761": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1762": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1763": {
+            "status": 1,
+            "run_result": {
+                "output": "'' ''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1764": {
+            "status": 1,
+            "run_result": {
+                "output": "aaa aa z1 aaa aaaa",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1765": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1766": {
+            "status": 1,
+            "run_result": {
+                "output": "'  '",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1767": {
+            "status": 1,
+            "run_result": {
+                "output": "AAA je ovo je OVO",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1768": {
+            "status": 1,
+            "run_result": {
+                "output": "Ovo je neka proba sa praznim nizom zamjena",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1769": {
+            "status": 1,
+            "run_result": {
+                "output": "c",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1770": {
+            "status": 1,
+            "run_result": {
+                "output": "OK",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1771": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1830": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1836": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1551140080
+}

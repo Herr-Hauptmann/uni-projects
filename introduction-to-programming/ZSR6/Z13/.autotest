@@ -1,0 +1,164 @@
+{
+    "id": 7059,
+    "name": "Osnove ra\u010dunarstva (2017\/2018), ZSR6, zadatak 13",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1377,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5\n1 2 3 4 5\n6 7 8 9 1\n1 2 3 4 5\n6 7 8 9 1\n1 2 3 4 5\n\n"
+            },
+            "expected": [
+                "Unesite dimenziju matrice: \\nUnesite elemente 1. reda: \\nUnesite elemente 2. reda: \\nUnesite elemente 3. reda: \\nUnesite elemente 4. reda: \\nUnesite elemente 5. reda: \\nMatrica nakon izbacivanja dijagonale:\\n2    3    4    5    \\n6    8    9    1    \\n1    2    4    5    \\n6    7    8    1    \\n1    2    3    4    "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1378,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5\n0 0 0 0 0\n0 0 0 0 0\n0 0 0 0 0\n0 0 0 0 0\n0 0 0 0 0\n"
+            },
+            "expected": [
+                "Unesite dimenziju matrice: \\nUnesite elemente 1. reda: \\nUnesite elemente 2. reda: \\nUnesite elemente 3. reda: \\nUnesite elemente 4. reda: \\nUnesite elemente 5. reda: \\nMatrica nakon izbacivanja dijagonale:\\n0    0    0    0    \\n0    0    0    0    \\n0    0    0    0    \\n0    0    0    0    \\n0    0    0    0    "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1379,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "2\n1 -1\n-1 1\n"
+            },
+            "expected": [
+                "Unesite dimenziju matrice: \\nUnesite elemente 1. reda: \\nUnesite elemente 2. reda:\\nMatrica nakon izbacivanja dijagonale:"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1380,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n-69 -85 1 0\n1 -8 2 -44\n-2 5 8 -11\n1 -11 0 5\n"
+            },
+            "expected": [
+                "Unesite dimenziju matrice: \\nUnesite elemente 1. reda: \\nUnesite elemente 2. reda: \\nUnesite elemente 3. reda: \\nUnesite elemente 4. reda:\\nMatrica nakon izbacivanja dijagonale:\\n-85  1    \\n1    -44  \\n-2   -11  \\n-11  0    \\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1381,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "6\n1 2 3 4 5 6\n6 7 8 9 1 7\n1 2 3 4 5 8\n6 7 8 9 1 9\n1 2 3 4 5 4\n1 4 7 5 2 1"
+            },
+            "expected": [
+                "Unesite dimenziju matrice: \\nUnesite elemente 1. reda: \\nUnesite elemente 2. reda: \\nUnesite elemente 3. reda: \\nUnesite elemente 4. reda: \\nUnesite elemente 5. reda: \\nUnesite elemente 6. reda: \\nMatrica nakon izbacivanja dijagonale:\\n2    3    4    5\\n6    8    9    7\\n1    2    5    8\\n6    7    1    9\\n1    3    4    4\\n4    7    5    2"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1382,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n1 1 1 1\n1 1 1 1\n1 1 1 1\n1 1 1 1"
+            },
+            "expected": [
+                "Unesite dimenziju matrice: \\nUnesite elemente 1. reda: \\nUnesite elemente 2. reda: \\nUnesite elemente 3. reda: \\nUnesite elemente 4. reda: \\nMatrica nakon izbacivanja dijagonale:\\n1    1    \\n1    1    \\n1    1    \\n1    1    "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1383,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "8\n1 3 5 7 9 11 14 2\n3 9 6 4 11 95 11 127\n5 3 9 8 7 11 13 145\n94 6 9 18 16 14 15 16\n11 2 1 5 8 7 17 95\n77 15 14 32 64 46 45 40\n8 57 58 59 55 44 33 22\n9 11 13 34 66 77 88 99"
+            },
+            "expected": [
+                "Unesite dimenziju matrice: \\nUnesite elemente 1. reda: \\nUnesite elemente 2. reda: \\nUnesite elemente 3. reda: \\nUnesite elemente 4. reda: \\nUnesite elemente 5. reda: \\nUnesite elemente 6. reda: \\nUnesite elemente 7. reda: \\nUnesite elemente 8. reda: \\nMatrica nakon izbacivanja dijagonale:\\n3    5    7    9    11   14   \\n3    6    4    11   95   127  \\n5    3    8    7    13   145  \\n94   6    9    14   15   16   \\n11   2    1    7    17   95   \\n77   15   32   64   45   40   \\n8    58   59   55   44   22   \\n11   13   34   66   77   88   "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

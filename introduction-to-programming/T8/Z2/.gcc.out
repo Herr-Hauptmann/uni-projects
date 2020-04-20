@@ -1,0 +1,8 @@
+/rhome/m/mucanbarli1/workspace/OR/T8/Z2/main.c: In function ‘maxtemp’:
+/rhome/m/mucanbarli1/workspace/OR/T8/Z2/main.c:9:4: warning: statement with no effect [-Wunused-value]
+    for(q; q<niz+8; q++){
+    ^~~
+/rhome/m/mucanbarli1/workspace/OR/T8/Z2/main.c: In function ‘prtemp’:
+/rhome/m/mucanbarli1/workspace/OR/T8/Z2/main.c:19:3: warning: statement with no effect [-Wunused-value]
+   for(p; p<niz+8; p++){
+   ^~~

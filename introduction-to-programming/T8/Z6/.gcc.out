@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/T8/Z6/main.c: In function ‘sortiraj’:
+/rhome/m/mucanbarli1/workspace/OR/T8/Z6/main.c:9:2: warning: statement with no effect [-Wunused-value]
+  for(p; p<niz+vel-1; p++){
+  ^~~

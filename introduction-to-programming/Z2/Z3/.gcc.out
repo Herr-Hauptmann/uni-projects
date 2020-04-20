@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/Z2/Z3/main.c: In function ‘main’:
+/rhome/m/mucanbarli1/workspace/OR/Z2/Z3/main.c:4:52: warning: unused variable ‘brojac’ [-Wunused-variable]
+     int niz[100],i,j,hazaminut[100]={0},N,flag,xOR,brojac=1;
+                                                    ^~~~~~

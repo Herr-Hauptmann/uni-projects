@@ -1,0 +1,32 @@
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c: In function ‘spoji’:
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:43:11: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     while(*s1++ = *s2++);
+           ^
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c: In function ‘podstring’:
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:51:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+         char* p = s1;
+                   ^~
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:52:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+         char* q = s2;
+                   ^~
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:54:31: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+         if(*q == '\0') return s1;
+                               ^~
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c: In function ‘max_slovo’:
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:63:22: warning: ISO C forbids empty initializer braces [-Wpedantic]
+     int brojac[26] = {};
+                      ^
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c: In function ‘nadji_rijec’:
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:115:18: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+      char* poc = s1;
+                  ^~
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:117:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+         char* p = s1;
+                   ^~
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:118:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+         char* q = s2;
+                   ^~
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c: In function ‘izbaci_rijec’:
+/rhome/m/mucanbarli1/workspace/OR/M1ki/Stringovi/main.c:138:24: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+                  while(*pocetak++ = *s++);
+                        ^

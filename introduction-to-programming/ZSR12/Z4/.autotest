@@ -1,0 +1,269 @@
+{
+    "id": 7205,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), Zada\u0107a 5, zadatak 2",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1896,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT1: Primjer datoteke iz zadatka, poziv maina, test kompresovanja *\/\nint c;\nFILE* ulaz = fopen(\"z5z2_test1.txt\", \"w\");\nfputs(\"Proba proba proba proba proba proba...\", ulaz);\nfclose(ulaz);\n\n_main();\n\n\/* Ispisujemo kompresovanu datoteku na ekran *\/\nprintf(\"\\nKOMPRESOVANA DATOTEKA:\\n\");\nulaz = fopen(\"z5z2_test1.zip\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\ndo {\n    c=fgetc(ulaz);\n    if (c >= 20 && c<=29) printf(\"[%d]\", c);\n    else if (c != EOF) printf(\"%c\", c);\n} while (c != EOF);\nfclose(ulaz);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\nz5z2_test1.txt\nz5z2_test1.zip\n0\n"
+            },
+            "expected": [
+                "Odaberite: 1 - kompresuj, 2 - dekompresuj, 0 - izlaz: Unesite ime ulazne datoteke: Unesite ime izlazne datoteke: Datoteka kompresovana.\\nOdaberite: 1 - kompresuj, 2 - dekompresuj, 0 - izlaz: \\nKOMPRESOVANA DATOTEKA:\\nproba\\nProba\\n\\n[21] [20] [20] [20] [20] [20]..."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1897,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT2: Primjer datoteke iz zadatka, poziv maina, test dekompresovanja *\/\nint c;\nFILE* ulaz = fopen(\"z5z2_test2.txt\", \"w\");\nfputs(\"Proba proba proba proba proba proba...\", ulaz);\nfclose(ulaz);\n\n_main();\n\n\/* Ispisujemo dekompresovanu datoteku na ekran *\/\nprintf(\"\\nDEKOMPRESOVANA DATOTEKA:\\n\");\nulaz = fopen(\"z5z2_test2_polazna.txt\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\n\ndo {\n    c=fgetc(ulaz);\n    if (c != EOF) printf(\"%c\", c);\n} while (c != EOF);\nfclose(ulaz);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\nz5z2_test2.txt\nz5z2_test2.zip\n2\nz5z2_test2.zip\nz5z2_test2_polazna.txt\n0\n"
+            },
+            "expected": [
+                "Odaberite: 1 - kompresuj, 2 - dekompresuj, 0 - izlaz: Unesite ime ulazne datoteke: Unesite ime izlazne datoteke: Datoteka kompresovana.\\nOdaberite: 1 - kompresuj, 2 - dekompresuj, 0 - izlaz: Unesite ime ulazne datoteke: Unesite ime izlazne datoteke: Datoteka dekompresovana.\\nOdaberite: 1 - kompresuj, 2 - dekompresuj, 0 - izlaz: \\nDEKOMPRESOVANA DATOTEKA:\\nProba proba proba proba proba proba..."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1898,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT3: Isto sto i AT1 samo pozivajuci funkcije a bez maina *\/\nint c;\nFILE* ulaz = fopen(\"z5z2_test3.txt\", \"w\");\nfputs(\"Proba proba proba proba proba proba...\", ulaz);\nfclose(ulaz);\n\nkompresuj(\"z5z2_test3.txt\", \"z5z2_test3.zip\");\n\n\/* Ispisujemo kompresovanu datoteku na ekran *\/\nprintf(\"KOMPRESOVANA DATOTEKA:\\n\");\nulaz = fopen(\"z5z2_test3.zip\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\ndo {\n    c=fgetc(ulaz);\n    if (c >= 20 && c<=29) printf(\"[%d]\", c);\n    else if (c != EOF) printf(\"%c\", c);\n} while (c != EOF);\nfclose(ulaz);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nKOMPRESOVANA DATOTEKA:\\nproba\\nProba\\n\\n[21] [20] [20] [20] [20] [20]..."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1899,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT4: Isto sto i AT2 samo pozivajuci funkcije a bez maina *\/\nint c;\nFILE* ulaz = fopen(\"z5z2_test4.txt\", \"w\");\nfputs(\"Proba proba proba proba proba proba...\", ulaz);\nfclose(ulaz);\n\nkompresuj(\"z5z2_test4.txt\", \"z5z2_test4.zip\");\ndekompresuj(\"z5z2_test4.zip\", \"z5z2_test4_polazna.txt\");\n\n\/* Ispisujemo dekompresovanu datoteku na ekran *\/\nprintf(\"\\nDEKOMPRESOVANA DATOTEKA:\\n\");\nulaz = fopen(\"z5z2_test4_polazna.txt\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\ndo {\n    c=fgetc(ulaz);\n    if (c != EOF) printf(\"%c\", c);\n} while (c != EOF);\nfclose(ulaz);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nDatoteka dekompresovana.\\nDEKOMPRESOVANA DATOTEKA:\\nProba proba proba proba proba proba..."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1900,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT5: Test predugackih rijeci, nekih specijalnih karaktera i slicno (kompresija) *\/\nint c;\nFILE* ulaz = fopen(\"z5z2_test5.txt\", \"w\");\nfputs(\"Proba proba predugacka proba predugackarijec proba proba proba... auto-stop!!@@##$$%%^^&&**(())--__++==sdfgsdfg\", ulaz);\nfclose(ulaz);\n\nkompresuj(\"z5z2_test5.txt\", \"z5z2_test5.zip\");\n\n\/* Ispisujemo kompresovanu datoteku na ekran *\/\nprintf(\"KOMPRESOVANA:\\n\");\nulaz = fopen(\"z5z2_test5.zip\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\ndo {\n    c=fgetc(ulaz);\n    if (c >= 20 && c<=29) printf(\"[%d]\", c);\n    else if (c != EOF) printf(\"%c\", c);\n} while (c != EOF);\nfclose(ulaz);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nKOMPRESOVANA:\\nproba\\nProba\\nauto\\nsdfgsdfg\\nstop\\n\\n[21] [20] predugacka [20] predugackarijec [20] [20] [20]... [22]-[24]!!@@##$$%%^^&&**(())--__++==[23]"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1901,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT6: Test predugackih rijeci, nekih specijalnih karaktera i slicno (dekompresija) *\/\nint c;\nFILE* ulaz = fopen(\"z5z2_test6.txt\", \"w\");\nfputs(\"Proba proba predugacka proba predugackarijec proba proba proba... auto-stop!!@@##$$%%^^&&**(())--__++==sdfgsdfg\", ulaz);\nfclose(ulaz);\n\nkompresuj(\"z5z2_test6.txt\", \"z5z2_test6.zip\");\ndekompresuj(\"z5z2_test6.zip\", \"z5z2_test6_polazna.txt\");\n\n\/* Ispisujemo dekompresovanu datoteku na ekran *\/\nprintf(\"\\nDEKOMPRESOVANA:\\n\");\nulaz = fopen(\"z5z2_test6_polazna.txt\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\ndo {\n    c=fgetc(ulaz);\n    if (c != EOF) printf(\"%c\", c);\n} while (c != EOF);\nfclose(ulaz);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nDatoteka dekompresovana.\\nDEKOMPRESOVANA:\\nProba proba predugacka proba predugackarijec proba proba proba... auto-stop!!@@##$$%%^^&&**(())--__++==sdfgsdfg"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1902,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT7: Datoteka velicine 400 kB, sve rijeci razlicite *\/\nint c,i=0;\ngen(\"z5z2_test7.txt\", 1, 100000);\n\nkompresuj(\"z5z2_test7.txt\", \"z5z2_test7.zip\");\n\n\/* Ispisujemo samo tabelu rijeci i prvih 10 karaktera *\/\nprintf(\"KOMPRESOVANA:\\n\");\nFILE* ulaz = fopen(\"z5z2_test7.zip\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\ndo {\n    c=fgetc(ulaz);\n    if (c >= 20 && c<=29) printf(\"[%d]\", c);\n    else if (c != EOF) printf(\"%c\", c);\n    i++;\n    if (i==50) break;\n} while (c != EOF);\nfclose(ulaz);",
+            "global_above_main": "#include <string.h>\nvoid gen(char* ime_testa, int razlicite, int duzina) {\n\tFILE *izl = fopen(ime_testa, \"w\");\n\tchar rijec[] = \"aaa \";\n\tint i;\n\t\n\tfor (i=0; i<duzina; i++) {\n\t\tif (i%1000 == 0) {\n\t\t\tstrcpy(rijec, \"aaa \");\n\t\t} else if (razlicite==1) {\n\t\t\trijec[0]++;\n\t\t\tif (rijec[0] > 'z') { rijec[0]='a'; rijec[1]++; }\n\t\t\tif (rijec[1] > 'z') { rijec[1]='a'; rijec[2]++; }\n\t\t}\n\t\tfputs(rijec, izl);\n\t}\n\tfclose(izl);\n}\n",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nKOMPRESOVANA:\\naaa\\naab\\naba\\nabb\\naca\\nacb\\nada\\nadb\\naea\\naeb\\n[20] baa caa "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1903,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT8: Datoteka velicine 400 kB, sve rijeci razlicite (test dekompresije) *\/\nint c,i=0;\nchar rijec[] = \"aaa \";\ngen(\"z5z2_test8.txt\", 1, 100000);\n\nkompresuj(\"z5z2_test8.txt\", \"z5z2_test8.zip\");\ndekompresuj(\"z5z2_test8.zip\", \"z5z2_test8_polazna.txt\");\n\n\/* Provjeravamo da li je dekompresovana datoteka jednaka originalnoj *\/\nprintf(\"DEKOMPRESOVANA:\\n\");\nFILE* ulaz = fopen(\"z5z2_test8_polazna.txt\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\nfor (i=0; i<100000; i++) {\n    if (i%1000 == 0) {\n        strcpy(rijec, \"aaa \");\n    } else  {\n        rijec[0]++;\n        if (rijec[0] > 'z') { rijec[0]='a'; rijec[1]++; }\n        if (rijec[1] > 'z') { rijec[1]='a'; rijec[2]++; }\n    }\n    if (fgetc(ulaz) != rijec[0]) printf(\"Greska: %d (0)\\n\", i);\n    if (fgetc(ulaz) != rijec[1]) printf(\"Greska: %d (1)\\n\", i);\n    if (fgetc(ulaz) != rijec[2]) printf(\"Greska: %d (2)\\n\", i);\n    if (fgetc(ulaz) != rijec[3]) printf(\"Greska: %d (3)\\n\", i);\n}\nfclose(ulaz);",
+            "global_above_main": "#include <string.h>\nvoid gen(char* ime_testa, int razlicite, int duzina) {\n    FILE *izl = fopen(ime_testa, \"w\");\n    char rijec[] = \"aaa \";\n    int i;\n    \n    for (i=0; i<duzina; i++) {\n        if (i%1000 == 0) {\n            strcpy(rijec, \"aaa \");\n        } else if (razlicite==1) {\n            rijec[0]++;\n            if (rijec[0] > 'z') { rijec[0]='a'; rijec[1]++; }\n            if (rijec[1] > 'z') { rijec[1]='a'; rijec[2]++; }\n        }\n        fputs(rijec, izl);\n    }\n    fclose(izl);\n}",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nDatoteka dekompresovana.\\nDEKOMPRESOVANA:"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1904,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT9: Datoteka velicine 40 MB, sve rijeci jednake *\/\nint c,i=0;\nchar rijec[100];\ngen(\"z5z2_test9.txt\", 0, 10000000);\n\nkompresuj(\"z5z2_test9.txt\", \"z5z2_test9.zip\");\n\n\/* Ispisujemo samo tabelu rijeci i prvih nekoliko karaktera *\/\nprintf(\"KOMPRESOVANA:\\n\");\nFILE* ulaz = fopen(\"z5z2_test9.zip\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\ndo {\n    c=fgetc(ulaz);\n    if (c >= 20 && c<=29) printf(\"[%d]\", c);\n    else if (c != EOF) printf(\"%c\", c);\n    if (++i == 10) break;\n} while (c != EOF);\nfclose(ulaz);",
+            "global_above_main": "#include <string.h>\nvoid gen(char* ime_testa, int razlicite, int duzina) {\n    FILE *izl = fopen(ime_testa, \"w\");\n    char rijec[] = \"aaa \";\n    int i;\n    \n    for (i=0; i<duzina; i++) {\n        if (i%1000 == 0) {\n            strcpy(rijec, \"aaa \");\n        } else if (razlicite==1) {\n            rijec[0]++;\n            if (rijec[0] > 'z') { rijec[0]='a'; rijec[1]++; }\n            if (rijec[1] > 'z') { rijec[1]='a'; rijec[2]++; }\n        }\n        fputs(rijec, izl);\n    }\n    fclose(izl);\n}",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nKOMPRESOVANA:\\naaa\\n\\n[20] [20] [20]"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1905,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/* AT10: Datoteka velicine 4 MB, sve rijeci jednake *\/\n\/* Test dekompresije malo du\u017ee traje pa smo smanjili datoteku u odnosu na AT9 *\/\nint c,i=0;\nchar rijec[] = \"aaa \";\ngen(\"z5z2_test10.txt\", 0, 1000000);\n\nkompresuj(\"z5z2_test10.txt\", \"z5z2_test10.zip\");\ndekompresuj(\"z5z2_test10.zip\", \"z5z2_test10_polazna.txt\");\n\n\/* Provjeravamo da li je dekompresovana datoteka jednaka originalnoj *\/\nprintf(\"DEKOMPRESOVANA:\\n\");\nFILE* ulaz = fopen(\"z5z2_test10_polazna.txt\", \"r\");\nif (ulaz == NULL) {\n    printf(\"Datoteka ne postoji!\");\n    return 0;\n}\nfor (i=0; i<1000000; i++) {\n    if (fgetc(ulaz) != rijec[0]) printf(\"Greska: %d (0)\\n\", i);\n    if (fgetc(ulaz) != rijec[1]) printf(\"Greska: %d (1)\\n\", i);\n    if (fgetc(ulaz) != rijec[2]) printf(\"Greska: %d (2)\\n\", i);\n    if (fgetc(ulaz) != rijec[3]) printf(\"Greska: %d (3)\\n\", i);\n}\nfclose(ulaz);",
+            "global_above_main": "#include <string.h>\nvoid gen(char* ime_testa, int razlicite, int duzina) {\n    FILE *izl = fopen(ime_testa, \"w\");\n    char rijec[] = \"aaa \";\n    int i;\n    \n    for (i=0; i<duzina; i++) {\n        if (i%1000 == 0) {\n            strcpy(rijec, \"aaa \");\n        } else if (razlicite==1) {\n            rijec[0]++;\n            if (rijec[0] > 'z') { rijec[0]='a'; rijec[1]++; }\n            if (rijec[1] > 'z') { rijec[1]='a'; rijec[2]++; }\n        }\n        fputs(rijec, izl);\n    }\n    fclose(izl);\n}",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Datoteka kompresovana.\\nDatoteka dekompresovana.\\nDEKOMPRESOVANA:"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

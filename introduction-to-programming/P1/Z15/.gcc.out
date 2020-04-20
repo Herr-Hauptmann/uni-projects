@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/OR/P1/Z15/main.c:6:9: fatal error: conio.h: No such file or directory
+ #include<conio.h>
+         ^~~~~~~~~
+compilation terminated.

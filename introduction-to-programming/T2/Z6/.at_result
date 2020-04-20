@@ -1,0 +1,185 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:7:6: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n  if(a==c&&b==d)\n      ^~\nmain.c:7:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n  if(a==c&&b==d)\n            ^~\nmain.c:4:11: warning: unused variable ‘S2’ [-Wunused-variable]\n  float S1,S2,a,b,c,d;\n           ^~\nmain.c:4:8: warning: unused variable ‘S1’ [-Wunused-variable]\n  float S1,S2,a,b,c,d;\n        ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "7",
+                "col": "6",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_2333/main.c:7:6: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]  if(a==c&&b==d)      ^~",
+                "code": "if(a==c&&b==d)"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "7",
+                "col": "12",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_2333/main.c:7:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]  if(a==c&&b==d)            ^~",
+                "code": "if(a==c&&b==d)"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "4",
+                "col": "11",
+                "message": "unused variable 'S2'",
+                "output": "/tmp/buildservice/bs_2333/main.c:4:11: warning: unused variable ‘S2’ [-Wunused-variable]  float S1,S2,a,b,c,d;           ^~",
+                "code": "float S1,S2,a,b,c,d;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "4",
+                "col": "8",
+                "message": "unused variable 'S1'",
+                "output": "/tmp/buildservice/bs_2333/main.c:4:8: warning: unused variable ‘S1’ [-Wunused-variable]  float S1,S2,a,b,c,d;        ^~",
+                "code": "float S1,S2,a,b,c,d;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "4062": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Skupovi se ne sijeku.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4063": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Rezultantni interval je [7,9].",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4064": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Rezultantni interval je [7,9].",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4065": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Rezultantni interval je [1.2,1.3].",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4066": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Skupovi se ne sijeku.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4067": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Rezultantni interval je [-3.3,-2.2].",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4068": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Skupovi se ne sijeku.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4069": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Rezultantni interval je [-7,-5].",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4070": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve a,b,c,d: Rezultantni interval je [-15.5,-10.1].",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1539811130
+}

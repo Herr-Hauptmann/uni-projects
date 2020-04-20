@@ -1,0 +1,253 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "4109": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite M i N: \nPogresan unos!Pogresan unos!Matrica je teplikova",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==4581== exp-sgcheck, a stack and global array overrun detector\n==4581== NOTE: This is an Experimental-Class Valgrind Tool\n==4581== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==4581== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==4581== Command: bs_test_4109\n==4581== Parent PID: 4580\n==4581== \n==4581== Invalid read of size 4\n==4581==    at 0x400822: _main (bs_test_4109.c:29)\n==4581==    by 0x4008B3: main (bs_test_4109.c:49)\n==4581==  Address 0xffeff7178 expected vs actual:\n==4581==  Expected: unknown\n==4581==  Actual:   stack array \"matrica\" of size 40,000 in this frame\n==4581== \n==4581== \n==4581== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x400822: _main (bs_test_4109.c:29)\n    by 0x4008B3: main (bs_test_4109.c:49)\n  Address 0xffeff7178 expected vs actual:\n  Expected: unknown\n  Actual:   stack array \"matrica\" of size 40,000 in this frame\n",
+                        "file": "main.c",
+                        "line": 27
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4110": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite M i N: \nPogresan unos!Matrica je cirkularna",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4111": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4112": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4113": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4115": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite M i N: \nPogresan unos!Matrica je cirkularna",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4116": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 9,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4120": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4121": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4122": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica nije ni teplikova ni cirkularna.",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4127": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica nije ni teplikova ni cirkularna.",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4128": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 9,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==4780== Memcheck, a memory error detector\n==4780== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==4780== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==4780== Command: bs_test_4128\n==4780== Parent PID: 4779\n==4780== \n==4780== Conditional jump or move depends on uninitialised value(s)\n==4780==    at 0x400790: _main (bs_test_4128.c:24)\n==4780==    by 0x4008B3: main (bs_test_4128.c:49)\n==4780== \n==4780== \n==4780== More than 10000000 total errors detected.  I'm not reporting any more.\n==4780== Final error counts will be inaccurate.  Go fix your program!\n==4780== Rerun with --error-limit=no to disable this cutoff.  Note\n==4780== that errors may occur in your program without prior warning from\n==4780== Valgrind, because errors are no longer being displayed.\n==4780== \n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x400790: _main (bs_test_4128.c:24)\n    by 0x4008B3: main (bs_test_4128.c:49)\n",
+                        "file": "main.c",
+                        "line": 22
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4214": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica nije ni teplikova ni cirkularna.",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4215": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4216": {
+            "status": 4,
+            "run_result": {
+                "output": "Unesite M i N: \nMatrica je cirkularna",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1550106057
+}
