@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/TP/Z2/Z1/main.cpp: In function ‘bool UnosKomande(Komande&, int&, KodoviGresaka&)’:
+/rhome/m/mucanbarli1/workspace/TP/Z2/Z1/main.cpp:109:10: warning: unused variable ‘dodatni_parametar’ [-Wunused-variable]
+     char dodatni_parametar;
+          ^~~~~~~~~~~~~~~~~

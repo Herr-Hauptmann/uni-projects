@@ -1,0 +1,7 @@
+/rhome/m/mucanbarli1/workspace/TP/T2/Z2/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/T2/Z2/main.cpp:41:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     while(std::cin>>a, a!=0) v.push_back(a);
+                           ^
+/rhome/m/mucanbarli1/workspace/TP/T2/Z2/main.cpp:43:11: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(a!=0) std::cout<<"Slijed je periodican sa osnovnim periodom "<<a<<".";
+           ^

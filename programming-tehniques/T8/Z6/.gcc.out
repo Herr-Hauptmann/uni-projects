@@ -1,0 +1,10 @@
+/rhome/m/mucanbarli1/workspace/TP/T8/Z6/main.cpp: In instantiation of ‘Cvor<TipElemenata>* KreirajPovezanuListu(TipElemenata) [with TipElemenata = double]’:
+/rhome/m/mucanbarli1/workspace/TP/T8/Z6/main.cpp:68:48:   required from here
+/rhome/m/mucanbarli1/workspace/TP/T8/Z6/main.cpp:15:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(broj==zavrsni) break;
+            ~~~~^~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T8/Z6/main.cpp: In instantiation of ‘void UnistiListu(Cvor<TipElemenata>*) [with TipElemenata = double]’:
+/rhome/m/mucanbarli1/workspace/TP/T8/Z6/main.cpp:70:22:   required from here
+/rhome/m/mucanbarli1/workspace/TP/T8/Z6/main.cpp:48:9: warning: unused variable ‘brojac’ [-Wunused-variable]
+     int brojac=0;
+         ^~~~~~

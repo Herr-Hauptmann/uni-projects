@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/TP/T4/Z3/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/T4/Z3/main.cpp:52:50: error: expected primary-expression before ‘;’ token
+     std::cout<<"Koliko zelite unijeti rijeci: "<<;
+                                                  ^

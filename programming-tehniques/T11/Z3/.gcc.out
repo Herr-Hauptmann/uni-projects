@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/TP/T11/Z3/main.cpp: In member function ‘void Tim::IspisiPodatke()’:
+/rhome/m/mucanbarli1/workspace/TP/T11/Z3/main.cpp:54:2: error: expected ‘;’ before ‘broj_poraza’
+  broj_poraza<<std::setw(4)<<broj_datih<<std::setw(4)<<std::setw(4)<<broj_poraza<<std::setw(4)<<broj_poena;
+  ^~~~~~~~~~~

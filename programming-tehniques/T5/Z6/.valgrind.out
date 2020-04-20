@@ -1,0 +1,33 @@
+==15112== Memcheck, a memory error detector
+==15112== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==15112== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==15112== Command: /rhome/m/mucanbarli1/workspace/TP/T5/Z6/.runme
+==15112== Parent PID: 15085
+==15112== 
+==15112== 
+==15112== Process terminating with default action of signal 1 (SIGHUP)
+==15112==    at 0x56EF081: read (read.c:27)
+==15112==    by 0x566C147: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:531)
+==15112==    by 0x566D3F1: _IO_default_uflow (genops.c:380)
+==15112==    by 0x512B95C: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==15112==    by 0x51396F9: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==15112==    by 0x513996D: std::istream::operator>>(int&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==15112==    by 0x108EF8: unos(int&) (main.cpp:34)
+==15112==    by 0x1093BC: void (*std::for_each<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, void (*)(int&)>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, void (*)(int&)))(int&) (stl_algo.h:3884)
+==15112==    by 0x108FB9: main (main.cpp:45)
+==15112== 
+==15112== HEAP SUMMARY:
+==15112==     in use at exit: 80 bytes in 1 blocks
+==15112==   total heap usage: 3 allocs, 2 frees, 73,808 bytes allocated
+==15112== 
+==15112== LEAK SUMMARY:
+==15112==    definitely lost: 0 bytes in 0 blocks
+==15112==    indirectly lost: 0 bytes in 0 blocks
+==15112==      possibly lost: 0 bytes in 0 blocks
+==15112==    still reachable: 80 bytes in 1 blocks
+==15112==         suppressed: 0 bytes in 0 blocks
+==15112== Reachable blocks (those to which a pointer was found) are not shown.
+==15112== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==15112== 
+==15112== For counts of detected and suppressed errors, rerun with: -v
+==15112== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

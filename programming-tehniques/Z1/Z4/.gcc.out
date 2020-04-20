@@ -1,0 +1,7 @@
+/rhome/m/mucanbarli1/workspace/TP/Z1/Z4/main.cpp: In function ‘bool JeLiSlovo(char)’:
+/rhome/m/mucanbarli1/workspace/TP/Z1/Z4/main.cpp:15:11: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  if(c>='a'&&c<='z' || c>='A'&&c<='Z' || c>='0'&&c<='9') return true;
+     ~~~~~~^~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z1/Z4/main.cpp:15:47: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  if(c>='a'&&c<='z' || c>='A'&&c<='Z' || c>='0'&&c<='9') return true;
+                                         ~~~~~~^~~~~~~~

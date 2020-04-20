@@ -1,0 +1,24 @@
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp: In member function ‘double Trougao::UgaoTrougla(const Tacka&, const Tacka&, const Tacka&)’:
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp:30:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp: In member function ‘void Trougao::Skaliraj(const Tacka&, double)’:
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp:165:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(faktor==0) throw std::domain_error("Nekorektan faktor skaliranja");
+                ^
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp:286:8: warning: variable ‘p2’ set but not used [-Wunused-but-set-variable]
+   auto p2 = std::transform(v.begin(),v.end(),v.begin(),[k,ugao,dx,dy,&v](std::shared_ptr<Trougao> it){
+        ^~
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp: In member function ‘double Trougao::DajStranicu(int) const’:
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp:88:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp: In member function ‘double Trougao::DajUgao(int) const’:
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp:101:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp: In function ‘bool DaLiSuSlicni(const Trougao&, const Trougao&)’:
+/rhome/m/mucanbarli1/workspace/TP/Z4/Z1/main.cpp:243:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^

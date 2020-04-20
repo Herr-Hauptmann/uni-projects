@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/TP/T2/Z5/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/T2/Z5/main.cpp:21:98: error: ‘struct std::complex<double>’ has no member named ‘arg’
+     std::cout<<"\nParalelna veza ovih elemenata ima Z = "<<abs((1./suma))<<" i fi = "<<(1./suma).arg()<<".";
+                                                                                                  ^~~

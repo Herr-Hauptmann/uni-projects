@@ -1,0 +1,19 @@
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp: In function ‘double tezinskikoeficjent(int, std::vector<std::pair<double, double> >, double)’:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp:22:10: warning: statement has no effect [-Wunused-value]
+     for(k; k<=min(i,n-d); k++) {
+          ^
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp: In function ‘std::function<double(double)> BaricentricnaInterpolacija(std::vector<std::pair<double, double> >, double)’:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp:38:53: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+             if(cvorovi.at(i).first == cvorovi.at(j).first) throw std::domain_error("Neispravni cvorovi");
+                                                     ^~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp: In lambda function:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp:47:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+             if(x==cvorovi.at(i).first) return cvorovi.at(i).second;
+                                 ^~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp: In function ‘std::function<double(double)> BaricentricnaInterpolacija(double (*)(double), double, double, double, double)’:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp:59:39: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(x_min > x_max || delta_x<=0 || x_min=x_max) throw std::domain_error("Nekorektni parametri");
+                                       ^~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z1/main.cpp:59:45: error: lvalue required as left operand of assignment
+     if(x_min > x_max || delta_x<=0 || x_min=x_max) throw std::domain_error("Nekorektni parametri");
+                                             ^~~~~

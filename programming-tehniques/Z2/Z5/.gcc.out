@@ -1,0 +1,7 @@
+/rhome/m/mucanbarli1/workspace/TP/Z2/Z5/main.cpp: In lambda function:
+/rhome/m/mucanbarli1/workspace/TP/Z2/Z5/main.cpp:52:14: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if(c>='0'&&c<='9' || c>='a'&&c<='z' || c>='A'&&c<='Z') return true;
+        ~~~~~~^~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z2/Z5/main.cpp:52:50: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if(c>='0'&&c<='9' || c>='a'&&c<='z' || c>='A'&&c<='Z') return true;
+                                            ~~~~~~^~~~~~~~

@@ -1,0 +1,443 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3697": {
+            "status": 1,
+            "run_result": {
+                "output": "Direktna inicijalizacija\nKopirajuca inicijalizacija\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3709": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3709.cpp: In function ‘int main()’:\nbs_test_3709.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};\n ^~~~\nbs_test_3709.cpp:45:6: error: expected ‘;’ before ‘l2’\n Liga l2{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Krupa\"};\n      ^~\nbs_test_3709.cpp:47:7: error: ‘l1’ was not declared in this scope\n try { l1=l2; }\n       ^~\nbs_test_3709.cpp:47:10: error: ‘l2’ was not declared in this scope\n try { l1=l2; }\n          ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3709.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 1,
+                        "col": "6",
+                        "message": "expected ';' before 'l2'",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3709.cpp:45:6: error: expected ‘;’ before ‘l2’ Liga l2{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Krupa\"};      ^~",
+                        "code": "Liga l2{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Krupa\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "7",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3709.cpp:47:7: error: ‘l1’ was not declared in this scope try { l1=l2; }       ^~",
+                        "code": "try { l1=l2; }"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "10",
+                        "message": "'l2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3709.cpp:47:10: error: ‘l2’ was not declared in this scope try { l1=l2; }          ^~",
+                        "code": "try { l1=l2; }"
+                    }
+                ]
+            }
+        },
+        "3712": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3712.cpp: In function ‘int main()’:\nbs_test_3712.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};\n ^~~~\nbs_test_3712.cpp:45:6: error: expected ‘;’ before ‘l2’\n Liga l2{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Krupa\"};\n      ^~\nbs_test_3712.cpp:47:7: error: ‘l1’ was not declared in this scope\n try { l1=std::move(l2); }\n       ^~\nbs_test_3712.cpp:47:20: error: ‘l2’ was not declared in this scope\n try { l1=std::move(l2); }\n                    ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3712.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 1,
+                        "col": "6",
+                        "message": "expected ';' before 'l2'",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3712.cpp:45:6: error: expected ‘;’ before ‘l2’ Liga l2{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Krupa\"};      ^~",
+                        "code": "Liga l2{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Krupa\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "7",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3712.cpp:47:7: error: ‘l1’ was not declared in this scope try { l1=std::move(l2); }       ^~",
+                        "code": "try { l1=std::move(l2); }"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "20",
+                        "message": "'l2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3712.cpp:47:20: error: ‘l2’ was not declared in this scope try { l1=std::move(l2); }                    ^~",
+                        "code": "try { l1=std::move(l2); }"
+                    }
+                ]
+            }
+        },
+        "3713": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3713.cpp: In function ‘int main()’:\nbs_test_3713.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};\n ^~~~\nbs_test_3713.cpp:46:7: error: ‘l1’ was not declared in this scope\n try { l1.DodajNoviTim(\"FK Borac Banja Luka\"); }\n       ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3713.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3713.cpp:46:7: error: ‘l1’ was not declared in this scope try { l1.DodajNoviTim(\"FK Borac Banja Luka\"); }       ^~",
+                        "code": "try { l1.DodajNoviTim(\"FK Borac Banja Luka\"); }"
+                    }
+                ]
+            }
+        },
+        "3714": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3714.cpp: In function ‘int main()’:\nbs_test_3714.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};\n ^~~~\nbs_test_3714.cpp:46:7: error: ‘l1’ was not declared in this scope\n try { l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"FK Krupa\", 1, 1); }\n       ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3714.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3714.cpp:46:7: error: ‘l1’ was not declared in this scope try { l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"FK Krupa\", 1, 1); }       ^~",
+                        "code": "try { l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"FK Krupa\", 1, 1); }"
+                    }
+                ]
+            }
+        },
+        "3718": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3718.cpp: In function ‘int main()’:\nbs_test_3718.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};\n ^~~~\nbs_test_3718.cpp:46:7: error: ‘l1’ was not declared in this scope\n try { l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"FK Sarajevo\", 1, -10); }\n       ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3718.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3718.cpp:46:7: error: ‘l1’ was not declared in this scope try { l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"FK Sarajevo\", 1, -10); }       ^~",
+                        "code": "try { l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"FK Sarajevo\", 1, -10); }"
+                    }
+                ]
+            }
+        },
+        "3722": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3722.cpp: In function ‘int main()’:\nbs_test_3722.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};\n ^~~~\nbs_test_3722.cpp:45:1: error: ‘l1’ was not declared in this scope\n l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"HSK Zrinjski\",2,0);\n ^~\nbs_test_3722.cpp:46:6: error: expected ‘;’ before ‘l2’\n Liga l2(l1);\n      ^~\nbs_test_3722.cpp:51:1: error: ‘l2’ was not declared in this scope\n l2.IspisiTabelu();\n ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3722.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 1,
+                        "col": "1",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3722.cpp:45:1: error: ‘l1’ was not declared in this scope l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"HSK Zrinjski\",2,0); ^~",
+                        "code": "l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"HSK Zrinjski\",2,0);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "6",
+                        "message": "expected ';' before 'l2'",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3722.cpp:46:6: error: expected ‘;’ before ‘l2’ Liga l2(l1);      ^~",
+                        "code": "Liga l2(l1);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 7,
+                        "col": "1",
+                        "message": "'l2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3722.cpp:51:1: error: ‘l2’ was not declared in this scope l2.IspisiTabelu(); ^~",
+                        "code": "l2.IspisiTabelu();"
+                    }
+                ]
+            }
+        },
+        "3724": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3724.cpp: In function ‘int main()’:\nbs_test_3724.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};\n ^~~~\nbs_test_3724.cpp:45:1: error: ‘l1’ was not declared in this scope\n l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"HSK Zrinjski\",2,0);\n ^~\nbs_test_3724.cpp:47:6: error: expected ‘;’ before ‘l2’\n Liga l2 = l1;\n      ^~\nbs_test_3724.cpp:52:1: error: ‘l2’ was not declared in this scope\n l2.IspisiTabelu();\n ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3724.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 1,
+                        "col": "1",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3724.cpp:45:1: error: ‘l1’ was not declared in this scope l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"HSK Zrinjski\",2,0); ^~",
+                        "code": "l1.RegistrirajUtakmicu(\"NK Zeljeznicar\", \"HSK Zrinjski\",2,0);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "6",
+                        "message": "expected ';' before 'l2'",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3724.cpp:47:6: error: expected ‘;’ before ‘l2’ Liga l2 = l1;      ^~",
+                        "code": "Liga l2 = l1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 8,
+                        "col": "1",
+                        "message": "'l2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3724.cpp:52:1: error: ‘l2’ was not declared in this scope l2.IspisiTabelu(); ^~",
+                        "code": "l2.IspisiTabelu();"
+                    }
+                ]
+            }
+        },
+        "3726": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3726.cpp: In function ‘int main()’:\nbs_test_3726.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};\n ^~~~\nbs_test_3726.cpp:45:6: error: expected ‘;’ before ‘l2’\n Liga l2{\"NK Siroki Brijeg\", \"FK Mladost DK\", \"NK Celik\", \"NK Vitez\", \"NK Metalleghe BSI\", \"FK Olimpic\"};\n      ^~\nbs_test_3726.cpp:47:1: error: ‘l1’ was not declared in this scope\n l1.RegistrirajUtakmicu(\"FK Sloboda\", \"HSK Zrinjski\",1,1);\n ^~\nbs_test_3726.cpp:54:1: error: ‘l2’ was not declared in this scope\n l2 = l1;\n ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3726.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 1,
+                        "col": "6",
+                        "message": "expected ';' before 'l2'",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3726.cpp:45:6: error: expected ‘;’ before ‘l2’ Liga l2{\"NK Siroki Brijeg\", \"FK Mladost DK\", \"NK Celik\", \"NK Vitez\", \"NK Metalleghe BSI\", \"FK Olimpic\"};      ^~",
+                        "code": "Liga l2{\"NK Siroki Brijeg\", \"FK Mladost DK\", \"NK Celik\", \"NK Vitez\", \"NK Metalleghe BSI\", \"FK Olimpic\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "1",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3726.cpp:47:1: error: ‘l1’ was not declared in this scope l1.RegistrirajUtakmicu(\"FK Sloboda\", \"HSK Zrinjski\",1,1); ^~",
+                        "code": "l1.RegistrirajUtakmicu(\"FK Sloboda\", \"HSK Zrinjski\",1,1);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 10,
+                        "col": "1",
+                        "message": "'l2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3726.cpp:54:1: error: ‘l2’ was not declared in this scope l2 = l1; ^~",
+                        "code": "l2 = l1;"
+                    }
+                ]
+            }
+        },
+        "3727": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3727.cpp: In function ‘int main()’:\nbs_test_3727.cpp:44:1: error: ‘Liga’ was not declared in this scope\n Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};\n ^~~~\nbs_test_3727.cpp:45:6: error: expected ‘;’ before ‘l2’\n Liga l2(6);\n      ^~\nbs_test_3727.cpp:47:1: error: ‘l2’ was not declared in this scope\n l2.DodajNoviTim(\"NK Siroki Brijeg\");\n ^~\nbs_test_3727.cpp:56:6: error: ‘l1’ was not declared in this scope\n l2 = l1;\n      ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 0,
+                        "col": "1",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3727.cpp:44:1: error: ‘Liga’ was not declared in this scope Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"}; ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"HSK Zrinjski\", \"FK Sarajevo\", \"FK Sloboda\", \"FK Krupa\", \"FK Radnik Bijeljina\"};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 1,
+                        "col": "6",
+                        "message": "expected ';' before 'l2'",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3727.cpp:45:6: error: expected ‘;’ before ‘l2’ Liga l2(6);      ^~",
+                        "code": "Liga l2(6);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "1",
+                        "message": "'l2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3727.cpp:47:1: error: ‘l2’ was not declared in this scope l2.DodajNoviTim(\"NK Siroki Brijeg\"); ^~",
+                        "code": "l2.DodajNoviTim(\"NK Siroki Brijeg\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 12,
+                        "col": "6",
+                        "message": "'l1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3727.cpp:56:6: error: ‘l1’ was not declared in this scope l2 = l1;      ^~",
+                        "code": "l2 = l1;"
+                    }
+                ]
+            }
+        },
+        "3743": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3743.cpp: In function ‘void operator delete(void*)’:\nbs_test_3743.cpp:68:63: warning: throw will always call terminate() [-Wterminate]\n   if(adresa && !tekuci) throw std::runtime_error(\"Bad delete!\");\n                                                               ^\nbs_test_3743.cpp: In function ‘int main()’:\nbs_test_3743.cpp:80:3: error: ‘Liga’ was not declared in this scope\n   Liga l1{\"NK Zeljeznicar\", \"FK Sarajevo\"};\n   ^~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 31,
+                        "col": "63",
+                        "message": "throw will always call terminate()",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3743.cpp:68:63: warning: throw will always call terminate() [-Wterminate]   if(adresa && !tekuci) throw std::runtime_error(\"Bad delete!\");                                                               ^",
+                        "code": "if(adresa && !tekuci) throw std::runtime_error(\"Bad delete!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 1,
+                        "col": "3",
+                        "message": "'Liga' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_8969/bs_test_3743.cpp:80:3: error: ‘Liga’ was not declared in this scope   Liga l1{\"NK Zeljeznicar\", \"FK Sarajevo\"};   ^~~~",
+                        "code": "Liga l1{\"NK Zeljeznicar\", \"FK Sarajevo\"};"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1558997674
+}

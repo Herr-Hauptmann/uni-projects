@@ -1,0 +1,10 @@
+/rhome/m/mucanbarli1/workspace/TP/T13/Z4/main.cpp: In constructor ‘ApstraktniStudent::ApstraktniStudent(std::__cxx11::string, std::__cxx11::string, int)’:
+/rhome/m/mucanbarli1/workspace/TP/T13/Z4/main.cpp:18:6: warning: ‘ApstraktniStudent::broj_polozenih’ will be initialized after [-Wreorder]
+  int broj_polozenih;
+      ^~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z4/main.cpp:17:9: warning:   ‘double ApstraktniStudent::prosjek’ [-Wreorder]
+  double prosjek;
+         ^~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z4/main.cpp:20:2: warning:   when initialized here [-Wreorder]
+  ApstraktniStudent(std::string ime, std::string prezime, int broj_indeksa): ime(ime), prezime(prezime), broj_indeksa(broj_indeksa), broj_polozenih(0),prosjek(5){}
+  ^~~~~~~~~~~~~~~~~

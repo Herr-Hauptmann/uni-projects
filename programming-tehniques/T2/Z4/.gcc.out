@@ -1,0 +1,28 @@
+/rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp:23:91: error: no match for ‘operator/’ (operand types are ‘int’ and ‘std::complex<double>’)
+     std::cout<<"\nParalelna veza ovih elemenata ima R = "<<(1./suma).real()<<" i X = "<<(1/suma).imag<<".";
+                                                                                          ~^~~~~
+In file included from /rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp:3:0:
+/usr/include/c++/7/complex:434:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const _Tp&, const std::complex<_Tp>&)
+     operator/(const _Tp& __x, const complex<_Tp>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/complex:434:5: note:   template argument deduction/substitution failed:
+/rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp:23:92: note:   deduced conflicting types for parameter ‘_Tp’ (‘int’ and ‘double’)
+     std::cout<<"\nParalelna veza ovih elemenata ima R = "<<(1./suma).real()<<" i X = "<<(1/suma).imag<<".";
+                                                                                            ^~~~
+In file included from /rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp:3:0:
+/usr/include/c++/7/complex:425:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const std::complex<_Tp>&, const _Tp&)
+     operator/(const complex<_Tp>& __x, const _Tp& __y)
+     ^~~~~~~~
+/usr/include/c++/7/complex:425:5: note:   template argument deduction/substitution failed:
+/rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp:23:92: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+     std::cout<<"\nParalelna veza ovih elemenata ima R = "<<(1./suma).real()<<" i X = "<<(1/suma).imag<<".";
+                                                                                            ^~~~
+In file included from /rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp:3:0:
+/usr/include/c++/7/complex:416:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator/(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/complex:416:5: note:   template argument deduction/substitution failed:
+/rhome/m/mucanbarli1/workspace/TP/T2/Z4/main.cpp:23:92: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+     std::cout<<"\nParalelna veza ovih elemenata ima R = "<<(1./suma).real()<<" i X = "<<(1/suma).imag<<".";
+                                                                                            ^~~~

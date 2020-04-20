@@ -1,0 +1,18 @@
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp: In function ‘std::istream& operator>>(std::istream&, Matrica<TipElemenata>&)’:
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp:188:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+     for (int i = 0; i < m.br_redova; i++)
+     ^~~
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp:193:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+         return tok;
+         ^~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp: In instantiation of ‘Matrica<TipEl>::Matrica(int, int, char) [with TipEl = double]’:
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp:281:32:   required from here
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp:17:10: warning: ‘Matrica<double>::ime_matrice’ will be initialized after [-Wreorder]
+     char ime_matrice;
+          ^~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp:16:13: warning:   ‘double** Matrica<double>::elementi’ [-Wreorder]
+     TipEl** elementi;
+             ^~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T12/Z6/main.cpp:125:1: warning:   when initialized here [-Wreorder]
+ Matrica<TipEl>::Matrica(int br_redova, int br_kolona, char ime)
+ ^~~~~~~~~~~~~~

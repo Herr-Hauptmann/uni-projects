@@ -1,0 +1,14 @@
+/rhome/m/mucanbarli1/workspace/TP/T13/Z3/main.cpp: In constructor ‘ApstraktniStudent::ApstraktniStudent(std::__cxx11::string, std::__cxx11::string, int)’:
+/rhome/m/mucanbarli1/workspace/TP/T13/Z3/main.cpp:21:6: warning: ‘ApstraktniStudent::broj_polozenih’ will be initialized after [-Wreorder]
+  int broj_polozenih;
+      ^~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z3/main.cpp:20:9: warning:   ‘double ApstraktniStudent::prosjek’ [-Wreorder]
+  double prosjek;
+         ^~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z3/main.cpp:23:2: warning:   when initialized here [-Wreorder]
+  ApstraktniStudent(std::string ime, std::string prezime, int broj_indeksa): ime(ime), prezime(prezime), broj_indeksa(broj_indeksa), broj_polozenih(0),prosjek(5){}
+  ^~~~~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z3/main.cpp: In lambda function:
+/rhome/m/mucanbarli1/workspace/TP/T13/Z3/main.cpp:106:41: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(s1->DajProsjek() == s2->DajProsjek()) return s1->DajBrojIndeksa() > s2->DajBrojIndeksa();
+                                         ^

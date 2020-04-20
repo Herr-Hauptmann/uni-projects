@@ -1,0 +1,8 @@
+/rhome/m/mucanbarli1/workspace/TP/T2/Z3/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/T2/Z3/main.cpp:8:54: error: ‘ednl’ is not a member of ‘std’
+     std::cout<<"Unesite broj broj elemenata: "<<std::ednl;
+                                                      ^~~~
+/rhome/m/mucanbarli1/workspace/TP/T2/Z3/main.cpp:8:54: note: suggested alternative: ‘endl’
+     std::cout<<"Unesite broj broj elemenata: "<<std::ednl;
+                                                      ^~~~
+                                                      endl

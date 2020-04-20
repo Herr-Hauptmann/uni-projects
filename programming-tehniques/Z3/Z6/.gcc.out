@@ -1,0 +1,11 @@
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z6/main.cpp: In function ‘int DuzinaImena(std::__cxx11::string)’:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z6/main.cpp:28:24: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+         if(s.at(i)>='a'&&s.at(i)<='z' || s.at(i)>='A'&&s.at(i)<='Z' || s.at(i)>='0'&&s.at(i)<='9') brojac++;
+            ~~~~~~~~~~~~^~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z6/main.cpp:28:84: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+         if(s.at(i)>='a'&&s.at(i)<='z' || s.at(i)>='A'&&s.at(i)<='Z' || s.at(i)>='0'&&s.at(i)<='9') brojac++;
+                                                                        ~~~~~~~~~~~~^~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z6/main.cpp: In function ‘std::vector<std::set<std::__cxx11::basic_string<char> > > Razvrstavanje(std::vector<std::__cxx11::basic_string<char> >, int)’:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z6/main.cpp:90:14: warning: statement has no effect [-Wunused-value]
+         for(i; i<n%k; i++){
+              ^

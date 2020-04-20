@@ -1,0 +1,11 @@
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z2/main.cpp: In function ‘bool JeLiSB(char)’:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z2/main.cpp:9:14: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if(c>='a'&&c<='z' || c>='A'&&c<='Z' || c>='0'&&c<='9') return true;
+        ~~~~~~^~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z2/main.cpp:9:50: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if(c>='a'&&c<='z' || c>='A'&&c<='Z' || c>='0'&&c<='9') return true;
+                                            ~~~~~~^~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z2/main.cpp: In function ‘std::map<std::__cxx11::basic_string<char>, std::set<int> > KreirajIndeksPojmova(std::__cxx11::string)’:
+/rhome/m/mucanbarli1/workspace/TP/Z3/Z2/main.cpp:50:18: warning: statement has no effect [-Wunused-value]
+             for(j; j<s.size(); j++) {
+                  ^

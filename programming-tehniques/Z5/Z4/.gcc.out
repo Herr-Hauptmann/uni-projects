@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/TP/Z5/Z4/main.cpp: In member function ‘PolimorfniSpremnik& PolimorfniSpremnik::operator=(const Spremnik&)’:
+/rhome/m/mucanbarli1/workspace/TP/Z5/Z4/main.cpp:123:21: error: comparison between distinct pointer types ‘PolimorfniSpremnik*’ and ‘const Spremnik*’ lacks a cast
+         if(this == &s) return *this;
+                     ^

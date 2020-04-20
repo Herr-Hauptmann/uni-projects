@@ -1,0 +1,6 @@
+/rhome/m/mucanbarli1/workspace/TP/T4/Z5/main.cpp: In instantiation of ‘Kolekcija Presjek(Kolekcija&, Kolekcija&) [with Kolekcija = std::vector<double>]’:
+/rhome/m/mucanbarli1/workspace/TP/T4/Z5/main.cpp:50:43:   required from here
+/rhome/m/mucanbarli1/workspace/TP/T4/Z5/main.cpp:12:21: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(v1.at(i) == v2.at(j)) duplikat = 1;
+/rhome/m/mucanbarli1/workspace/TP/T4/Z5/main.cpp:16:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(v1.at(i)== c.at(k)) ponavljanje=1;

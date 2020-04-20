@@ -1,0 +1,132 @@
+==23930== Memcheck, a memory error detector
+==23930== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23930== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==23930== Command: /rhome/m/mucanbarli1/workspace/TP/T6/Z6/.runme
+==23930== Parent PID: 23888
+==23930== 
+==23930== Invalid read of size 8
+==23930==    at 0x1098AB: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:34)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0x5d81038 is 8 bytes before a block of size 16 alloc'd
+==23930==    at 0x4C3089F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23930==    by 0x1097EF: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:31)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930== 
+==23930== Invalid read of size 8
+==23930==    at 0x10A860: std::_Deque_iterator<int, int&, int*>::difference_type std::operator-<int, int&, int*>(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) (stl_deque.h:356)
+==23930==    by 0x10A1F6: std::deque<int, std::allocator<int> >::size() const (stl_deque.h:1272)
+==23930==    by 0x1098CD: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:34)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0x5d809d8 is 8 bytes before a block of size 160 alloc'd
+==23930==    at 0x4C3017F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23930==    by 0x10B317: __gnu_cxx::new_allocator<std::deque<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==23930==    by 0x10B02D: std::allocator_traits<std::allocator<std::deque<int, std::allocator<int> > > >::allocate(std::allocator<std::deque<int, std::allocator<int> > >&, unsigned long) (alloc_traits.h:436)
+==23930==    by 0x10AC37: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:172)
+==23930==    by 0x10A652: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_M_create_storage(unsigned long) (stl_vector.h:187)
+==23930==    by 0x109E82: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_Vector_base(unsigned long, std::allocator<std::deque<int, std::allocator<int> > > const&) (stl_vector.h:138)
+==23930==    by 0x1096F2: std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::vector(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > const&) (stl_vector.h:328)
+==23930==    by 0x1090F4: main (main.cpp:64)
+==23930== 
+==23930== Invalid read of size 8
+==23930==    at 0x10A86B: std::_Deque_iterator<int, int&, int*>::difference_type std::operator-<int, int&, int*>(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) (stl_deque.h:356)
+==23930==    by 0x10A1F6: std::deque<int, std::allocator<int> >::size() const (stl_deque.h:1272)
+==23930==    by 0x1098CD: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:34)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0x5d809b8 is 24 bytes after a block of size 512 in arena "client"
+==23930== 
+==23930== Invalid read of size 8
+==23930==    at 0x10A885: std::_Deque_iterator<int, int&, int*>::difference_type std::operator-<int, int&, int*>(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) (stl_deque.h:356)
+==23930==    by 0x10A1F6: std::deque<int, std::allocator<int> >::size() const (stl_deque.h:1272)
+==23930==    by 0x1098CD: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:34)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0x5d809c0 is 32 bytes before a block of size 160 in arena "client"
+==23930== 
+==23930== Invalid read of size 8
+==23930==    at 0x10A88F: std::_Deque_iterator<int, int&, int*>::difference_type std::operator-<int, int&, int*>(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) (stl_deque.h:356)
+==23930==    by 0x10A1F6: std::deque<int, std::allocator<int> >::size() const (stl_deque.h:1272)
+==23930==    by 0x1098CD: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:34)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0x5d809c8 is 24 bytes before a block of size 160 alloc'd
+==23930==    at 0x4C3017F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23930==    by 0x10B317: __gnu_cxx::new_allocator<std::deque<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==23930==    by 0x10B02D: std::allocator_traits<std::allocator<std::deque<int, std::allocator<int> > > >::allocate(std::allocator<std::deque<int, std::allocator<int> > >&, unsigned long) (alloc_traits.h:436)
+==23930==    by 0x10AC37: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:172)
+==23930==    by 0x10A652: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_M_create_storage(unsigned long) (stl_vector.h:187)
+==23930==    by 0x109E82: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_Vector_base(unsigned long, std::allocator<std::deque<int, std::allocator<int> > > const&) (stl_vector.h:138)
+==23930==    by 0x1096F2: std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::vector(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > const&) (stl_vector.h:328)
+==23930==    by 0x1090F4: main (main.cpp:64)
+==23930== 
+==23930== Invalid read of size 8
+==23930==    at 0x10A8A4: std::_Deque_iterator<int, int&, int*>::difference_type std::operator-<int, int&, int*>(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) (stl_deque.h:357)
+==23930==    by 0x10A1F6: std::deque<int, std::allocator<int> >::size() const (stl_deque.h:1272)
+==23930==    by 0x1098CD: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:34)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0x5d809b0 is 16 bytes after a block of size 512 alloc'd
+==23930==    at 0x4C3017F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23930==    by 0x10B4E3: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:111)
+==23930==    by 0x10B24F: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:436)
+==23930==    by 0x10AF15: std::_Deque_base<int, std::allocator<int> >::_M_allocate_node() (stl_deque.h:602)
+==23930==    by 0x10AA10: std::_Deque_base<int, std::allocator<int> >::_M_create_nodes(int**, int**) (stl_deque.h:727)
+==23930==    by 0x10A33A: std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) (stl_deque.h:701)
+==23930==    by 0x109B5C: std::_Deque_base<int, std::allocator<int> >::_Deque_base(std::allocator<int> const&, unsigned long) (stl_deque.h:500)
+==23930==    by 0x10B39E: std::deque<int, std::allocator<int> >::deque(std::deque<int, std::allocator<int> > const&) (stl_deque.h:949)
+==23930==    by 0x10B1BE: void std::_Construct<std::deque<int, std::allocator<int> >, std::deque<int, std::allocator<int> > const&>(std::deque<int, std::allocator<int> >*, std::deque<int, std::allocator<int> > const&) (stl_construct.h:75)
+==23930==    by 0x10B094: std::deque<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&) (stl_uninitialized.h:210)
+==23930==    by 0x10AC9D: std::deque<int, std::allocator<int> >* std::uninitialized_fill_n<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&) (stl_uninitialized.h:255)
+==23930==    by 0x10A6F7: std::deque<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> >, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&, std::allocator<std::deque<int, std::allocator<int> > >&) (stl_uninitialized.h:366)
+==23930== 
+==23930== Invalid read of size 8
+==23930==    at 0x10A8AF: std::_Deque_iterator<int, int&, int*>::difference_type std::operator-<int, int&, int*>(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) (stl_deque.h:357)
+==23930==    by 0x10A1F6: std::deque<int, std::allocator<int> >::size() const (stl_deque.h:1272)
+==23930==    by 0x1098CD: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:34)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0x5d809a0 is 0 bytes after a block of size 512 alloc'd
+==23930==    at 0x4C3017F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23930==    by 0x10B4E3: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:111)
+==23930==    by 0x10B24F: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:436)
+==23930==    by 0x10AF15: std::_Deque_base<int, std::allocator<int> >::_M_allocate_node() (stl_deque.h:602)
+==23930==    by 0x10AA10: std::_Deque_base<int, std::allocator<int> >::_M_create_nodes(int**, int**) (stl_deque.h:727)
+==23930==    by 0x10A33A: std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) (stl_deque.h:701)
+==23930==    by 0x109B5C: std::_Deque_base<int, std::allocator<int> >::_Deque_base(std::allocator<int> const&, unsigned long) (stl_deque.h:500)
+==23930==    by 0x10B39E: std::deque<int, std::allocator<int> >::deque(std::deque<int, std::allocator<int> > const&) (stl_deque.h:949)
+==23930==    by 0x10B1BE: void std::_Construct<std::deque<int, std::allocator<int> >, std::deque<int, std::allocator<int> > const&>(std::deque<int, std::allocator<int> >*, std::deque<int, std::allocator<int> > const&) (stl_construct.h:75)
+==23930==    by 0x10B094: std::deque<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&) (stl_uninitialized.h:210)
+==23930==    by 0x10AC9D: std::deque<int, std::allocator<int> >* std::uninitialized_fill_n<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&) (stl_uninitialized.h:255)
+==23930==    by 0x10A6F7: std::deque<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> >, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&, std::allocator<std::deque<int, std::allocator<int> > >&) (stl_uninitialized.h:366)
+==23930== 
+==23930== Invalid write of size 4
+==23930==    at 0x1099A0: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:37)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  Address 0xffffffffffff6ee0 is not stack'd, malloc'd or (recently) free'd
+==23930== 
+==23930== 
+==23930== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==23930==  Access not within mapped region at address 0xFFFFFFFFFFFF6EE0
+==23930==    at 0x1099A0: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:37)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930==  If you believe this happened as a result of a stack
+==23930==  overflow in your program's main thread (unlikely but
+==23930==  possible), you can try to increase the size of the
+==23930==  main thread stack using the --main-stacksize= flag.
+==23930==  The main thread stack size used in this run was 8388608.
+==23930== 
+==23930== HEAP SUMMARY:
+==23930==     in use at exit: 2,656 bytes in 12 blocks
+==23930==   total heap usage: 21 allocs, 9 frees, 78,272 bytes allocated
+==23930== 
+==23930== 16 bytes in 1 blocks are definitely lost in loss record 2 of 8
+==23930==    at 0x4C3089F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23930==    by 0x109856: std::remove_reference<decltype (({parm#1}[0])[0])>::type** KreirajDinamickuKopiju2D<std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > > >(std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >) (main.cpp:33)
+==23930==    by 0x109100: main (main.cpp:64)
+==23930== 
+==23930== LEAK SUMMARY:
+==23930==    definitely lost: 16 bytes in 1 blocks
+==23930==    indirectly lost: 0 bytes in 0 blocks
+==23930==      possibly lost: 0 bytes in 0 blocks
+==23930==    still reachable: 2,640 bytes in 11 blocks
+==23930==         suppressed: 0 bytes in 0 blocks
+==23930== Reachable blocks (those to which a pointer was found) are not shown.
+==23930== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==23930== 
+==23930== For counts of detected and suppressed errors, rerun with: -v
+==23930== ERROR SUMMARY: 9 errors from 9 contexts (suppressed: 0 from 0)

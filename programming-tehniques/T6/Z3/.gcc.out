@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/TP/T6/Z3/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/T6/Z3/main.cpp:51:14: error: unable to find string literal operator ‘operator""e’ with ‘const char [11]’, ‘long unsigned int’ arguments
+   std::cout<<"Izuzetak: "e.what();
+              ^~~~~~~~~~~~~

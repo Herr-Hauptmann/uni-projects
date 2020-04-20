@@ -1,0 +1,40 @@
+==29227== Memcheck, a memory error detector
+==29227== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29227== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29227== Command: /rhome/m/mucanbarli1/workspace/TP/T6/Z1/.runme
+==29227== Parent PID: 29208
+==29227== 
+==29227== 
+==29227== Process terminating with default action of signal 6 (SIGABRT): dumping core
+==29227==    at 0x561DE97: raise (raise.c:51)
+==29227==    by 0x561F800: abort (abort.c:79)
+==29227==    by 0x50CA8B6: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==29227==    by 0x50D0A05: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==29227==    by 0x50D0A40: std::terminate() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==29227==    by 0x50D0C73: __cxa_throw (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==29227==    by 0x109C53: float* GenerirajStepeneDvojke<float>(int) (main.cpp:24)
+==29227==    by 0x10947F: main (main.cpp:66)
+==29227== 
+==29227== HEAP SUMMARY:
+==29227==     in use at exit: 276 bytes in 3 blocks
+==29227==   total heap usage: 6 allocs, 3 frees, 74,036 bytes allocated
+==29227== 
+==29227== 144 bytes in 1 blocks are possibly lost in loss record 3 of 3
+==29227==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29227==    by 0x50CF83F: __cxa_allocate_exception (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==29227==    by 0x109C28: float* GenerirajStepeneDvojke<float>(int) (main.cpp:24)
+==29227==    by 0x10947F: main (main.cpp:66)
+==29227== 
+==29227== LEAK SUMMARY:
+==29227==    definitely lost: 0 bytes in 0 blocks
+==29227==    indirectly lost: 0 bytes in 0 blocks
+==29227==      possibly lost: 144 bytes in 1 blocks
+==29227==    still reachable: 132 bytes in 2 blocks
+==29227==                       of which reachable via heuristic:
+==29227==                         stdstring          : 52 bytes in 1 blocks
+==29227==         suppressed: 0 bytes in 0 blocks
+==29227== Reachable blocks (those to which a pointer was found) are not shown.
+==29227== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==29227== 
+==29227== For counts of detected and suppressed errors, rerun with: -v
+==29227== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

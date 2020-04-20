@@ -1,0 +1,8 @@
+/rhome/m/mucanbarli1/workspace/TP/ZSR3/Z22/main.cpp: In function ‘int main()’:
+/rhome/m/mucanbarli1/workspace/TP/ZSR3/Z22/main.cpp:10:10: error: ‘unique_copy_if’ is not a member of ‘std’
+     std::unique_copy_if(s.begin(),s.end(),s.begin(),[](char c){if(c != ' ') return true; return false;});
+          ^~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/ZSR3/Z22/main.cpp:10:10: note: suggested alternative: ‘unique_copy’
+     std::unique_copy_if(s.begin(),s.end(),s.begin(),[](char c){if(c != ' ') return true; return false;});
+          ^~~~~~~~~~~~~~
+          unique_copy

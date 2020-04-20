@@ -1,0 +1,8 @@
+/rhome/m/mucanbarli1/workspace/TP/T10/Z2/main.cpp: In member function ‘void Valjak::Ispisi() const’:
+/rhome/m/mucanbarli1/workspace/TP/T10/Z2/main.cpp:77:19: error: ‘fixied’ is not a member of ‘std’
+   std::cout<<std::fixied<<std::setprecision(5)<<"R="<<DajPoluprecnikBaze()<<" H="<<DajVisinu()<<" P="<<DajPovrsinu()<<" V="<<DajZapreminu();
+                   ^~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T10/Z2/main.cpp:77:19: note: suggested alternative: ‘fixed’
+   std::cout<<std::fixied<<std::setprecision(5)<<"R="<<DajPoluprecnikBaze()<<" H="<<DajVisinu()<<" P="<<DajPovrsinu()<<" V="<<DajZapreminu();
+                   ^~~~~~
+                   fixed

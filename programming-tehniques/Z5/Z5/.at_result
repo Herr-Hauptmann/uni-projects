@@ -1,0 +1,618 @@
+{
+    "buildhost_description": {
+        "id": "lab002c26",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1.cpp: In function ‘int main()’:\nbs_test_1.cpp:21:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<int> m1(\"datoteka.DAT\", true);\n         ^~~~~~~\nbs_test_1.cpp:21:17: error: expected primary-expression before ‘int’\n         Matrica<int> m1(\"datoteka.DAT\", true);\n                 ^~~\nbs_test_1.cpp:30:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<int> m1(\"datoteka.txt\", false);\n         ^~~~~~~\nbs_test_1.cpp:30:17: error: expected primary-expression before ‘int’\n         Matrica<int> m1(\"datoteka.txt\", false);\n                 ^~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_1.cpp:21:9: error: ‘Matrica’ was not declared in this scope         Matrica<int> m1(\"datoteka.DAT\", true);         ^~~~~~~",
+                        "code": "Matrica<int> m1(\"datoteka.DAT\", true);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_1.cpp:21:17: error: expected primary-expression before ‘int’         Matrica<int> m1(\"datoteka.DAT\", true);                 ^~~",
+                        "code": "Matrica<int> m1(\"datoteka.DAT\", true);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 13,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_1.cpp:30:9: error: ‘Matrica’ was not declared in this scope         Matrica<int> m1(\"datoteka.txt\", false);         ^~~~~~~",
+                        "code": "Matrica<int> m1(\"datoteka.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 13,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_1.cpp:30:17: error: expected primary-expression before ‘int’         Matrica<int> m1(\"datoteka.txt\", false);                 ^~~",
+                        "code": "Matrica<int> m1(\"datoteka.txt\", false);"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2.cpp: In function ‘int main()’:\nbs_test_2.cpp:21:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<int> m1(2,2);\n         ^~~~~~~\nbs_test_2.cpp:21:17: error: expected primary-expression before ‘int’\n         Matrica<int> m1(2,2);\n                 ^~~\nbs_test_2.cpp:22:9: error: ‘m1’ was not declared in this scope\n         m1.ObnoviIzBinarneDatoteke(\"datoteka.DAT\");\n         ^~\nbs_test_2.cpp:31:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<int> m1(2,2);\n         ^~~~~~~\nbs_test_2.cpp:31:17: error: expected primary-expression before ‘int’\n         Matrica<int> m1(2,2);\n                 ^~~\nbs_test_2.cpp:32:9: error: ‘m1’ was not declared in this scope\n         m1.ObnoviIzTekstualneDatoteke(\"datoteka.txt\");\n         ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_2.cpp:21:9: error: ‘Matrica’ was not declared in this scope         Matrica<int> m1(2,2);         ^~~~~~~",
+                        "code": "Matrica<int> m1(2,2);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_2.cpp:21:17: error: expected primary-expression before ‘int’         Matrica<int> m1(2,2);                 ^~~",
+                        "code": "Matrica<int> m1(2,2);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "9",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_2.cpp:22:9: error: ‘m1’ was not declared in this scope         m1.ObnoviIzBinarneDatoteke(\"datoteka.DAT\");         ^~",
+                        "code": "m1.ObnoviIzBinarneDatoteke(\"datoteka.DAT\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 14,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_2.cpp:31:9: error: ‘Matrica’ was not declared in this scope         Matrica<int> m1(2,2);         ^~~~~~~",
+                        "code": "Matrica<int> m1(2,2);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 14,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_2.cpp:31:17: error: expected primary-expression before ‘int’         Matrica<int> m1(2,2);                 ^~~",
+                        "code": "Matrica<int> m1(2,2);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 15,
+                        "col": "9",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_2.cpp:32:9: error: ‘m1’ was not declared in this scope         m1.ObnoviIzTekstualneDatoteke(\"datoteka.txt\");         ^~",
+                        "code": "m1.ObnoviIzTekstualneDatoteke(\"datoteka.txt\");"
+                    }
+                ]
+            }
+        },
+        "3": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3.cpp: In function ‘void kreirajDatotetkuZbii1()’:\nbs_test_3.cpp:17:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type\n     std::ofstream dat(ime);\n                          ^\nbs_test_3.cpp: In function ‘void kreirajDatotetkuZbii2()’:\nbs_test_3.cpp:25:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type\n     std::ofstream dat(ime);\n                          ^\nbs_test_3.cpp: In function ‘int main()’:\nbs_test_3.cpp:36:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<int> m1(\"matrica.txt\", false);\n         ^~~~~~~\nbs_test_3.cpp:36:17: error: expected primary-expression before ‘int’\n         Matrica<int> m1(\"matrica.txt\", false);\n                 ^~~\nbs_test_3.cpp:37:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m1;\n                      ^~~\nbs_test_3.cpp:37:38: error: ‘m1’ was not declared in this scope\n         std::cout << std::setw(6) << m1;\n                                      ^~\nbs_test_3.cpp:47:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<double> m1(\"matrica.txt\", false);\n         ^~~~~~~\nbs_test_3.cpp:47:17: error: expected primary-expression before ‘double’\n         Matrica<double> m1(\"matrica.txt\", false);\n                 ^~~~~~\nbs_test_3.cpp:48:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m1;\n                      ^~~\nbs_test_3.cpp:48:38: error: ‘m1’ was not declared in this scope\n         std::cout << std::setw(6) << m1;\n                                      ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 4,
+                        "col": "26",
+                        "message": "variable 'std::ofstream dat' has initializer but incomplete type",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:17:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type     std::ofstream dat(ime);                          ^",
+                        "code": "std::ofstream dat(ime);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 12,
+                        "col": "26",
+                        "message": "variable 'std::ofstream dat' has initializer but incomplete type",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:25:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type     std::ofstream dat(ime);                          ^",
+                        "code": "std::ofstream dat(ime);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:36:9: error: ‘Matrica’ was not declared in this scope         Matrica<int> m1(\"matrica.txt\", false);         ^~~~~~~",
+                        "code": "Matrica<int> m1(\"matrica.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:36:17: error: expected primary-expression before ‘int’         Matrica<int> m1(\"matrica.txt\", false);                 ^~~",
+                        "code": "Matrica<int> m1(\"matrica.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:37:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m1;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "38",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:37:38: error: ‘m1’ was not declared in this scope         std::cout << std::setw(6) << m1;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 16,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:47:9: error: ‘Matrica’ was not declared in this scope         Matrica<double> m1(\"matrica.txt\", false);         ^~~~~~~",
+                        "code": "Matrica<double> m1(\"matrica.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 16,
+                        "col": "17",
+                        "message": "expected primary-expression before 'double'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:47:17: error: expected primary-expression before ‘double’         Matrica<double> m1(\"matrica.txt\", false);                 ^~~~~~",
+                        "code": "Matrica<double> m1(\"matrica.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 17,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:48:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m1;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 17,
+                        "col": "38",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_3.cpp:48:38: error: ‘m1’ was not declared in this scope         std::cout << std::setw(6) << m1;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    }
+                ]
+            }
+        },
+        "4": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_4.cpp: In function ‘int main()’:\nbs_test_4.cpp:22:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<int> m0{2, 2};\n         ^~~~~~~\nbs_test_4.cpp:22:17: error: expected primary-expression before ‘int’\n         Matrica<int> m0{2, 2};\n                 ^~~\nbs_test_4.cpp:25:17: error: ‘m0’ was not declared in this scope\n                 m0[i][j] = i + j;\n                 ^~\nbs_test_4.cpp:26:9: error: ‘m0’ was not declared in this scope\n         m0.SacuvajUBinarnuDatoteku(\"matrica1.DAT\");\n         ^~\nbs_test_4.cpp:27:17: error: expected primary-expression before ‘int’\n         Matrica<int> m1(\"matrica1.DAT\", true);\n                 ^~~\nbs_test_4.cpp:28:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m1;\n                      ^~~\nbs_test_4.cpp:28:38: error: ‘m1’ was not declared in this scope\n         std::cout << std::setw(6) << m1;\n                                      ^~\nbs_test_4.cpp:39:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<double> m0{2, 2};\n         ^~~~~~~\nbs_test_4.cpp:39:17: error: expected primary-expression before ‘double’\n         Matrica<double> m0{2, 2};\n                 ^~~~~~\nbs_test_4.cpp:42:17: error: ‘m0’ was not declared in this scope\n                 m0[i][j] = i + j + 0.5;\n                 ^~\nbs_test_4.cpp:43:9: error: ‘m0’ was not declared in this scope\n         m0.SacuvajUBinarnuDatoteku(\"matrica2.DAT\");\n         ^~\nbs_test_4.cpp:44:17: error: expected primary-expression before ‘double’\n         Matrica<double> m1(\"matrica2.DAT\", true);\n                 ^~~~~~\nbs_test_4.cpp:45:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m1;\n                      ^~~\nbs_test_4.cpp:45:38: error: ‘m1’ was not declared in this scope\n         std::cout << std::setw(6) << m1;\n                                      ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:22:9: error: ‘Matrica’ was not declared in this scope         Matrica<int> m0{2, 2};         ^~~~~~~",
+                        "code": "Matrica<int> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:22:17: error: expected primary-expression before ‘int’         Matrica<int> m0{2, 2};                 ^~~",
+                        "code": "Matrica<int> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 8,
+                        "col": "17",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:25:17: error: ‘m0’ was not declared in this scope                 m0[i][j] = i + j;                 ^~",
+                        "code": "m0[i][j] = i + j;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "9",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:26:9: error: ‘m0’ was not declared in this scope         m0.SacuvajUBinarnuDatoteku(\"matrica1.DAT\");         ^~",
+                        "code": "m0.SacuvajUBinarnuDatoteku(\"matrica1.DAT\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 10,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:27:17: error: expected primary-expression before ‘int’         Matrica<int> m1(\"matrica1.DAT\", true);                 ^~~",
+                        "code": "Matrica<int> m1(\"matrica1.DAT\", true);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:28:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m1;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "38",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:28:38: error: ‘m1’ was not declared in this scope         std::cout << std::setw(6) << m1;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 22,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:39:9: error: ‘Matrica’ was not declared in this scope         Matrica<double> m0{2, 2};         ^~~~~~~",
+                        "code": "Matrica<double> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 22,
+                        "col": "17",
+                        "message": "expected primary-expression before 'double'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:39:17: error: expected primary-expression before ‘double’         Matrica<double> m0{2, 2};                 ^~~~~~",
+                        "code": "Matrica<double> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 25,
+                        "col": "17",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:42:17: error: ‘m0’ was not declared in this scope                 m0[i][j] = i + j + 0.5;                 ^~",
+                        "code": "m0[i][j] = i + j + 0.5;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 26,
+                        "col": "9",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:43:9: error: ‘m0’ was not declared in this scope         m0.SacuvajUBinarnuDatoteku(\"matrica2.DAT\");         ^~",
+                        "code": "m0.SacuvajUBinarnuDatoteku(\"matrica2.DAT\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 27,
+                        "col": "17",
+                        "message": "expected primary-expression before 'double'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:44:17: error: expected primary-expression before ‘double’         Matrica<double> m1(\"matrica2.DAT\", true);                 ^~~~~~",
+                        "code": "Matrica<double> m1(\"matrica2.DAT\", true);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 28,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:45:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m1;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 28,
+                        "col": "38",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_4.cpp:45:38: error: ‘m1’ was not declared in this scope         std::cout << std::setw(6) << m1;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    }
+                ]
+            }
+        },
+        "5": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_5.cpp: In function ‘int main()’:\nbs_test_5.cpp:22:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<int> m0{2, 2};\n         ^~~~~~~\nbs_test_5.cpp:22:17: error: expected primary-expression before ‘int’\n         Matrica<int> m0{2, 2};\n                 ^~~\nbs_test_5.cpp:25:17: error: ‘m0’ was not declared in this scope\n                 m0[i][j] = i + j;\n                 ^~\nbs_test_5.cpp:26:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m0;\n                      ^~~\nbs_test_5.cpp:26:38: error: ‘m0’ was not declared in this scope\n         std::cout << std::setw(6) << m0;\n                                      ^~\nbs_test_5.cpp:28:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m0;\n                      ^~~\nbs_test_5.cpp:40:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<double> m0{2, 2};\n         ^~~~~~~\nbs_test_5.cpp:40:17: error: expected primary-expression before ‘double’\n         Matrica<double> m0{2, 2};\n                 ^~~~~~\nbs_test_5.cpp:43:17: error: ‘m0’ was not declared in this scope\n                 m0[i][j] = i + j + 0.5;\n                 ^~\nbs_test_5.cpp:44:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m0;\n                      ^~~\nbs_test_5.cpp:44:38: error: ‘m0’ was not declared in this scope\n         std::cout << std::setw(6) << m0;\n                                      ^~\nbs_test_5.cpp:46:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m0;\n                      ^~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:22:9: error: ‘Matrica’ was not declared in this scope         Matrica<int> m0{2, 2};         ^~~~~~~",
+                        "code": "Matrica<int> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "17",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:22:17: error: expected primary-expression before ‘int’         Matrica<int> m0{2, 2};                 ^~~",
+                        "code": "Matrica<int> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 8,
+                        "col": "17",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:25:17: error: ‘m0’ was not declared in this scope                 m0[i][j] = i + j;                 ^~",
+                        "code": "m0[i][j] = i + j;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:26:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m0;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m0;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "38",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:26:38: error: ‘m0’ was not declared in this scope         std::cout << std::setw(6) << m0;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m0;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:28:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m0;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m0;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 23,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:40:9: error: ‘Matrica’ was not declared in this scope         Matrica<double> m0{2, 2};         ^~~~~~~",
+                        "code": "Matrica<double> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 23,
+                        "col": "17",
+                        "message": "expected primary-expression before 'double'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:40:17: error: expected primary-expression before ‘double’         Matrica<double> m0{2, 2};                 ^~~~~~",
+                        "code": "Matrica<double> m0{2, 2};"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 26,
+                        "col": "17",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:43:17: error: ‘m0’ was not declared in this scope                 m0[i][j] = i + j + 0.5;                 ^~",
+                        "code": "m0[i][j] = i + j + 0.5;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 27,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:44:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m0;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m0;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 27,
+                        "col": "38",
+                        "message": "'m0' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:44:38: error: ‘m0’ was not declared in this scope         std::cout << std::setw(6) << m0;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m0;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 29,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_5.cpp:46:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m0;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m0;"
+                    }
+                ]
+            }
+        },
+        "6": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_6.cpp: In function ‘void kreirajDatotetkuZbii2()’:\nbs_test_6.cpp:17:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type\n     std::ofstream dat(ime);\n                          ^\nbs_test_6.cpp: In function ‘int main()’:\nbs_test_6.cpp:30:9: error: ‘Matrica’ was not declared in this scope\n         Matrica<double> m1(\"matrica2.txt\", false);\n         ^~~~~~~\nbs_test_6.cpp:30:17: error: expected primary-expression before ‘double’\n         Matrica<double> m1(\"matrica2.txt\", false);\n                 ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 4,
+                        "col": "26",
+                        "message": "variable 'std::ofstream dat' has initializer but incomplete type",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_6.cpp:17:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type     std::ofstream dat(ime);                          ^",
+                        "code": "std::ofstream dat(ime);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 7,
+                        "col": "9",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_6.cpp:30:9: error: ‘Matrica’ was not declared in this scope         Matrica<double> m1(\"matrica2.txt\", false);         ^~~~~~~",
+                        "code": "Matrica<double> m1(\"matrica2.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 7,
+                        "col": "17",
+                        "message": "expected primary-expression before 'double'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_6.cpp:30:17: error: expected primary-expression before ‘double’         Matrica<double> m1(\"matrica2.txt\", false);                 ^~~~~~",
+                        "code": "Matrica<double> m1(\"matrica2.txt\", false);"
+                    }
+                ]
+            }
+        },
+        "7": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_7.cpp: In function ‘void kreirajDatotetkuZbii1()’:\nbs_test_7.cpp:17:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type\n     std::ofstream dat(ime);\n                          ^\nbs_test_7.cpp: In function ‘void kreirajDatotetkuZbii4()’:\nbs_test_7.cpp:25:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type\n     std::ofstream dat(ime);\n                          ^\nbs_test_7.cpp: In function ‘int main()’:\nbs_test_7.cpp:37:5: error: ‘Matrica’ was not declared in this scope\n     Matrica<int> m1(\"matrica1.txt\", false);\n     ^~~~~~~\nbs_test_7.cpp:37:13: error: expected primary-expression before ‘int’\n     Matrica<int> m1(\"matrica1.txt\", false);\n             ^~~\nbs_test_7.cpp:41:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m1;\n                      ^~~\nbs_test_7.cpp:41:38: error: ‘m1’ was not declared in this scope\n         std::cout << std::setw(6) << m1;\n                                      ^~\nbs_test_7.cpp:48:22: error: ‘setw’ is not a member of ‘std’\n         std::cout << std::setw(6) << m1 << std::endl << std::endl;\n                      ^~~\nbs_test_7.cpp:48:38: error: ‘m1’ was not declared in this scope\n         std::cout << std::setw(6) << m1 << std::endl << std::endl;\n                                      ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 4,
+                        "col": "26",
+                        "message": "variable 'std::ofstream dat' has initializer but incomplete type",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:17:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type     std::ofstream dat(ime);                          ^",
+                        "code": "std::ofstream dat(ime);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 12,
+                        "col": "26",
+                        "message": "variable 'std::ofstream dat' has initializer but incomplete type",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:25:26: error: variable ‘std::ofstream dat’ has initializer but incomplete type     std::ofstream dat(ime);                          ^",
+                        "code": "std::ofstream dat(ime);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "5",
+                        "message": "'Matrica' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:37:5: error: ‘Matrica’ was not declared in this scope     Matrica<int> m1(\"matrica1.txt\", false);     ^~~~~~~",
+                        "code": "Matrica<int> m1(\"matrica1.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "13",
+                        "message": "expected primary-expression before 'int'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:37:13: error: expected primary-expression before ‘int’     Matrica<int> m1(\"matrica1.txt\", false);             ^~~",
+                        "code": "Matrica<int> m1(\"matrica1.txt\", false);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 10,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:41:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m1;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 10,
+                        "col": "38",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:41:38: error: ‘m1’ was not declared in this scope         std::cout << std::setw(6) << m1;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m1;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 17,
+                        "col": "22",
+                        "message": "'setw' is not a member of 'std'",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:48:22: error: ‘setw’ is not a member of ‘std’         std::cout << std::setw(6) << m1 << std::endl << std::endl;                      ^~~",
+                        "code": "std::cout << std::setw(6) << m1 << std::endl << std::endl;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 17,
+                        "col": "38",
+                        "message": "'m1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4063/bs_test_7.cpp:48:38: error: ‘m1’ was not declared in this scope         std::cout << std::setw(6) << m1 << std::endl << std::endl;                                      ^~",
+                        "code": "std::cout << std::setw(6) << m1 << std::endl << std::endl;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1560993103
+}

@@ -1,0 +1,26 @@
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp: In constructor ‘ApstraktniStudent::ApstraktniStudent(std::__cxx11::string, std::__cxx11::string, int)’:
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp:18:6: warning: ‘ApstraktniStudent::broj_polozenih’ will be initialized after [-Wreorder]
+  int broj_polozenih;
+      ^~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp:17:9: warning:   ‘double ApstraktniStudent::prosjek’ [-Wreorder]
+  double prosjek;
+         ^~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp:20:2: warning:   when initialized here [-Wreorder]
+  ApstraktniStudent(std::string ime, std::string prezime, int broj_indeksa): ime(ime), prezime(prezime), broj_indeksa(broj_indeksa), broj_polozenih(0),prosjek(5){}
+  ^~~~~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp: In member function ‘virtual void StudentBachelor::IspisiPodatke() const’:
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp:43:95: error: ‘DajBrojIndeks’ was not declared in this scope
+   std::cout<<"Student bachelor studija "<<DajIme()<<" "<<DajPrezime()<<", sa brojem indeksa"<<DajBrojIndeks()<<std::endl;
+                                                                                               ^~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp:43:95: note: suggested alternative: ‘DajBrojIndeksa’
+   std::cout<<"Student bachelor studija "<<DajIme()<<" "<<DajPrezime()<<", sa brojem indeksa"<<DajBrojIndeks()<<std::endl;
+                                                                                               ^~~~~~~~~~~~~
+                                                                                               DajBrojIndeksa
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp: In member function ‘virtual void StudentMaster::IspisiPodatke() const’:
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp:55:92: error: ‘DajBrojIndeks’ was not declared in this scope
+  std::cout<<"Student master studija "<<DajIme()<<" "<<DajPrezime()<<", sa brojem indeksa"<<DajBrojIndeks()<<std::endl;
+                                                                                            ^~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T13/Z2/main.cpp:55:92: note: suggested alternative: ‘DajBrojIndeksa’
+  std::cout<<"Student master studija "<<DajIme()<<" "<<DajPrezime()<<", sa brojem indeksa"<<DajBrojIndeks()<<std::endl;
+                                                                                            ^~~~~~~~~~~~~
+                                                                                            DajBrojIndeksa

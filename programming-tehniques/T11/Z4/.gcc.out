@@ -1,0 +1,24 @@
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp: In copy constructor ‘Liga::Liga(const Liga&)’:
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp:98:12: warning: ‘Liga::max_broj_timova’ will be initialized after [-Wreorder]
+  const int max_broj_timova;
+            ^~~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp:97:6: warning:   ‘int Liga::broj_timova’ [-Wreorder]
+  int broj_timova;
+      ^~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp:118:2: warning:   when initialized here [-Wreorder]
+  Liga(const Liga& l): max_broj_timova(l.max_broj_timova), broj_timova(l.broj_timova)
+  ^~~~
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp: In constructor ‘Liga::Liga(int)’:
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp:98:12: warning: ‘Liga::max_broj_timova’ will be initialized after [-Wreorder]
+  const int max_broj_timova;
+            ^~~~~~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp:97:6: warning:   ‘int Liga::broj_timova’ [-Wreorder]
+  int broj_timova;
+      ^~~~~~~~~~~
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp:183:1: warning:   when initialized here [-Wreorder]
+ Liga::Liga(int velicina_lige):max_broj_timova(velicina_lige),broj_timova(0),timovi(new Tim*[velicina_lige]) {}
+ ^~~~
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp: In lambda function:
+/rhome/m/mucanbarli1/workspace/TP/T11/Z4/main.cpp:213:3: error: expected ‘;’ before ‘else’
+   else return false;
+   ^~~~

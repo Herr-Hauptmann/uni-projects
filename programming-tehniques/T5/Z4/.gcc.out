@@ -1,0 +1,4 @@
+/rhome/m/mucanbarli1/workspace/TP/T5/Z4/main.cpp: In lambda function:
+/rhome/m/mucanbarli1/workspace/TP/T5/Z4/main.cpp:38:30: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(sqrt(n) == floor(sqrt(n))) return true;
+                              ^
